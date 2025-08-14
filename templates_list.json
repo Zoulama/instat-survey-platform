@@ -1,0 +1,88 @@
+{
+  "survey_templates": {
+    "total_templates": 12,
+    "retrieval_date": "2025-08-10T21:01:00Z",
+    "templates": [
+      {
+        "TemplateID": 1,
+        "TemplateName": "Template_MODELISATION_Fiche_De_Programmation_DES_Activites_Pour_2025",
+        "Domain": "sds",
+        "Category": "development_assessment",
+        "Version": "1.0.0",
+        "CreatedBy": "System",
+        "CreatedDate": "2025-08-10T12:48:16.181981",
+        "UsageCount": 0,
+        "sections_count": 5,
+        "description": "Template pour la programmation des activités DES (Développement Economique et Social) pour 2025"
+      },
+      {
+        "TemplateID": 7,
+        "TemplateName": "Template_MODELISATION_FICHIER_BILAN_ACTIVITES_2024_V28072025",
+        "Domain": "sds",
+        "Category": "development_assessment", 
+        "Version": "1.0.0",
+        "CreatedBy": "System",
+        "CreatedDate": "2025-08-10T13:39:15.110910",
+        "UsageCount": 0,
+        "sections_count": 6,
+        "description": "Template pour le bilan des activités programmées et non programmées réalisées en 2024"
+      },
+      {
+        "TemplateID": 9,
+        "TemplateName": "Template_MODELISATION_FICHIER_BILAN_ACTIVITES_2024_V28072025",
+        "Domain": "sds",
+        "Category": "development_assessment",
+        "Version": "1.0.0", 
+        "CreatedBy": "System",
+        "CreatedDate": "2025-08-10T20:48:18.622636",
+        "UsageCount": 0,
+        "sections_count": 6,
+        "description": "Template dupliqué pour le bilan des activités 2024"
+      },
+      {
+        "TemplateID": 11,
+        "TemplateName": "Template_MODELISATION_FICHIER_BILAN_ACTIVITES_2024_V28072025",
+        "Domain": "sds",
+        "Category": "development_assessment",
+        "Version": "1.0.0",
+        "CreatedBy": "System", 
+        "CreatedDate": "2025-08-10T21:00:30.879772",
+        "UsageCount": 0,
+        "sections_count": 6,
+        "description": "Template récent pour le bilan des activités 2024"
+      },
+      {
+        "TemplateID": 12,
+        "TemplateName": "Template_MODELISATION_Fiche_De_Programmation_DES_Activites_Pour_2025",
+        "Domain": "sds",
+        "Category": "development_assessment",
+        "Version": "1.0.0",
+        "CreatedBy": "System",
+        "CreatedDate": "2025-08-10T21:01:17.823228", 
+        "UsageCount": 0,
+        "sections_count": 5,
+        "description": "Template récent pour la programmation DES 2025"
+      }
+    ],
+    "domain_distribution": {
+      "sds": 5,
+      "diagnostic": 0,
+      "des": 0,
+      "ssn": 0
+    },
+    "category_distribution": {
+      "development_assessment": 5,
+      "diagnostic": 0,
+      "program_review": 0,
+      "activity_report": 0
+    },
+    "template_characteristics": {
+      "average_sections_per_template": 5.4,
+      "total_unique_templates": 2,
+      "duplicates": 3,
+      "creation_pattern": "Automatique via upload Excel",
+      "version_pattern": "1.0.0 (standard)",
+      "usage_status": "Tous les templates ont 0 utilisation"
+    }
+  }
+}

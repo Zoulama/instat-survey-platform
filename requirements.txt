@@ -1,0 +1,41 @@
+# FastAPI and related dependencies
+fastapi==0.116.1
+uvicorn[standard]==0.32.0
+starlette==0.47.2
+pydantic[email]==2.11.0
+python-multipart==0.0.9
+
+# Database
+psycopg2-binary==2.9.9
+alembic==1.13.3
+SQLAlchemy==2.0.31
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-decouple==3.8
+PyJWT==2.8.0
+
+# File processing
+openpyxl==3.1.5
+python-docx==1.1.2
+pandas==2.2.3
+
+# Web and HTTP
+aiofiles==24.1.0
+requests==2.32.4
+
+# Template and static files
+Jinja2==3.1.4
+
+# Development and testing
+pytest==8.3.2
+black==24.3.0
+
+# Date and time
+python-dateutil==2.8.2
+pytz==2025.2
+
+# Utilities
+click==8.1.7
+python-dotenv==1.0.1

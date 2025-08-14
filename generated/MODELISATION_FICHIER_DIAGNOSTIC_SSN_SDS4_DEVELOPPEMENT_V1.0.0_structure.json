@@ -1,0 +1,6595 @@
+{
+  "title": "DÉVELOPPEMENT DES CAPACITÉS POUR DE MEILLEURES STATISTIQUES",
+  "description": "Survey: DÉVELOPPEMENT DES CAPACITÉS POUR DE MEILLEURES STATISTIQUES",
+  "sections": [
+    {
+      "title": "Context: Information’s sur le répondant",
+      "subsections": [],
+      "questions": [],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 1,
+        "type": "context"
+      }
+    },
+    {
+      "title": "Repondant",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Pays",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Nom",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Poste",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Service",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Email",
+          "type": "email",
+          "options": [],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Telephone (cell)",
+          "type": "phone",
+          "options": [],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Telephone (fixe):",
+          "type": "phone",
+          "options": [],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Sexe (cocher SVP):",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Masc",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Fem",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Préfère ne pas préciser",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Lois, règlements et textes juridiques",
+      "subsections": [
+        {
+          "title": "Gouvernance de la coordination des statistiques et/ou du système statistique  national",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Réglements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et La protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Gouvernance de la collecte des données",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Gouvernance de la production statistique",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Gouvernance de la diffusion des statistiques",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Gouvernance grâce aux financements nationaux dédiés à la statistique",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Titre et année du document (préciser le lien si disponible)",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "N’existe pas",
+          "questions": [
+            {
+              "text": "Loi statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 7,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Règlements",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 7,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Loi sur la confidentialité et \nLa protection des données",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 7,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres actes juridiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 7,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 1
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "La loi statistique précise-t-elle le rôle du Conseil de la statistique",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "La loi statistique précise-t-elle le rôle du Conseil de la statistique",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "Quel est le mandat du Conseil de\n La statistique ou équivalent spécifié dans la loi sur la statistique",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quel est le mandat du Conseil de\n La statistique ou équivalent spécifié dans la loi sur la statistique",
+          "type": "text",
+          "options": [
+            {
+              "text": "Préciser",
+              "value": "Préciser",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "La loi statistique définit-elle les relations avec\n les fournisseurs de données administratives au sein du SSN?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "La loi statistique définit-elle les relations avec\n les fournisseurs de données administratives au sein du SSN?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "La loi sur les statistiques définit-elle les relations\n avec les autres parties prenantes de l'écosystème des données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "La loi sur les statistiques définit-elle les relations\n avec les autres parties prenantes de l'écosystème des données",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "8.  Quand l'organisation a-t-elle été fondée (INSTAT)?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "8.  Quand l'organisation a-t-elle été fondée (INSTAT)?",
+          "type": "date",
+          "options": [
+            {
+              "text": "An",
+              "value": "An",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 3
+      }
+    },
+    {
+      "title": "Quelles sont les missions principales de l'organisation ?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Coordination institutionnelle",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Coordination technique",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Collecte de données",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Conduire des travaux méthodologiques",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Compiler des statistiques et maintenir des bases\nDe données statistiques",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Harmoniser les statistiques \nSur la base de normes méthodologiques",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Diffuser des statistiques via des publications et/ou un site internet",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Répondre aux demandes de données et\nDe statistiques des utilisateurs nationaux et internationaux",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 8,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Organiser une formation statistique pour les utilisateurs\nDe données",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 9,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Autres, Préciser",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 10,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 3
+      }
+    },
+    {
+      "title": "Votre organisation élabore-t-elle un plan pour\n assurer le financement des activités statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation élabore-t-elle \nUn plan pour assurer le financement des activités statistiques ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 4
+      }
+    },
+    {
+      "title": "Ressources nationales de financement",
+      "subsections": [
+        {
+          "title": "Quelles opérations statistiques prioritaires de vos \nOrganisations sont financées par le gouvernement",
+          "questions": [
+            {
+              "text": "Recensement de la population",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Enquête auprès des ménages",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Enquête sur la pauvreté",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Enquête auprès des entreprises/Recensement économique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Comptes nationaux/balance des paiements/ stat. Finances publiques",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Stat. du commerce / Stat. du tourisme",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Stat. de l’éducation et de la santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Stat. du travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Statistiques de l’agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Existe-t-il des critères pour inclure délibérément les statistiques\nDans le processus de budgétisation nationale des statistiques ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Oui",
+                  "value": "Oui",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 6
+                  }
+                },
+                {
+                  "text": "Non",
+                  "value": "Non",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 6
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2
+          }
+        }
+      ],
+      "questions": [
+        {
+          "text": "Existe-t-il un budget dédié, dans le cadre du budget du\n gouvernement national, spécifiquement pour les statistiques \nproduites dans votre organisation ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Fournir une part estimée du budget national pour les statistiques \nPar rapport au budget total du gouvernement",
+          "type": "text",
+          "options": [
+            {
+              "text": "Fournir l’estimation en Pourcentage",
+              "value": "Fournir l’estimation en Pourcentage",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Est-il possible de vérifier le décaissement et l'engagement ?\n Si oui, veuillez fournir une estimation du montant",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Décaissement",
+              "value": "Décaissement",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3
+              }
+            },
+            {
+              "text": "Engagement",
+              "value": "Engagement",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "S'il n'y a pas de budget dédié, des fonds sont-ils\n disponibles pour les activités statistiques sur une base ad hoc ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 4
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Existe-t-il un fonds domestique et durable\nDédié au développement des statistiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 5
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 4
+      }
+    },
+    {
+      "title": "Ressources extérieures de financement",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Veuillez indiquer le nombre de partenaires au développement\nQui soutiennent actuellement votre organisation",
+          "type": "number",
+          "options": [
+            {
+              "text": "Valeur de l’indication",
+              "value": "Valeur de l’indication",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Votre organisation a-t-elle un groupe partenaire (groupe statistique) \nComprenant des partenaires au développement",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Fournir une part estimée du financement des statistiques par les\n prestataires externes de coopération au développement dans\n Le cadre du budget total des statistiques",
+          "type": "text",
+          "options": [
+            {
+              "text": "Estimation du budget total pour le financement des statistiques\n Par les prestataires externes",
+              "value": "Estimation du budget total pour le financement des statistiques\n Par les prestataires externes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 4
+      }
+    },
+    {
+      "title": "Plans nationaux de développement",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Le CREDD comprend-il un cadre de suivi et d'évaluation?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Le CREDD mentionne-t-il spécifiquement le rôle des \nStatistiques ou du SSN/INSTAT?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Les hauts dirigeants du SSN/INSTAT sont-ils inclus lors de la\n Conception et de la négociation du CREDD?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 5
+      }
+    },
+    {
+      "title": "Plans statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Le système statistique national dispose-t-il actuellement d'une \nStratégie nationale de développement de la statistique?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quelle est la portée de la SNDS?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Se concentrer uniquement sur le SSN",
+              "value": "Se concentrer uniquement sur le SSN",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            },
+            {
+              "text": "inclure des acteurs plus larges que le cadre statistique",
+              "value": "inclure des acteurs plus larges que le cadre statistique",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "La SNDS est-elle arrimée au CREDD ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 5
+      }
+    },
+    {
+      "title": "Comment le SSN est-il organisé dans le pays",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Centralisé",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Decentralisé",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Autres",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "La loi sur les statistiques désigne-t-elle l'Office national de la \nstatistique (INSTAT) en tant que chef de file ou coordinateur ou\n Intendant du SSN et/ou de l'écosystème de données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "La loi sur les statistiques désigne-t-elle l'Office national de la\n statistique (INSTAT) en tant que chef de file ou coordinateur ou\n intendant du SSN et/ou de l'écosystème de données?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Votre organisation travaille-t-elle en coordination avec les \nInstitutions des secteurs suivants sur les données administratives",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Agriculture",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Commerce/trade",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Education",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Santé",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Travail/Emploi",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Finance",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Banque Central",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Plan",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 8,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Affaires Etrang",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 9,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Genre/ Egalité Genre",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 10,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Autres",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 11,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Votre organisation travaille-t-elle en coordination avec des entités\nClés actives au niveau \ninfranational?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation travaille-t-elle en coordination avec des entités \nClés actives  au niveau international ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Votre organisation travaille-t-elle en coordination avec les entités\n Clés via des groupes de travail techniques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation travaille-t-elle en coordination avec les entités\n Clés via des groupes de travail techniques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Travaillez-vous en coordination avec l'entité responsable du suivi \nDes ODD au sein du gouvernement national",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Travaillez-vous en coordination avec l'entité responsable du suivi \nDes ODD au sein du gouvernement national",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Si votre pays participe aux Examens Nationaux Volontaires\n (ENV), votre organisation participe-t-elle à ce processus",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Si votre pays participe aux Examens Nationaux Volontaires\n (ENV), votre organisation participe-t-elle à ce processus",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 7,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 7,
+        "parent_index": 6
+      }
+    },
+    {
+      "title": "Votre organisation coordonne-t-elle et met-elle en œuvre les \nobjectifs statistiques ou les mandats des organisations \nÉconomiques régionales",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation coordonne-t-elle et met-elle en œuvre les\nObjectifs statistiques ou les mandats des organisations \nÉconomiques régionales?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Votre organisation coordonne-t-elle et met-elle en œuvre les \nObjectifs statistiques ou les mandats des organisations \nInternationales",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation coordonne-t-elle et met-elle en œuvre les \nObjectifs statistiques ou les mandats des organisations \nInternationales",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Votre organisation collabore-t-elle avec une organisation régionale \nou internationale dans les domaines suivants",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Guides méthodologiques concernant la production statistique",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Détachements de personnel entre organisations",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Organisation de la formation.",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Autres",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Non, nous ne collaborons pas avec une organisation \nRégionale ou internationale.",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Existe-t-il des partenariats ou des collaborations entre les\n agences du SSN et les différents acteurs de données de \nl'écosystème de données du pays soutenant la production \nEt l'utilisation de statistique",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il des partenariats ou des collaborations entre les\n agences du SSN et les différents acteurs de données",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Existe-t-il une politique de confidentialité des données réglementant\n la confidentialité des données entre les différents acteurs de \nDonnées de l'écosystème de données du pays et le SSN?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il une politique de confidentialité des données réglementant\n la confidentialité des données entre les différents acteurs de \nDonnées de l'écosystème de données du pays et le SSN?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Existe-t-il une politique d'accès/partage des données réglementant\n la confidentialité des données entre les différents acteurs de \nDonnées de l'écosystème de données du pays et le SSN ?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il une politique d'accès/partage des données réglementant\n la confidentialité des données entre les différents acteurs de \nDonnées de l'écosystème de données du pays et le SSN ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Existe-t-il des mécanismes de coordination établis par votre \norganisation qui réglementent toutes les données collectées/produites\n Dans le pays/territoire de sa juridiction par des tiers?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il des mécanismes de coordination établis par votre \norganisation qui réglementent toutes les données collectées/produites\n Dans le pays/territoire de sa juridiction par des tiers?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 7,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 7,
+        "parent_index": 7
+      }
+    },
+    {
+      "title": "Avez-vous déjà effectué une évaluation des lacunes \nDans les données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Avez-vous déjà effectué une évaluation des lacunes \nDans les données?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 8
+      }
+    },
+    {
+      "title": "Le cadre de suivi des ODD reconnaît l'importance de l'utilisation\n de sources de données alternatives pour produire les indicateurs",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il des politiques qui favorisent l'utilisation de sources de\n données alternatives pour les rapports officiels (ODD, CREDD,\n plans régionaux, etc.)?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 9
+      }
+    },
+    {
+      "title": "L’INSTAT utilise-t-il des sources de données alternatives?",
+      "subsections": [
+        {
+          "title": "Sources de données alternatives",
+          "questions": [
+            {
+              "text": "Vérifiez si utilisé pour produire des indicateurs de genre au niveau \nLocal dans le passé 3 ans”",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Données des OSC et des ONG",
+                  "value": "Données des OSC et des ONG",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Récupéraion Web",
+                  "value": "Récupéraion Web",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Information géospatilae",
+                  "value": "Information géospatilae",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Collecte de données via tablette",
+                  "value": "Collecte de données via tablette",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autres,Précisez",
+                  "value": "Autres,Précisez",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Si vous n'avez pas utilisé au cours des trois dernières années, \nvérifiez si vous prévoyez d'utiliser au cours des 3 prochaines années",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Données des OSC et des ONG",
+                  "value": "Données des OSC et des ONG",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Récupéraion Web",
+                  "value": "Récupéraion Web",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Information géospatilae",
+                  "value": "Information géospatilae",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Collecte de données via tablette",
+                  "value": "Collecte de données via tablette",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Autres,Précisez",
+                  "value": "Autres,Précisez",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 2
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Non, pas utilisé et ne prévoyez pas d'utiliser d'autres\n Sources de données",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Données des OSC et des ONG",
+                  "value": "Données des OSC et des ONG",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Récupéraion Web",
+                  "value": "Récupéraion Web",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Information géospatilae",
+                  "value": "Information géospatilae",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Collecte de données via tablette",
+                  "value": "Collecte de données via tablette",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Autres,Précisez",
+                  "value": "Autres,Précisez",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 3
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1
+          }
+        }
+      ],
+      "questions": [
+        {
+          "text": "L’INSTAT utilise-t-il des sources de données alternatives?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 9
+      }
+    },
+    {
+      "title": "Est-il prévu d'utiliser de telles sources au moins au cours \nDes 3 prochaines années?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Est-il prévu d'utiliser de telles sources au moins au cours \nDes 3 prochaines années?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Votre organisation organise-t-elle des formations/ateliers sur \nles produits statistiques dans les écoles?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation organise-t-elle des formations/ateliers sur \nles produits statistiques dans les écoles?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 10
+      }
+    },
+    {
+      "title": "Votre organisation organise-t-elle des formations/ateliers sur les \nproduits statistiques pour les décideurs?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation organise-t-elle des formations/ateliers sur \nles produits statistiques pour les décideurs?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 10
+      }
+    },
+    {
+      "title": "Votre organisation organise-t-elle des formations/ateliers \nSur les produits statistiques pour les journalistes?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation organise-t-elle des formations/ateliers sur \nles produits statistiques pour les journalistes?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 10
+      }
+    },
+    {
+      "title": "Votre organisation publie-t-elle une politique/stratégie \nDe communication",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation publie-t-elle une politique/stratégie\n De communication?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "Si l'INSTAT a un site Web actif, y a-t-il une section \nDédiée aux ODD?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Si l'INSTAT a un site Web actif, y a-t-il une section \nDédiée aux ODD?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "Utilisez-vous les médias sociaux pour promouvoir les \nProduits statistiques publiés?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Utilisez-vous les médias sociaux pour promouvoir les \nProduits statistiques publiés",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Twiter",
+              "value": "Twiter",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "LinkedIn",
+              "value": "LinkedIn",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Facebook",
+              "value": "Facebook",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres: Précisez",
+              "value": "Autres: Précisez",
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "Existe-t-il d'autres moyens de partager les statistiques avec le public",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il d'autres moyens de partager les statistiques avec le public",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Décrivez tous les autres moyens de communication des statistiques",
+          "type": "text",
+          "options": [
+            {
+              "text": "fournissez les titres des publications et des exemplaires",
+              "value": "fournissez les titres des publications et des exemplaires",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "L'organisation utilise-t-elle des techniques \nDe visualisation de données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'organisation utilise-t-elle des techniques \nde visualisation de données ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "Des campagnes d'information du public basées sur les produits\nStatistiques actuels sont-elles menées?",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Des campagnes d'information du public basées sur les produits\nStatistiques actuels sont-elles menées?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "L'INSTAT a-t-il déployé des efforts pour promouvoir \nL'utilisation des statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'INSTAT a-t-il déployé des efforts pour promouvoir \nL'utilisation des statistiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 7,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 7,
+        "parent_index": 11
+      }
+    },
+    {
+      "title": "Indiquer si l’organisation travaille avec le ministère ?",
+      "subsections": [
+        {
+          "title": "Établir des priorités pour la production de données",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Collecte de données",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Analyse des données",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Diffusion des données",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère, Précisez:",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Pas de collaboration",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Formulaire (réunions, groupes de travail, etc.)",
+          "questions": [
+            {
+              "text": "Banque Centrale”",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Finances",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Agriculture",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Commerce",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l’Education",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Genre/femmes",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de la Santé",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Travail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 8,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère de l'Inclusion sociale ou du Développement social",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 9,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère du Plan",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 10,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Ministère des Affaires Etrangères",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 11,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre Agence/ministère",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 12,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 1
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 12
+      }
+    },
+    {
+      "title": "Existe-t-il une politique de partage des données entre les \nDifférents producteurs de statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il une politique de partage des données entre les \nDifférents producteurs de statistiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 12
+      }
+    },
+    {
+      "title": "Les classifications et les définitions sont-elles harmonisées entre\nLes producteurs de données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Les classifications et les définitions sont-elles harmonisées entre les\n producteurs de données",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui, pour assurer la comparabilité des données",
+              "value": "Oui, pour assurer la comparabilité des données",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui, minimiser les incohérences et utiliser un langage commun dans \nLa définition et le calcul des indicateurs.",
+              "value": "Oui, minimiser les incohérences et utiliser un langage commun dans \nLa définition et le calcul des indicateurs.",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 12
+      }
+    },
+    {
+      "title": "Indiquez les principaux groupes d'utilisateurs de statistiques\n Dans le pays auxquels votre organisation s'adresse",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Indiquez les principaux groupes d'utilisateurs de statistiques\n Dans le pays auxquels votre organisation s'adresse",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indiquer les groupes",
+              "value": "Indiquer les groupes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 13
+      }
+    },
+    {
+      "title": "Y a-t-il d'autres groupes d'utilisateurs potentiels de statistiques\n Que vous aimeriez contacter",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Y a-t-il d'autres groupes d'utilisateurs potentiels de statistiques\n Que vous aimeriez contacter",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indiquer les groupes",
+              "value": "Indiquer les groupes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 13
+      }
+    },
+    {
+      "title": "Votre institution organise-t-elle des réunions avec les utilisateurs avant une\n Grande enquête (ou recensement) pour identifier leurs besoins spécifiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre institution organise-t-elle des réunions avec les utilisateurs avant une\n Grande enquête (ou recensement) pour identifier leurs besoins spécifiques",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indiquer les groupes",
+              "value": "Indiquer les groupes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Décrivez d'autres types de dialogue utilisateur-producteur s'ils existent.",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Décrivez d'autres types de dialogue utilisateur-producteur s'ils existent.",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indiquer les groupes",
+              "value": "Indiquer les groupes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 13
+      }
+    },
+    {
+      "title": "Votre organisation mène-t-elle une enquête de satisfaction des utilisateurs\n qui s'enquiert spécifiquement des statistiques produites par votre\n Organisation",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation mène-t-elle une enquête de satisfaction des utilisateurs\n qui s'enquiert spécifiquement des statistiques produites par votre\n Organisation",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 13
+      }
+    },
+    {
+      "title": "L'INSTAT a-t-il déployé des efforts pour contrôler l'utilisation \nDes statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'INSTAT a-t-il déployé des efforts pour contrôler l'utilisation\n des statistiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 13
+      }
+    },
+    {
+      "title": "Pensez-vous qu'il existe un soutien politique pour le développement de\n Meilleures statistiques au niveau national",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Pensez-vous qu'il existe un soutien politique pour le développement de\n Meilleures statistiques au niveau national ?",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indication sur une échelle de 0 à 10 le niveau de soutien",
+              "value": "Indication sur une échelle de 0 à 10 le niveau de soutien",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 14
+      }
+    },
+    {
+      "title": "Votre organisation organise-t-elle régulièrement des réunions/tables\n rondes avec des responsables gouvernementaux nationaux",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Fréquence d’organisation des réunions sur une échelle de À à 5",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Une fois par semaine",
+              "value": "Une fois par semaine",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Une fois par mois",
+              "value": "Une fois par mois",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "une fois tous les 6 mois",
+              "value": "une fois tous les 6 mois",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Une fois chaque année",
+              "value": "Une fois chaque année",
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Jamais",
+              "value": "Jamais",
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Je ne sais pas",
+              "value": "Je ne sais pas",
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 14
+      }
+    },
+    {
+      "title": "Vous a-t-on déjà refusé de publier un produit statistique pour des\n Raisons politiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Vous a-t-on déjà refusé de publier un produit statistique pour des\n Raisons politiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Je ne sais pas",
+              "value": "Je ne sais pas",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 14
+      }
+    },
+    {
+      "title": "Le statisticien général (DG INSTAT) peut-il contredire qui que ce soit,\n Y compris les décideurs politiques, lorsqu'il abuse des statistiques",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Le statisticien général (DG INSTAT) peut-il contredire qui que ce soit,\n Y compris les décideurs politiques, lorsqu'il abuse des statistiques",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Je ne sais pas",
+              "value": "Je ne sais pas",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 14
+      }
+    },
+    {
+      "title": "Existe-t-il des procédures pour signaler les éléments suivants",
+      "subsections": [
+        {
+          "title": "Pressions politiques ou administratives subies par l’INSTAT lors de la\n Production et de la diffusion de l’information statistique",
+          "questions": [
+            {
+              "text": "Oui",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Non",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Je ne sais pas",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5
+          }
+        },
+        {
+          "title": "Abus ou fausse déclaration de données statistiques",
+          "questions": [
+            {
+              "text": "Oui",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Non",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Je ne sais pas",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 5
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 14
+      }
+    },
+    {
+      "title": "Répertorier les principaux exercices de collecte de données ou indicateurs \nqui ont été compilés à la demande d'une partie prenante spécifique \nAu cours des trois dernières années.",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Veuillez indiquer la partie prenante en fonction du projet que vous analysez",
+          "type": "text",
+          "options": [
+            {
+              "text": "Indiquer les parties prenantes",
+              "value": "Indiquer les parties prenantes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 15
+      }
+    },
+    {
+      "title": "Votre organisation prend-elle en compte de telles demandes même si cette \ndemande ne fait pas partie du portefeuille/plan/programme annuel habituel",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation prend-elle en compte de telles demandes même si cette \ndemande ne fait pas partie du portefeuille/plan/programme annuel habituel",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Je ne sais pas",
+              "value": "Je ne sais pas",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 15
+      }
+    },
+    {
+      "title": "Votre organisation dispose-t-elle d'un mécanisme spécifique pour \ncollecter les demandes des parties prenantes",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation dispose-t-elle d'un mécanisme spécifique pour \ncollecter les demandes des parties prenantes",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Je ne sais pas",
+              "value": "Je ne sais pas",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 15
+      }
+    },
+    {
+      "title": "Indiquez le nombre total d'employés travaillant dans l'organisation",
+      "subsections": [],
+      "questions": [],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Nombre total d'employés diplômés",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Nombre total d'employés diplômés",
+          "type": "number",
+          "options": [
+            {
+              "text": "Nombre total d'employés diplômés",
+              "value": "Nombre total d'employés diplômés",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Nombre total de cadres (basé sur les niveaux hiérarchiques dans \nL'organigramme)",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Nombre total de cadres ( niveaux hiérarchiques dans  L'organigramme)",
+          "type": "number",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Nombre total de femmes",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Nombre total de femmes",
+          "type": "number",
+          "options": [
+            {
+              "text": "Nombre total de femmes",
+              "value": "Nombre total de femmes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Nombre total de femmes occupant des postes de direction",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Nombre total de femmes",
+          "type": "number",
+          "options": [
+            {
+              "text": "Nombre total de femmes",
+              "value": "Nombre total de femmes",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Le taux de vacance actuel dans l'organisation",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Le taux de vacance actuel dans l'organisation",
+          "type": "text",
+          "options": [
+            {
+              "text": "Le taux de vacance actuel dans l'organisation",
+              "value": "Le taux de vacance actuel dans l'organisation",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Spécifiez le pourcentage total du budget de votre organisation \nConsacré à la formation du personnel",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Spécifiez le pourcentage total du budget de votre organisation \nConsacré à la formation du personnel",
+          "type": "number",
+          "options": [
+            {
+              "text": "Pourcentage budgétaire pour la formation du personnel",
+              "value": "Pourcentage budgétaire pour la formation du personnel",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 7,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 7,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Votre organisation a-t-elle reçu des ressources humaines de partenaires de \nla coopération au développement pour la production et la \nDiffusion statistique",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation a-t-elle reçu des ressources humaines de partenaires de \nla coopération au développement pour la production et la \nDiffusion statistique",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 8,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Type de soutien (technique, financier)",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Période",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Nom collecte/statistique/publication",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 8,
+        "parent_index": 16
+      }
+    },
+    {
+      "title": "Votre organisation a-t-elle mis en place une stratégie/politique ressources\n Humaines",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation a-t-elle mis en place une stratégie/politique ressources\n Humaines",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 17
+      }
+    },
+    {
+      "title": "L'organisation a-t-elle mis en place des incitations pour améliorer \nles compétences du personnel chargé des statistiques et réduire la mobilité",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'organisation a-t-elle mis en place des incitations pour améliorer \nles compétences du personnel chargé des statistiques et réduire la mobilité",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 17
+      }
+    },
+    {
+      "title": "La formation technique des producteurs de données de votre organisation\n couvre-t-elle les compétences et les connaissances relatives aux nouvelles\n Sources de données",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "La formation technique des producteurs de données de votre organisation\n couvre-t-elle les compétences et les connaissances relatives aux nouvelles\n Sources de données",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 17
+      }
+    },
+    {
+      "title": "Si oui, est-il pris en compte dans les plans de formation/développement \nPersonnels",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Si oui, est-il pris en compte dans les plans de formation/développement \nPersonnels",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 17
+      }
+    },
+    {
+      "title": "Y a-t-il des récompenses accordées aux employés en échange de leur \nTravail exceptionnel et pour les motiver à accomplir leurs tâches",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Y a-t-il des récompenses accordées aux employés en échange de leur \nTravail exceptionnel et pour les motiver à accomplir leurs tâches",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 17
+      }
+    },
+    {
+      "title": "Votre organisation dispose-t-elle de suffisamment d'espaces de travail/de \nBureaux pour que tout le personnel puisse travailler sur place",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation dispose-t-elle de suffisamment d'espaces de travail/de \nBureaux pour que tout le personnel puisse travailler sur place",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Le personnel de votre organisation dispose-t-il d'équipements ou \nRessources suffisants pour effectuer ses tâches à domicile si nécessaire",
+      "subsections": [
+        {
+          "title": "Suffisant",
+          "questions": [
+            {
+              "text": "Ordinateur",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Imprimante",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Bureau/espace bureau",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Logiciel de traitement de données et la gestion",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Logiciel de statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Accès Internet",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2
+          }
+        },
+        {
+          "title": "Insuffisant",
+          "questions": [
+            {
+              "text": "Ordinateur",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Imprimante",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Bureau/espace bureau",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Logiciel de traitement de données et la gestion",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Logiciel de statistique",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Accès Internet",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autre",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Votre organisation dispose-t-elle d'une capacité de \nStockage/d'archivage de données locale",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation dispose-t-elle d'une capacité de \nStockage/d'archivage de données locale",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Quelle proportion du personnel professionnel est équipée d'un ordinateur\nPortable",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quelle proportion du personnel professionnel est équipée d'un ordinateur\n Portable",
+          "type": "text",
+          "options": [
+            {
+              "text": "Le personnel professionnel équipé d’un ordinateur portable",
+              "value": "Le personnel professionnel équipé d’un ordinateur portable",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Quelle proportion du personnel professionnel dispose d'une connexion \nInternet permanente sur le lieu de travail",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quelle proportion du personnel professionnel dispose d'une connexion \nInternet permanente sur le lieu de travail",
+          "type": "text",
+          "options": [
+            {
+              "text": "La portion du  personnel professionnel disposant d’une connexion Internet\n Permanente sur le lieu de travail",
+              "value": "La portion du  personnel professionnel disposant d’une connexion Internet\n Permanente sur le lieu de travail",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Quelle proportion du personnel professionnel dispose d'une connexion \nInternet permanente à domicile payée par le bureau",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quelle proportion du personnel professionnel dispose d'une connexion \nInternet permanente à domicile payée par le bureau",
+          "type": "text",
+          "options": [
+            {
+              "text": "La portion du du personnel professionnel disposant d'une connexion \nInternet permanente à domicile payée par le bureau",
+              "value": "La portion du du personnel professionnel disposant d'une connexion \nInternet permanente à domicile payée par le bureau",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 18
+      }
+    },
+    {
+      "title": "Utilisez-vous le type de littérature suivant pour guider les processus\n De production statistique",
+      "subsections": [
+        {
+          "title": "Oui",
+          "questions": [
+            {
+              "text": "Livres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "lignes directrices",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Recommandations",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Manuels",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Non",
+          "questions": [
+            {
+              "text": "Livres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "lignes directrices",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Recommandations",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Manuels",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Veuillez fournir le titre/lien",
+          "questions": [
+            {
+              "text": "Livres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "lignes directrices",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Recommandations",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Manuels",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 19
+      }
+    },
+    {
+      "title": "Votre organisation est-elle passée de la collecte de données sur papier à la\n Collecte de données assistée par ordinateur (CAPI, etc.)",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation est-elle passée de la collecte de données sur papier à la\n Collecte de données assistée par ordinateur (CAPI, etc.)",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 19
+      }
+    },
+    {
+      "title": "Des experts externes sont-ils consultés/impliqués dans la production de\nStatistiques",
+      "subsections": [
+        {
+          "title": "Oui",
+          "questions": [
+            {
+              "text": "Ministères/institutions du gouvernement",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "ONG, OSC",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Organisations internationales",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Universités, centres de recherche",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Media",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Forme de consultations",
+          "questions": [
+            {
+              "text": "Ministères/institutions du gouvernement",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "ONG, OSC",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Organisations internationales",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Universités, centres de recherche",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Media",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Fréquence des consultations",
+          "questions": [
+            {
+              "text": "Ministères/institutions du gouvernement",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "ONG, OSC",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Organisations internationales",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Universités, centres de recherche",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Media",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Autres",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Il n'y a pas de telles consultations",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 19
+      }
+    },
+    {
+      "title": "Au cours des 3 dernières années, l'organisation a-t-elle entrepris des \névaluations de ses processus de production de données pour voir s'ils sont \nconformes aux normes de qualité communes",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Au cours des 3 dernières années, l'organisation a-t-elle entrepris des \névaluations de ses processus de production de données pour voir s'ils sont \nconformes aux normes de qualité communes",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 20
+      }
+    },
+    {
+      "title": "Des normes et directives internationales ont-elles été utilisées dans les \nProduits suivants",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Produit 1",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Produit 2",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Autres",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Aucun d’eux",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 20
+      }
+    },
+    {
+      "title": "Votre organisation dispose-t-elle d'un cadre national d'assurance qualité",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation dispose-t-elle d'un cadre national d'assurance qualité",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 20
+      }
+    },
+    {
+      "title": "Votre organisation surveille-t-elle la qualité des informations géospatiales",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Votre organisation surveille-t-elle la qualité des informations géospatiales",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 20
+      }
+    },
+    {
+      "title": "Changements et nouveaux outils de collecte et \nde compilation introduits lors des 3 dernières années",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quels sont les changements et nouveaux outils de collecte et de compilation \ndes 3 dernières années.?»",
+          "type": "date",
+          "options": [
+            {
+              "text": "Décrivez leurs impacts et les résultats",
+              "value": "Décrivez leurs impacts et les résultats",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 21
+      }
+    },
+    {
+      "title": "Pourriez-vous indiquer la phase de la chaîne de valeur des données \noù vous avez utilisé des sources de données non traditionnelles",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Planification",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Production",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Dissémination",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Utilisation",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 21
+      }
+    },
+    {
+      "title": "Pourriez-vous indiquer la phase de la chaîne de valeur des données où \nvous avez utilisé des méthodes non traditionnelles pour produire des statistiques officielles",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Planification",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Production",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Dissémination",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Utilisation",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 21
+      }
+    },
+    {
+      "title": "Évolution de l’environnement de la production statistique au niveau \nnational au cours des dernières années",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Considérez-vous que l'environnement de la production statistique au niveau national a changé ces dernières années?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 22
+      }
+    },
+    {
+      "title": "Besoins en données pour le suivi de la mise en œuvre des accords internationaux",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Il y a-t-il une intégration des besoins en données de suivi des accords internationaux ?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 22
+      }
+    },
+    {
+      "title": "Les  collectes et/ou les opérations de données statistiques prioritaires, \nque votre organisation  entreprendra dans les 3 prochaines années.",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Considérez-vous que l'environnement de la production statistique au niveau national a changé ces dernières années?",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Recensement de la population/Enquête auprès des ménages",
+              "value": "Recensement de la population/Enquête auprès des ménages",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Enquête conjoncture/Recensement Économique Entreprise",
+              "value": "Enquête conjoncture/Recensement Économique Entreprise",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Recensement de l’Agriculture",
+              "value": "Recensement de l’Agriculture",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Statistiques macroéconomiques",
+              "value": "Statistiques macroéconomiques",
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Données administrative (éducation, santé, commerce, tourisme, public finance, etc.",
+              "value": "Données administrative (éducation, santé, commerce, tourisme, public finance, etc.",
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres. Précisez",
+              "value": "Autres. Précisez",
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Aucun d’eux. Justifiez",
+              "value": "Aucun d’eux. Justifiez",
+              "metadata": {
+                "entry_index": 7,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 22
+      }
+    },
+    {
+      "title": "les actions envisagées pas votre organisation pour améliorer \nles données et les statistiques dans votre pays respectif",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'organisation envisage-t-elle d'entreprendre des actions visant à améliorer \nles données et les statistiques dans votre pays respectif",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Établir des priorités",
+              "value": "Établir des priorités",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Coordonner et aligner systématiquement les actions et les ressources avec\n les objectifs définis, et s'assurer que les employés de l'agence/organisation\n travaillent vers des objectifs communs",
+              "value": "Coordonner et aligner systématiquement les actions et les ressources avec\n les objectifs définis, et s'assurer que les employés de l'agence/organisation\n travaillent vers des objectifs communs",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Entreprendre des interventions ou des programmes à plusieurs volets",
+              "value": "Entreprendre des interventions ou des programmes à plusieurs volets",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Aucune action de ce type n'est prévue",
+              "value": "Aucune action de ce type n'est prévue",
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 22
+      }
+    },
+    {
+      "title": "les actions susmentionnées au cours des 3 dernières années.",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "L'organisation a-t-elle entrepris les actions susmentionnées au cours des 3 dernières années.",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Établir des priorités",
+              "value": "Établir des priorités",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Coordonner et aligner systématiquement les actions et les ressources avec\n les objectifs définis, et s'assurer que les employés de l'agence/organisation\n travaillent vers des objectifs communs",
+              "value": "Coordonner et aligner systématiquement les actions et les ressources avec\n les objectifs définis, et s'assurer que les employés de l'agence/organisation\n travaillent vers des objectifs communs",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Entreprendre des interventions ou des programmes à plusieurs volets",
+              "value": "Entreprendre des interventions ou des programmes à plusieurs volets",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Autres",
+              "value": "Autres",
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Aucune action de ce type n'est prévue",
+              "value": "Aucune action de ce type n'est prévue",
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Les données statistiques couvrent-elles l’ensemble des indicateurs liés aux\n objectifs du CREDD",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Les données statistiques couvrent-elles l’ensemble des indicateurs liés aux\n objectifs du CREDD",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 23
+      }
+    },
+    {
+      "title": "la capacité du Gouvernement pour analyser les données statistiques à des\n fins de prévision",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quelle est la capacité du Gouvernement pour analyser les données \nstatistiques à des fins de prévision",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Bonne",
+              "value": "Bonne",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Moynne",
+              "value": "Moynne",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Mauvaise",
+              "value": "Mauvaise",
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 23
+      }
+    },
+    {
+      "title": "Les indicateurs de performance pour les processus de vis à vis du \ndu gouvenement",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Le Gouvernement tient-il compte des indicateurs de performance \npour les processus de décision",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 23
+      }
+    },
+    {
+      "title": "Outre la satisfaction des usagers, le système de gestion de l’information capture-t-il des données sur l’impact de la prestation de service",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Outre la satisfaction des usagers, le système de gestion de l’information capture-t-il des données sur l’impact de la prestation de service",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Les ministères et organismes publics produisent-ils un rapport périodique",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Les ministères et organismes publics produisent-ils un rapport périodique\nqui résume les réalisations en termes de prestations de services, leur portée, leur facilité d’accès, qualité et satisfaction des usagers",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 5,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 5,
+        "parent_index": 3
+      }
+    },
+    {
+      "title": "Les systèmes d’information sont-ils à la disposition du public via l’Internet",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Les systèmes d’information sont-ils à la disposition du public via l’Internet",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 6,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 6,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "Des lignes directrices sur des méthodologies et des normes techniques formellement établies et utilisées par les ministères et autres organismes publics",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Des lignes directrices sur des méthodologies et des normes techniques sont-elles formellement établies et utilisées par les ministères et autres organismes publics",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 7,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 7,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "Les procédures pour corriger les programmes lorsque le suivi de leur mise en œuvre montre un manque d’adhérence aux objectifs fixé",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Existe-t-il des procédures pour corriger les programmes lorsque le suivi de leur mise en œuvre montre un manque d’adhérence aux objectifs fixés",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 8,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 8,
+        "parent_index": 2
+      }
+    },
+    {
+      "title": "Les informations de suivi de la performance du CREDD sont-elles mises à la disposition du public",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Les informations de suivi de la performance du CREDD sont-elles mises à la disposition du public",
+          "type": "single_choice",
+          "options": [
+            {
+              "text": "Oui",
+              "value": "Oui",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            },
+            {
+              "text": "Non",
+              "value": "Non",
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 9,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 9,
+        "parent_index": 2
+      }
+    }
+  ],
+  "metadata": {
+    "source_file": "MODELISATION_FICHIER_DIAGNOSTIC_SSN_SDS4_DEVELOPPEMENT_V1.0.0.xlsx",
+    "total_rows": 794
+  }
+}

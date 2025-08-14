@@ -1,0 +1,1806 @@
+{
+  "title": "Bilan des activités programmées et non programmées realisées en 2024",
+  "description": "Survey: Bilan des activités programmées et non programmées realisées en 2024",
+  "sections": [
+    {
+      "title": "Context: Fiche Numero",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Numero d’ordre de la fiche",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Nombre total de fiches",
+          "type": "number",
+          "options": [],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 1,
+        "type": "context"
+      }
+    },
+    {
+      "title": "Identification de la fiche",
+      "subsections": [],
+      "questions": [
+        {
+          "text": "Quel est le code de la région de la structure en charge de la réalisation de l'activité",
+          "type": "text",
+          "options": [
+            {
+              "text": "Selectionner dans la liste deroulante le code de la region",
+              "value": "Selectionner dans la liste deroulante le code de la region",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quel est le code du Cercle de la structure en charge de la réalisation de l'activité",
+          "type": "text",
+          "options": [
+            {
+              "text": "Selectionner dans la liste deroulante le code du Cercle",
+              "value": "Selectionner dans la liste deroulante le code du Cercle",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quel est le Nom de la structure en charge de la réalisation de l'activité",
+          "type": "text",
+          "options": [
+            {
+              "text": "Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
+              "value": "Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quel est le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS»",
+          "type": "text",
+          "options": [
+            {
+              "text": "Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
+              "value": "Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quel est l'intitulé de l’activité dans la chaine des résultats ?",
+          "type": "text",
+          "options": [
+            {
+              "text": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+              "value": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quelle est la chaine de résultats ?",
+          "type": "text",
+          "options": [
+            {
+              "text": "Rechercher dans le champ de recherche la chaine de résultats",
+              "value": "Rechercher dans le champ de recherche la chaine de résultats",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 6
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        },
+        {
+          "text": "Quel est l'intitulé de l’activité dans la chaine des résultats ?",
+          "type": "text",
+          "options": [
+            {
+              "text": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+              "value": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 7
+              }
+            }
+          ],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 1,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 1,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Caractéristiques de l'activité",
+      "subsections": [
+        {
+          "title": "Les données de l'activité sont-elles désagrégées",
+          "questions": [
+            {
+              "text": "Les données de l'activité sont-elles désagrégées ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Oui",
+                  "value": "1=Oui",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "2=Non",
+                  "value": "2=Non",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 2
+          }
+        },
+        {
+          "title": "Si oui préciser le niveau de désagrégation",
+          "questions": [
+            {
+              "text": "Par Genre ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Age",
+                  "value": "Age",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Sexe",
+                  "value": "Sexe",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Handicap",
+                  "value": "Handicap",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Participation à la prise de décision",
+                  "value": "Participation à la prise de décision",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autre Genre",
+                  "value": "Autre Genre",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Par niveau territorial ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Région",
+                  "value": "Région",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Cercle",
+                  "value": "Cercle",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Arrondissement",
+                  "value": "Arrondissement",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Commune",
+                  "value": "Commune",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 2
+                  }
+                },
+                {
+                  "text": "Autre niveau de désagrégation territorial",
+                  "value": "Autre niveau de désagrégation territorial",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 2
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Par Milieu de résidence ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Urbain",
+                  "value": "Urbain",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Rural",
+                  "value": "Rural",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 3
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Par autre niveau de désagrégation ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Oui",
+                  "value": "1=Oui",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 4
+                  }
+                },
+                {
+                  "text": "2=Non",
+                  "value": "2=Non",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 4
+                  }
+                },
+                {
+                  "text": "3=Sans Objet",
+                  "value": "3=Sans Objet",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 4
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 2
+          }
+        },
+        {
+          "title": "Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?",
+          "questions": [
+            {
+              "text": "Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
+                  "value": "Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 2
+          }
+        },
+        {
+          "title": "Quelle est l'envergure de l’activité ?",
+          "questions": [
+            {
+              "text": "Quelle est l'envergure de l’activité ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1= Régional",
+                  "value": "1= Régional",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "2= Multirégional",
+                  "value": "2= Multirégional",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "3= National",
+                  "value": "3= National",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "4= Sous-régional",
+                  "value": "4= Sous-régional",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "5= International",
+                  "value": "5= International",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "7= Autre envergure",
+                  "value": "7= Autre envergure",
+                  "metadata": {
+                    "entry_index": 6,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 2
+          }
+        },
+        {
+          "title": "L'activité était-elle programmée ?",
+          "questions": [
+            {
+              "text": "L'activité était-elle programmée ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Oui",
+                  "value": "1=Oui",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "2=Non",
+                  "value": "2=Non",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 2
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 2,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Programmation de l’activité",
+      "subsections": [
+        {
+          "title": "Quelle est l'année de programmation ?",
+          "questions": [
+            {
+              "text": "Quelle est l'année de programmation ?",
+              "type": "date",
+              "options": [
+                {
+                  "text": "Entrer  l’année de programmation de l'activité",
+                  "value": "Entrer  l’année de programmation de l'activité",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 1
+          }
+        },
+        {
+          "title": "Quelle est l'année de réalisation prévue",
+          "questions": [
+            {
+              "text": "Quell est  l'année de réalisation prévue",
+              "type": "date",
+              "options": [
+                {
+                  "text": "Entrer l'année de réalisation prévue",
+                  "value": "Entrer l'année de réalisation prévue",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 2,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 2,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Quelles sont les rsiques potentiels qui peuvent entraver la réalisation de l'activité",
+          "questions": [
+            {
+              "text": "Quelles sont les rsiques potentiels qui peuvent entraver la réalisation de l'activité",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Absence de financement",
+                  "value": "Absence de financement",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Non décaissement des fonds à temps",
+                  "value": "Non décaissement des fonds à temps",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autres rsiques liés à la mobilisation des ressources financières",
+                  "value": "Autres rsiques liés à la mobilisation des ressources financières",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Insécurité et terrorisme",
+                  "value": "Insécurité et terrorisme",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Instatbilité politique",
+                  "value": "Instatbilité politique",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                  "value": "Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                  "metadata": {
+                    "entry_index": 6,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Capacités inégales des ressources humaines",
+                  "value": "Capacités inégales des ressources humaines",
+                  "metadata": {
+                    "entry_index": 7,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "value": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "metadata": {
+                    "entry_index": 8,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Corruption et népotisme",
+                  "value": "Corruption et népotisme",
+                  "metadata": {
+                    "entry_index": 9,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                  "value": "Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                  "metadata": {
+                    "entry_index": 10,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "value": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "metadata": {
+                    "entry_index": 11,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Grèves répétivies",
+                  "value": "Grèves répétivies",
+                  "metadata": {
+                    "entry_index": 12,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Coupures intempestives d'électricité",
+                  "value": "Coupures intempestives d'électricité",
+                  "metadata": {
+                    "entry_index": 13,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                  "value": "Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                  "metadata": {
+                    "entry_index": 14,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autres rsiques potentiels",
+                  "value": "Autres rsiques potentiels",
+                  "metadata": {
+                    "entry_index": 15,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Précisez",
+                  "value": "Précisez",
+                  "metadata": {
+                    "entry_index": 16,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 3,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 3,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Quel est l'effet potentiel sur l'atteinte",
+          "questions": [
+            {
+              "text": "Quel est l'effet potentiel sur l'atteinte",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Majeur",
+                  "value": "Majeur",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Modéré",
+                  "value": "Modéré",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Mineur",
+                  "value": "Mineur",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 4,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 4,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Quelle est la possibilité de matérialisation des risques",
+          "questions": [
+            {
+              "text": "Quelle est la probabilité de matérialisation",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Faible",
+                  "value": "Faible",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Moyen",
+                  "value": "Moyen",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Elevé",
+                  "value": "Elevé",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 5,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 5,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Quelles sont les mesures d'atténuation des risques et/ou réduction des riques",
+          "questions": [
+            {
+              "text": "Quelles sont les mesures d'atténuation des risques et/ou réduction des riques",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Donner le numéro de la mesure d’atténuation",
+                  "value": "Donner le numéro de la mesure d’atténuation",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Donner le code de la mesure d’atténuation",
+                  "value": "Donner le code de la mesure d’atténuation",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Donner le libellé de la mesure d’atténuation",
+                  "value": "Donner le libellé de la mesure d’atténuation",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 6,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 6,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Quelle est la périodicité de l’activité",
+          "questions": [
+            {
+              "text": "Quelle est la périodicité de l’activité ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Hebdomadaire",
+                  "value": "Hebdomadaire",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Mensuelle",
+                  "value": "Mensuelle",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Trimestrielle",
+                  "value": "Trimestrielle",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Semestrielle",
+                  "value": "Semestrielle",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Annuel",
+                  "value": "Annuel",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autre",
+                  "value": "Autre",
+                  "metadata": {
+                    "entry_index": 6,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 7,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 7,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "D'autres structures participeront-elles à l’activité ?",
+          "questions": [
+            {
+              "text": "D'autres structures participeront-elles à l’activité ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Oui",
+                  "value": "1=Oui",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "2= Non",
+                  "value": "2= Non",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 8,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 8,
+            "parent_index": 3
+          }
+        },
+        {
+          "title": "Si oui, lesquelles ?",
+          "questions": [
+            {
+              "text": "Quelles sont les structure participantes à l’activité ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "INSTAT",
+                  "value": "INSTAT",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "CPS",
+                  "value": "CPS",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Direction centrales",
+                  "value": "Direction centrales",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Observatoires /Organismes personnalisés",
+                  "value": "Observatoires /Organismes personnalisés",
+                  "metadata": {
+                    "entry_index": 4,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Services déconcentrés et décentralisés",
+                  "value": "Services déconcentrés et décentralisés",
+                  "metadata": {
+                    "entry_index": 5,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Structures privées (ONG, etc ;)",
+                  "value": "Structures privées (ONG, etc ;)",
+                  "metadata": {
+                    "entry_index": 6,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Ensemble du SSN",
+                  "value": "Ensemble du SSN",
+                  "metadata": {
+                    "entry_index": 7,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "cabinet ministérie",
+                  "value": "cabinet ministérie",
+                  "metadata": {
+                    "entry_index": 8,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "PTF",
+                  "value": "PTF",
+                  "metadata": {
+                    "entry_index": 9,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Missions Diplomatiques et Consulaires",
+                  "value": "Missions Diplomatiques et Consulaires",
+                  "metadata": {
+                    "entry_index": 10,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Autre structure",
+                  "value": "Autre structure",
+                  "metadata": {
+                    "entry_index": 11,
+                    "parent_index": 1
+                  }
+                },
+                {
+                  "text": "Préciser",
+                  "value": "Préciser",
+                  "metadata": {
+                    "entry_index": 12,
+                    "parent_index": 1
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 9,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 9,
+            "parent_index": 3
+          }
+        }
+      ],
+      "questions": [
+        {
+          "text": "Programmation de l’activité",
+          "type": "text",
+          "options": [],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 3,
+            "table_reference": null
+          },
+          "is_required": false
+        }
+      ],
+      "metadata": {
+        "entry_index": 3,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Financement  de l’activité",
+      "subsections": [
+        {
+          "title": "Quelles sont les sources de Financement et le montant (Coût) de l’activité en Francs CFA",
+          "questions": [
+            {
+              "text": "Quel est le code et libellé de la source de financement",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est le montant prévisionnel en FCFA",
+              "type": "number",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est l'état de fincancement",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Financement totalement acquis",
+                  "value": "Financement totalement acquis",
+                  "metadata": {
+                    "entry_index": 1,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Financement partiellement acquis",
+                  "value": "Financement partiellement acquis",
+                  "metadata": {
+                    "entry_index": 2,
+                    "parent_index": 3
+                  }
+                },
+                {
+                  "text": "Recherche de financement",
+                  "value": "Recherche de financement",
+                  "metadata": {
+                    "entry_index": 3,
+                    "parent_index": 3
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 1
+      }
+    },
+    {
+      "title": "Renseignements généraux",
+      "subsections": [
+        {
+          "title": "Renseigenement du point focal",
+          "questions": [
+            {
+              "text": "Prenom(s) NOM",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 1,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Sexe",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 2,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Titre",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 3,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Adresse de la structure",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 4,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Téléphone",
+              "type": "phone",
+              "options": [],
+              "metadata": {
+                "entry_index": 5,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Mail",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": 6,
+                "parent_index": 1,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4
+          }
+        },
+        {
+          "title": "Renseignement de la personne qui a rempli la fiche",
+          "questions": [
+            {
+              "text": "Autres raisons",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Oui",
+                  "value": "1=Oui",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "2=Non",
+                  "value": "2=Non",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": 1,
+            "parent_index": 4
+          }
+        },
+        {
+          "title": "Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?",
+          "questions": [
+            {
+              "text": "Qui est le Demandeur de la réalisation de cette activité non programmée ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Gouvernement",
+                  "value": "Gouvernement",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Partenaires Techniques et Financiers",
+                  "value": "Partenaires Techniques et Financiers",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Collectivités territoriales (CT)",
+                  "value": "Collectivités territoriales (CT)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Besoins propres",
+                  "value": "Besoins propres",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "ONG/OSC",
+                  "value": "ONG/OSC",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Autres utilisateurs",
+                  "value": "Autres utilisateurs",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": null,
+            "parent_index": null
+          }
+        },
+        {
+          "title": "Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?",
+          "questions": [
+            {
+              "text": "Quel est le numéro d’ordre d’enregistrement de l’Indicateur de suivi-évaluation ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
+                  "value": "Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est le code et le libellé de l’Indicateur de suivi-évaluation ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
+                  "value": "Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est le code et le libellé de la Source de vérification ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
+                  "value": "Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": null,
+            "parent_index": null
+          }
+        },
+        {
+          "title": "Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?",
+          "questions": [
+            {
+              "text": "Quel est le numéro d’ordre d’enregistrement du produit ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
+                  "value": "Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est le code et le libellé du produit ?",
+              "type": "text",
+              "options": [
+                {
+                  "text": "Sélectionner dans la liste déroulante le produit (@TableRef :03)",
+                  "value": "Sélectionner dans la liste déroulante le produit (@TableRef :03)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quels sont les supports de publication utilisés ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Papier",
+                  "value": "Papier",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Intranet",
+                  "value": "Intranet",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Internet",
+                  "value": "Internet",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Clé USB",
+                  "value": "Clé USB",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Autre Support",
+                  "value": "Autre Support",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": null,
+            "parent_index": null
+          }
+        },
+        {
+          "title": "Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?",
+          "questions": [
+            {
+              "text": "Quel est le numéro d’ordre d’enregistrement du type de difficultés ?",
+              "type": "text",
+              "options": [],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            },
+            {
+              "text": "Quel est le type de difficultés ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "1=Matérielles",
+                  "value": "1=Matérielles",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "2=Financières",
+                  "value": "2=Financières",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "3=Ressources humaines",
+                  "value": "3=Ressources humaines",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "4=Techniques",
+                  "value": "4=Techniques",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "5=Sécuritaires (Crises socio-politiques, insécurité, …)",
+                  "value": "5=Sécuritaires (Crises socio-politiques, insécurité, …)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "6=Sanitaires (Pandémie COVID 19, …)",
+                  "value": "6=Sanitaires (Pandémie COVID 19, …)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "7=Autres type de difficultés",
+                  "value": "7=Autres type de difficultés",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": null,
+            "parent_index": null
+          }
+        },
+        {
+          "title": "Quels sont les risques identifiés pendant la programmation de l’activité ?",
+          "questions": [
+            {
+              "text": "Quels sont les risques identifiés pendant la programmation de l’activité ?",
+              "type": "single_choice",
+              "options": [
+                {
+                  "text": "Absence de financement",
+                  "value": "Absence de financement",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Non décaissement des fonds à temps",
+                  "value": "Non décaissement des fonds à temps",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Non acquisition du complément du budget",
+                  "value": "Non acquisition du complément du budget",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Autres risques liés à la mobilisation des ressources financières",
+                  "value": "Autres risques liés à la mobilisation des ressources financières",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Insécurité et terrorisme",
+                  "value": "Insécurité et terrorisme",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Instabilité politique",
+                  "value": "Instabilité politique",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                  "value": "Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Capacités inégales des ressources humaines",
+                  "value": "Capacités inégales des ressources humaines",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "value": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Corruption et népotisme",
+                  "value": "Corruption et népotisme",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                  "value": "Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Grèves répétitives",
+                  "value": "Grèves répétitives",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Coupures intempestives d'électricité",
+                  "value": "Coupures intempestives d'électricité",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                  "value": "Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                },
+                {
+                  "text": "Autres risques potentiels à préciser",
+                  "value": "Autres risques potentiels à préciser",
+                  "metadata": {
+                    "entry_index": null,
+                    "parent_index": null
+                  }
+                }
+              ],
+              "metadata": {
+                "entry_index": null,
+                "parent_index": null,
+                "table_reference": null
+              },
+              "is_required": false
+            }
+          ],
+          "metadata": {
+            "entry_index": null,
+            "parent_index": null
+          }
+        }
+      ],
+      "questions": [],
+      "metadata": {
+        "entry_index": 4,
+        "parent_index": 1
+      }
+    }
+  ],
+  "metadata": {
+    "source_file": "MODELISATION_Fiche_De_Programmation_DES_Activites_Pour_2025.xlsx",
+    "total_rows": 317
+  }
+}

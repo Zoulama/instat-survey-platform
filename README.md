@@ -1,0 +1,527 @@
+# INSTAT Digital Platform for Managing Statistical Activities
+
+## Overview
+
+This is a comprehensive digital platform designed for INSTAT (National Institute of Statistics) to manage the entire statistical production chain. The platform consists of five main modules that handle different aspects of statistical survey management and data processing.
+
+## Platform Modules
+
+1. **Metadata Management** - Manage definitions, classifications, indicators, and statistical foundations
+2. **Form Designer** - Visual drag-and-drop form editor with conditional logic
+3. **Data Collection** - Multi-device responsive data entry interface with offline capability
+4. **Data Processing** - Generic data processing with validation rules and Superset integration
+5. **Dissemination** - Publishing and sharing results with access control
+
+## Architecture
+
+- **Backend**: Python with FastAPI framework
+- **Database**: PostgreSQL with multiple schemas for different macro-activities
+- **Authentication**: JWT-based authentication with role-based access control
+- **Deployment**: Docker containers with docker-compose
+- **Data Processing**: Apache Superset integration for analytics
+
+## Database Schemas
+
+The platform supports three main macro-activities, each with dedicated database schemas:
+- `survey_program` - Program management surveys
+- `survey_balance` - Balance sheet surveys  
+- `survey_diagnostic` - Diagnostic surveys
+
+## Features
+
+### Core Features
+- Multi-device responsive forms (mobile, tablet, desktop)
+- Offline-first data collection with sync capabilities
+- Real-time form validation and conditional logic
+- Excel/Word document parsing and form generation
+- Hierarchical form structure management
+- Role-based access control (Admin, Manager, Data Scientist, ReadOnly, Write)
+
+### Advanced Features
+- AI-powered form generation
+- Big Data and AI pipeline for data cleaning
+- Automated anomaly detection
+- Integration with existing tools (CSPro, SPSS, KoBoToolbox)
+- Multi-language support
+- WCAG accessibility compliance
+
+## On-Premise Deployment Guide
+
+### Prerequisites
+
+Before deploying the INSTAT Survey Platform on-premise, ensure your server meets these requirements:
+
+#### System Requirements
+- **Operating System**: Linux (Ubuntu 20.04+ recommended) or CentOS/RHEL 8+
+- **Memory**: Minimum 8GB RAM (16GB+ recommended for production)
+- **Storage**: Minimum 50GB free disk space (SSD recommended)
+- **CPU**: Minimum 4 cores (8+ cores recommended for production)
+- **Network**: Internet access for initial setup and updates
+
+#### Software Dependencies
+- **Docker**: Version 20.10 or higher
+- **Docker Compose**: Version 2.0 or higher
+- **Git**: For cloning the repository
+- **curl/wget**: For health checks and testing
+
+### Step 1: Install System Dependencies
+
+#### On Ubuntu/Debian:
+```bash
+# Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install required packages
+sudo apt install -y git curl wget unzip
+
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+
+# Install Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Logout and login again for Docker group changes
+newgrp docker
+```
+
+#### On CentOS/RHEL:
+```bash
+# Update system packages
+sudo yum update -y
+
+# Install required packages
+sudo yum install -y git curl wget unzip
+
+# Install Docker
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install -y docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+
+# Install Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Logout and login again for Docker group changes
+newgrp docker
+```
+
+### Step 2: Clone and Prepare the Application
+
+```bash
+# Clone the repository
+git clone https://github.com/your-org/instat-survey-platform.git
+cd instat-survey-platform
+
+# Create necessary directories
+mkdir -p logs
+mkdir -p data/postgres
+mkdir -p data/redis
+mkdir -p uploads
+mkdir -p generated
+
+# Set proper permissions
+sudo chown -R $USER:$USER .
+chmod +x scripts/*.py
+```
+
+### Step 3: Configure Environment
+
+```bash
+# Copy environment template
+cp .env.example .env
+
+# Edit environment configuration
+nano .env
+```
+
+**Key environment variables to configure:**
+```env
+# Database Configuration
+DATABASE_URL=postgresql://postgres:your_secure_password@db:5432/instat_survey_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=your_secure_password
+POSTGRES_DB=instat_survey_db
+
+# Redis Configuration
+REDIS_URL=redis://redis:6379/0
+
+# Security
+SECRET_KEY=your_very_secure_secret_key_here_minimum_32_characters
+ACCESS_TOKEN_EXPIRE_MINUTES=1440
+
+# Application
+ENVIRONMENT=production
+DEBUG=false
+API_V1_STR=/v1
+
+# CORS Settings
+ALLOWED_HOSTS=["localhost","127.0.0.1","your-domain.com"]
+CORS_ORIGINS=["http://localhost:3000","https://your-domain.com"]
+
+# File Upload
+MAX_FILE_SIZE=100MB
+UPLOAD_PATH=./uploads
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=./logs/app.log
+```
+
+### Step 4: Build and Deploy with Docker
+
+```bash
+# Build the application image
+docker-compose build --no-cache
+
+# Start all services in detached mode
+docker-compose up -d
+
+# Check service status
+docker-compose ps
+
+# View logs
+docker-compose logs -f app
+```
+
+### Step 5: Initialize the Database
+
+```bash
+# Wait for database to be ready (about 30 seconds)
+sleep 30
+
+# Check database connectivity
+docker-compose exec db pg_isready -U postgres
+
+# Run database migrations
+docker-compose exec app python -m alembic upgrade head
+
+# Verify migrations were applied
+docker-compose exec app python -m alembic current
+docker-compose exec app python -m alembic history
+```
+
+### Step 6: Apply Custom Migrations and Load Reference Data
+
+```bash
+# Create table reference mappings migration
+docker-compose exec app python -c "from database.migrations.create_table_reference_mappings import upgrade; upgrade()"
+
+# Load Mali reference data (regions, cercles, structures, etc.)
+docker-compose exec app python scripts/load_mali_reference_data.py
+
+# Verify reference data was loaded
+docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"MaliRegions\";"
+docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"MaliCercles\";"
+docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"INSTATStructures\";"
+docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM table_reference_mappings;"
+
+# Check if any additional migrations are needed
+docker-compose exec app python -c "
+import os
+from pathlib import Path
+
+# Check for additional migration files
+migration_dir = Path('database/migrations')
+if migration_dir.exists():
+    migration_files = [f for f in migration_dir.glob('*.py') if f.name != '__init__.py' and f.name != '__pycache__']
+    print(f'Found {len(migration_files)} migration files:')
+    for f in migration_files:
+        print(f'  - {f.name}')
+else:
+    print('No additional migration directory found')
+"
+```
+
+### Step 7: Create Initial Admin User
+
+```bash
+# Access the application container
+docker-compose exec app python -c "
+from src.infrastructure.database.db_manager import DatabaseManager
+from src.domain.auth.entities import User
+from passlib.context import CryptContext
+import uuid
+
+db_manager = DatabaseManager()
+session = db_manager.SessionLocal()
+pwd_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
+
+# Create admin user
+admin_user = User(
+    UserID=str(uuid.uuid4()),
+    Username='admin',
+    Email='admin@instat.ml',
+    PasswordHash=pwd_context.hash('admin123'),
+    FirstName='System',
+    LastName='Administrator',
+    Role='Admin',
+    IsActive=True
+)
+
+session.add(admin_user)
+session.commit()
+session.close()
+print('Admin user created: username=admin, password=admin123')
+"
+```
+
+### Step 8: Configure Reverse Proxy (Optional but Recommended)
+
+For production deployments, use Nginx as a reverse proxy:
+
+```bash
+# Install Nginx
+sudo apt install -y nginx  # Ubuntu/Debian
+# OR
+sudo yum install -y nginx   # CentOS/RHEL
+
+# Create Nginx configuration
+sudo tee /etc/nginx/sites-available/instat-survey > /dev/null <<EOF
+server {
+    listen 80;
+    server_name your-domain.com www.your-domain.com;
+    
+    client_max_body_size 100M;
+    
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
+        proxy_connect_timeout 300s;
+        proxy_send_timeout 300s;
+        proxy_read_timeout 300s;
+    }
+    
+    location /static {
+        alias /var/www/instat-survey/static;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+}
+EOF
+
+# Enable the site
+sudo ln -s /etc/nginx/sites-available/instat-survey /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+```
+
+### Step 9: Configure SSL/TLS (Recommended)
+
+```bash
+# Install Certbot for Let's Encrypt
+sudo apt install -y certbot python3-certbot-nginx  # Ubuntu/Debian
+# OR
+sudo yum install -y certbot python3-certbot-nginx   # CentOS/RHEL
+
+# Obtain SSL certificate
+sudo certbot --nginx -d your-domain.com -d www.your-domain.com
+
+# Test automatic renewal
+sudo certbot renew --dry-run
+```
+
+### Step 10: Setup System Services (Optional)
+
+Create systemd services for automatic startup:
+
+```bash
+# Create service file
+sudo tee /etc/systemd/system/instat-survey.service > /dev/null <<EOF
+[Unit]
+Description=INSTAT Survey Platform
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/\$USER/instat-survey-platform
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose down
+TimeoutStartSec=0
+User=\$USER
+Group=\$USER
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# Enable and start the service
+sudo systemctl enable instat-survey.service
+sudo systemctl start instat-survey.service
+```
+
+### Step 11: Verification and Testing
+
+```bash
+# Check all containers are running
+docker-compose ps
+
+# Test API endpoints
+curl -f http://localhost:8000/health
+curl -f http://localhost:8000/v1/
+
+# Test database connectivity
+docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM alembic_version;"
+
+# Test Redis connectivity
+docker-compose exec redis redis-cli ping
+
+# Test file upload (create a small test file)
+echo "test" > test.txt
+curl -X POST -F "file=@test.txt" http://localhost:8000/v1/files/upload
+rm test.txt
+```
+
+### Step 12: Monitoring and Maintenance
+
+```bash
+# View application logs
+docker-compose logs -f app
+
+# Monitor resource usage
+docker stats
+
+# Backup database
+docker-compose exec db pg_dump -U postgres -d instat_survey_db > backup_$(date +%Y%m%d).sql
+
+# Update application
+git pull
+docker-compose build --no-cache
+docker-compose up -d
+```
+
+### Troubleshooting
+
+#### Common Issues:
+
+1. **Port conflicts**: Ensure ports 8000, 5432, 6379 are available
+   ```bash
+   sudo netstat -tulpn | grep :8000
+   sudo netstat -tulpn | grep :5432
+   sudo netstat -tulpn | grep :6379
+   ```
+
+2. **Permission issues**: Fix file permissions
+   ```bash
+   sudo chown -R $USER:$USER .
+   chmod 755 scripts/*.py
+   ```
+
+3. **Database connection issues**: Check PostgreSQL status
+   ```bash
+   docker-compose logs db
+   docker-compose exec db psql -U postgres -c "\l"
+   ```
+
+4. **Memory issues**: Monitor Docker resource usage
+   ```bash
+   docker system df
+   docker system prune -a  # Clean unused images
+   ```
+
+#### Health Checks:
+
+- **API Health**: `http://localhost:8000/health`
+- **Database**: `docker-compose exec db pg_isready -U postgres`
+- **Redis**: `docker-compose exec redis redis-cli ping`
+- **Application**: `docker-compose exec app python -c "import requests; print(requests.get('http://localhost:8000/health').status_code)"`
+
+### Performance Tuning
+
+For production environments:
+
+1. **PostgreSQL tuning**:
+   ```bash
+   # Edit postgresql.conf in container
+   docker-compose exec db bash -c "echo 'shared_buffers = 256MB' >> /var/lib/postgresql/data/postgresql.conf"
+   docker-compose exec db bash -c "echo 'effective_cache_size = 1GB' >> /var/lib/postgresql/data/postgresql.conf"
+   docker-compose restart db
+   ```
+
+2. **Application scaling**:
+   ```yaml
+   # In docker-compose.yml, scale the app service
+   app:
+     deploy:
+       replicas: 3
+   ```
+
+3. **Resource limits**:
+   ```yaml
+   # Add resource limits to docker-compose.yml
+   deploy:
+     resources:
+       limits:
+         cpus: '2.0'
+         memory: 4G
+       reservations:
+         memory: 2G
+   ```
+
+## Development Setup
+
+For development purposes, you can also run the application locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-org/instat-survey-platform.git
+cd instat-survey-platform
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# OR
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up local PostgreSQL and Redis
+# Configure .env file with local database settings
+
+# Run database migrations
+alembic upgrade head
+
+# Start development server
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+## API Documentation
+
+Once running, access the API documentation at:
+- Swagger UI: `http://localhost:8000/docs`
+- ReDoc: `http://localhost:8000/redoc`
+
+## Directory Structure
+
+```
+instat-survey-platform/
+├── main.py                 # FastAPI application entry point
+├── config.py              # Configuration management
+├── requirements.txt       # Python dependencies
+├── docker-compose.yml     # Docker services configuration
+├── database/              # Database schemas and migrations
+├── src/
+│   ├── api/              # API endpoints
+│   ├── domain/           # Business logic and entities
+│   ├── infrastructure/   # External services and storage
+│   └── utils/            # Helper utilities
+├── schemas/              # Pydantic models
+├── static/               # Static files
+└── templates/            # HTML templates
+```
+
+## License
+
+This project is licensed under the MIT License.
