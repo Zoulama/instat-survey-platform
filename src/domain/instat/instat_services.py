@@ -6,10 +6,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc, asc
 
 from src.infrastructure.database.connection import get_db
-from src.infrastructure.database.models import (
-    INSTATSurvey, SurveyTemplate, INSTATQuestion, 
-    SurveyMetrics, DataExport
-)
+from src.infrastructure.database import models
 from schemas.instat_domains import (
     INSTATSurveyCreate, INSTATSurveyResponse, INSTATSurveyUpdate,
     SurveyTemplateCreate, SurveyTemplateResponse, 
@@ -34,7 +31,7 @@ class INSTATSurveyService:
     def create_survey(self, survey_data: INSTATSurveyCreate) -> INSTATSurveyResponse:
         """Create a new INSTAT survey."""
         try:
-            db_survey = INSTATSurvey(
+            db_survey = models.INSTATSurvey(
                 **survey_data.model_dump(),
                 Status=WorkflowStatus.DRAFT.value
             )
@@ -52,8 +49,8 @@ class INSTATSurveyService:
 
     def get_survey(self, survey_id: int) -> Optional[INSTATSurveyResponse]:
         """Get INSTAT survey by ID."""
-        survey = self.db.query(INSTATSurvey).filter(
-            INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(models.INSTATSurvey).filter(
+            models.INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:
@@ -72,22 +69,22 @@ class INSTATSurveyService:
         reporting_cycle: Optional[ReportingCycle] = None
     ) -> PaginatedResponse[INSTATSurveyResponse]:
         """List INSTAT surveys with filtering."""
-        query = self.db.query(INSTATSurvey)
+        query = self.db.query(models.INSTATSurvey)
         
         # Apply filters
         if domain:
-            query = query.filter(INSTATSurvey.Domain == domain.value)
+            query = query.filter(models.INSTATSurvey.Domain == domain.value)
         if category:
-            query = query.filter(INSTATSurvey.Category == category.value)
+            query = query.filter(models.INSTATSurvey.Category == category.value)
         if status:
-            query = query.filter(INSTATSurvey.Status == status.value)
+            query = query.filter(models.INSTATSurvey.Status == status.value)
         if fiscal_year:
-            query = query.filter(INSTATSurvey.FiscalYear == fiscal_year)
+            query = query.filter(models.INSTATSurvey.FiscalYear == fiscal_year)
         if reporting_cycle:
-            query = query.filter(INSTATSurvey.ReportingCycle == reporting_cycle.value)
+            query = query.filter(models.INSTATSurvey.ReportingCycle == reporting_cycle.value)
         
         total = query.count()
-        surveys = query.order_by(desc(INSTATSurvey.CreatedDate)).offset(skip).limit(limit).all()
+        surveys = query.order_by(desc(models.INSTATSurvey.CreatedDate)).offset(skip).limit(limit).all()
         
         items = [INSTATSurveyResponse(**survey.to_dict()) for survey in surveys]
         
@@ -111,8 +108,8 @@ class INSTATSurveyService:
         survey_update: INSTATSurveyUpdate
     ) -> Optional[INSTATSurveyResponse]:
         """Update INSTAT survey."""
-        survey = self.db.query(INSTATSurvey).filter(
-            INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(models.INSTATSurvey).filter(
+            models.INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:
@@ -136,8 +133,8 @@ class INSTATSurveyService:
 
     def delete_survey(self, survey_id: int) -> bool:
         """Delete INSTAT survey."""
-        survey = self.db.query(INSTATSurvey).filter(
-            INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(models.INSTATSurvey).filter(
+            models.INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:
@@ -164,7 +161,7 @@ class TemplateService:
     def create_template(self, template_data: SurveyTemplateCreate) -> SurveyTemplateResponse:
         """Create a new survey template."""
         try:
-            db_template = SurveyTemplate(**template_data.model_dump())
+            db_template = models.SurveyTemplate(**template_data.model_dump())
             self.db.add(db_template)
             self.db.commit()
             self.db.refresh(db_template)
@@ -179,8 +176,8 @@ class TemplateService:
 
     def get_template(self, template_id: int) -> Optional[SurveyTemplateResponse]:
         """Get survey template by ID."""
-        template = self.db.query(SurveyTemplate).filter(
-            SurveyTemplate.TemplateID == template_id
+        template = self.db.query(models.SurveyTemplate).filter(
+            models.SurveyTemplate.TemplateID == template_id
         ).first()
         
         if not template:
@@ -196,15 +193,15 @@ class TemplateService:
         category: Optional[SurveyCategory] = None
     ) -> PaginatedResponse[SurveyTemplateResponse]:
         """List survey templates with filtering."""
-        query = self.db.query(SurveyTemplate)
+        query = self.db.query(models.SurveyTemplate)
         
         if domain:
-            query = query.filter(SurveyTemplate.Domain == domain.value)
+            query = query.filter(models.SurveyTemplate.Domain == domain.value)
         if category:
-            query = query.filter(SurveyTemplate.Category == category.value)
+            query = query.filter(models.SurveyTemplate.Category == category.value)
         
         total = query.count()
-        templates = query.order_by(asc(SurveyTemplate.TemplateName)).offset(skip).limit(limit).all()
+        templates = query.order_by(asc(models.SurveyTemplate.TemplateName)).offset(skip).limit(limit).all()
         
         items = [SurveyTemplateResponse(**template.to_dict()) for template in templates]
         
@@ -220,8 +217,8 @@ class TemplateService:
         
     def get_template_with_sections(self, template_id: int) -> Optional[Dict[str, Any]]:
         """Get template with detailed sections and questions for display."""
-        template = self.db.query(SurveyTemplate).filter(
-            SurveyTemplate.TemplateID == template_id
+        template = self.db.query(models.SurveyTemplate).filter(
+            models.SurveyTemplate.TemplateID == template_id
         ).first()
         
         if not template:
@@ -257,8 +254,8 @@ class TemplateService:
         
     def list_templates_with_stats(self, skip: int = 0, limit: int = 100) -> Dict[str, Any]:
         """List templates with statistical information for better display."""
-        templates = self.db.query(SurveyTemplate).offset(skip).limit(limit).all()
-        total = self.db.query(SurveyTemplate).count()
+        templates = self.db.query(models.SurveyTemplate).offset(skip).limit(limit).all()
+        total = self.db.query(models.SurveyTemplate).count()
         
         template_list = []
         for template in templates:
@@ -308,18 +305,18 @@ class TemplateService:
         """Get template count by domain."""
         from sqlalchemy import func
         result = self.db.query(
-            SurveyTemplate.Domain, 
-            func.count(SurveyTemplate.TemplateID)
-        ).group_by(SurveyTemplate.Domain).all()
+            models.SurveyTemplate.Domain, 
+            func.count(models.SurveyTemplate.TemplateID)
+        ).group_by(models.SurveyTemplate.Domain).all()
         return {domain: count for domain, count in result}
         
     def _get_templates_by_category(self) -> Dict[str, int]:
         """Get template count by category."""
         from sqlalchemy import func
         result = self.db.query(
-            SurveyTemplate.Category, 
-            func.count(SurveyTemplate.TemplateID)
-        ).group_by(SurveyTemplate.Category).all()
+            models.SurveyTemplate.Category, 
+            func.count(models.SurveyTemplate.TemplateID)
+        ).group_by(models.SurveyTemplate.Category).all()
         return {category: count for category, count in result}
 
 
@@ -331,8 +328,8 @@ class MetricsService:
 
     def get_survey_metrics(self, survey_id: int) -> Optional[SurveyMetricsResponse]:
         """Get metrics for a specific survey."""
-        metrics = self.db.query(SurveyMetrics).filter(
-            SurveyMetrics.SurveyID == survey_id
+        metrics = self.db.query(models.SurveyMetrics).filter(
+            models.SurveyMetrics.SurveyID == survey_id
         ).first()
         
         if not metrics:
@@ -342,8 +339,8 @@ class MetricsService:
 
     def update_survey_metrics(self, survey_id: int, metrics_data: Dict[str, Any]) -> SurveyMetricsResponse:
         """Update or create survey metrics."""
-        metrics = self.db.query(SurveyMetrics).filter(
-            SurveyMetrics.SurveyID == survey_id
+        metrics = self.db.query(models.SurveyMetrics).filter(
+            models.SurveyMetrics.SurveyID == survey_id
         ).first()
         
         try:
@@ -352,7 +349,7 @@ class MetricsService:
                     if hasattr(metrics, field):
                         setattr(metrics, field, value)
             else:
-                metrics = SurveyMetrics(SurveyID=survey_id, **metrics_data)
+                metrics = models.SurveyMetrics(SurveyID=survey_id, **metrics_data)
                 self.db.add(metrics)
             
             self.db.commit()
@@ -376,7 +373,7 @@ class ExportService:
     def create_export_config(self, export_data: DataExportCreate) -> DataExportResponse:
         """Create a new export configuration."""
         try:
-            db_export = DataExport(**export_data.model_dump())
+            db_export = models.DataExport(**export_data.model_dump())
             self.db.add(db_export)
             self.db.commit()
             self.db.refresh(db_export)
@@ -396,13 +393,13 @@ class ExportService:
         limit: int = 100
     ) -> PaginatedResponse[DataExportResponse]:
         """List export configurations."""
-        query = self.db.query(DataExport)
+        query = self.db.query(models.DataExport)
         
         if survey_id:
-            query = query.filter(DataExport.SurveyID == survey_id)
+            query = query.filter(models.DataExport.SurveyID == survey_id)
         
         total = query.count()
-        exports = query.order_by(desc(DataExport.CreatedDate)).offset(skip).limit(limit).all()
+        exports = query.order_by(desc(models.DataExport.CreatedDate)).offset(skip).limit(limit).all()
         
         items = [DataExportResponse(**export.to_dict()) for export in exports]
         

@@ -27,6 +27,27 @@ The platform supports three main macro-activities, each with dedicated database 
 - `survey_balance` - Balance sheet surveys  
 - `survey_diagnostic` - Diagnostic surveys
 
+## 🚀 Quick Deployment
+
+For rapid deployment with complete database setup and Mali reference data:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-org/instat-survey-platform.git
+cd instat-survey-platform
+
+# One-command deployment (includes database setup)
+./deploy.sh
+
+# Or deploy with fresh build
+./deploy.sh --fresh
+```
+
+**Access the platform:**
+- Application: http://localhost:8000
+- API Docs: http://localhost:8000/docs
+- Admin Login: `username=admin`, `password=admin123!`
+
 ## Features
 
 ### Core Features
@@ -38,6 +59,10 @@ The platform supports three main macro-activities, each with dedicated database 
 - Role-based access control (Admin, Manager, Data Scientist, ReadOnly, Write)
 
 ### Advanced Features
+- **OAuth2 Authentication** with JWT tokens and role-based permissions
+- **Comprehensive Audit Logging** for all administrative actions
+- **Mali Reference Data** with complete administrative divisions
+- **File Upload Tracking** with rolling retention (last 100 uploads)
 - AI-powered form generation
 - Big Data and AI pipeline for data cleaning
 - Automated anomaly detection
@@ -189,7 +214,7 @@ docker-compose ps
 docker-compose logs -f app
 ```
 
-### Step 5: Initialize the Database
+### Step 5: Initialize Database with Complete Setup
 
 ```bash
 # Wait for database to be ready (about 30 seconds)
@@ -198,77 +223,73 @@ sleep 30
 # Check database connectivity
 docker-compose exec db pg_isready -U postgres
 
-# Run database migrations
-docker-compose exec app python -m alembic upgrade head
+# Run the automated database setup script (RECOMMENDED)
+./scripts/setup_database.sh
 
-# Verify migrations were applied
-docker-compose exec app python -m alembic current
-docker-compose exec app python -m alembic history
+# OR run manual setup if needed:
+# 1. Run complete database migration
+docker exec -i $(docker-compose ps -q db) psql -U postgres -d instat_surveys < migrations/complete_instat_platform_migration.sql
+
+# 2. Populate Mali reference data
+docker exec -i $(docker-compose ps -q db) psql -U postgres -d instat_surveys < scripts/populate_mali_reference_data.sql
+
+# Verify the setup was successful
+./scripts/setup_database.sh --verify
 ```
 
-### Step 6: Apply Custom Migrations and Load Reference Data
+### Step 6: Verify Database Setup
 
 ```bash
-# Create table reference mappings migration
-docker-compose exec app python -c "from database.migrations.create_table_reference_mappings import upgrade; upgrade()"
-
-# Load Mali reference data (regions, cercles, structures, etc.)
-docker-compose exec app python scripts/load_mali_reference_data.py
-
-# Verify reference data was loaded
-docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"MaliRegions\";"
-docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"MaliCercles\";"
-docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM \"INSTATStructures\";"
-docker-compose exec db psql -U postgres -d instat_survey_db -c "SELECT COUNT(*) FROM table_reference_mappings;"
-
-# Check if any additional migrations are needed
-docker-compose exec app python -c "
-import os
-from pathlib import Path
-
-# Check for additional migration files
-migration_dir = Path('database/migrations')
-if migration_dir.exists():
-    migration_files = [f for f in migration_dir.glob('*.py') if f.name != '__init__.py' and f.name != '__pycache__']
-    print(f'Found {len(migration_files)} migration files:')
-    for f in migration_files:
-        print(f'  - {f.name}')
-else:
-    print('No additional migration directory found')
+# Check that all tables were created and data populated
+docker-compose exec db psql -U postgres -d instat_surveys -c "
+SELECT 
+    'Users' as table_name, COUNT(*) as record_count FROM \"Users\"
+UNION ALL
+SELECT 'Mali Regions', COUNT(*) FROM mali_regions
+UNION ALL  
+SELECT 'Mali Cercles', COUNT(*) FROM mali_cercles
+UNION ALL
+SELECT 'INSTAT Structures', COUNT(*) FROM instat_structures
+UNION ALL
+SELECT 'Strategic Axis Results', COUNT(*) FROM strategic_axis_results
+UNION ALL
+SELECT 'CMR Indicators', COUNT(*) FROM cmr_indicators
+UNION ALL
+SELECT 'Financing Sources', COUNT(*) FROM financing_sources
+UNION ALL
+SELECT 'Table Reference Mappings', COUNT(*) FROM table_reference_mappings;
 "
+
+# Expected output should show:
+# Users: 1 (admin user)
+# Mali Regions: 10
+# Mali Cercles: 65
+# INSTAT Structures: 20
+# Strategic Axis Results: 17
+# CMR Indicators: 16
+# Financing Sources: 17
+# Table Reference Mappings: 9
 ```
 
-### Step 7: Create Initial Admin User
+### Step 7: Test Authentication System
 
 ```bash
-# Access the application container
-docker-compose exec app python -c "
-from src.infrastructure.database.db_manager import DatabaseManager
-from src.domain.auth.entities import User
-from passlib.context import CryptContext
-import uuid
+# Test the OAuth2 authentication system
+# The admin user is automatically created by the migration
+# Default credentials: username=admin, password=admin123!
 
-db_manager = DatabaseManager()
-session = db_manager.SessionLocal()
-pwd_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
+# Get authentication token
+curl -X POST "http://localhost:8000/api/v1/auth/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "username=admin&password=admin123!"
 
-# Create admin user
-admin_user = User(
-    UserID=str(uuid.uuid4()),
-    Username='admin',
-    Email='admin@instat.ml',
-    PasswordHash=pwd_context.hash('admin123'),
-    FirstName='System',
-    LastName='Administrator',
-    Role='Admin',
-    IsActive=True
-)
+# Test authenticated endpoint (replace YOUR_TOKEN with the token from above)
+curl -X GET "http://localhost:8000/api/v1/admin/audit-logs" \
+  -H "Authorization: Bearer YOUR_TOKEN"
 
-session.add(admin_user)
-session.commit()
-session.close()
-print('Admin user created: username=admin, password=admin123')
-"
+# Test Mali reference data endpoints
+curl -X GET "http://localhost:8000/api/v1/mali-reference/regions" \
+  -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
 ### Step 8: Configure Reverse Proxy (Optional but Recommended)

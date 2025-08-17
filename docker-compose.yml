@@ -7,15 +7,27 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://postgres:password@db:5432/instat_surveys
-      - DEBUG_MODE=true
-      - SECRET_KEY=your-secret-key-change-in-production
+      - DEBUG_MODE=false
+      - SECRET_KEY=muqObXpk89vWh_6YpNGYMv20iH8Lu7CLW5nh7FCi-o
+      - ACCESS_TOKEN_EXPIRE_MINUTES=1440
+      - ALLOWED_FILE_EXTENSIONS=.xlsx,.xls,.csv,.json
+      - UPLOAD_DIR=./uploads
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     volumes:
       - ./uploads:/app/uploads
       - ./generated:/app/generated
+      - ./logs:/app/logs
     networks:
       - instat-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
   db:
     image: postgres:15
@@ -23,13 +35,34 @@ services:
       - POSTGRES_DB=instat_surveys
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
+      - POSTGRES_INITDB_ARGS=--encoding=UTF8 --locale=C
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+      # Mount database setup files for easy access
+      - ./migrations:/opt/migrations
+      - ./scripts:/opt/scripts
     networks:
       - instat-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d instat_surveys"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    # Performance tuning for production
+    command: >
+      postgres
+      -c shared_buffers=256MB
+      -c effective_cache_size=1GB
+      -c maintenance_work_mem=64MB
+      -c checkpoint_completion_target=0.9
+      -c wal_buffers=16MB
+      -c default_statistics_target=100
+      -c random_page_cost=1.1
+      -c effective_io_concurrency=200
 
   redis:
     image: redis:7-alpine

@@ -3,9 +3,11 @@ File upload API for INSTAT Survey Platform
 """
 import os
 import shutil
+import time
+import hashlib
 from pathlib import Path
 from typing import Optional, Dict, Any, List
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Query, status
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Query, status, Request
 from sqlalchemy.orm import Session
 from datetime import datetime
 import config
@@ -13,6 +15,9 @@ from ...utils.excel_parser import ExcelParser
 from ...infrastructure.database.connection import get_db
 from ...domain.survey import survey_service
 from ...domain.instat.instat_services import get_template_service, TemplateService
+from ...infrastructure.auth.oauth2 import UserInToken, require_scopes
+from ...services.audit_service import AuditService
+from ...infrastructure.database.models.parsing_results import ParsingResult, ParsingStatistics
 from schemas import survey as survey_schema
 from schemas.instat_domains import SurveyTemplateCreate, INSTATDomain, SurveyCategory
 from schemas.responses import FileUploadResponse
@@ -24,7 +29,7 @@ from schemas.errors import (
 
 router = APIRouter(
     tags=["File Upload"],
-    prefix="/v1/files"
+    prefix="/v1/api/files"
 )
 
 excel_parser = ExcelParser()
@@ -43,10 +48,10 @@ def _convert_sections_to_schema(sections_data):
                     Title=subsection_data.get("title", "Untitled Subsection"),
                     Questions=questions
                 ))
-        
+
         # Convert direct questions in section
         questions = _convert_questions_to_schema(section_data.get("questions", []))
-        
+
         # Only add section if it has questions or subsections
         if questions or subsections:
             sections.append(survey_schema.SectionCreate(
@@ -54,7 +59,7 @@ def _convert_sections_to_schema(sections_data):
                 Subsections=subsections,
                 Questions=questions
             ))
-    
+
     return sections
 
 
@@ -69,12 +74,12 @@ def _convert_questions_to_schema(questions_data):
                 option_text = option.get("text", str(option))
             else:
                 option_text = str(option)
-            
+
             if option_text and option_text.strip():
                 options.append(survey_schema.AnswerOptionCreate(
                     OptionText=option_text.strip()
                 ))
-        
+
         # Create question only if it has valid text
         question_text = question_data.get("text", "Untitled Question").strip()
         if question_text and len(question_text) > 2:  # Only add valid questions
@@ -84,7 +89,7 @@ def _convert_questions_to_schema(questions_data):
                 AnswerOptions=options,
                 IsRequired=question_data.get("is_required", False)
             ))
-    
+
     return questions
 
 
@@ -94,15 +99,20 @@ def _convert_questions_to_schema(questions_data):
     status_code=status.HTTP_201_CREATED,
     responses={
         status.HTTP_400_BAD_REQUEST: {"model": BadRequestErrorResponse},
+        status.HTTP_401_UNAUTHORIZED: {"description": "Not authenticated"},
+        status.HTTP_403_FORBIDDEN: {"description": "Not enough permissions"},
         status.HTTP_422_UNPROCESSABLE_ENTITY: {"model": ValidationErrorResponse},
         status.HTTP_500_INTERNAL_SERVER_ERROR: {"model": InternalErrorResponse}
     }
 )
 async def upload_excel_and_create_survey(
-    file: UploadFile = File(...), 
+    *,
+    file: UploadFile = File(..., description="Excel file to upload and parse"),
     create_template: bool = Query(True, description="Automatically create template from survey structure"),
     template_name: Optional[str] = Query(None, description="Name for the template (defaults to filename)"),
     schema_name: Optional[str] = Query(None, description="Override auto-detected schema"),
+    request: Request = None,
+    current_user: UserInToken = require_scopes("upload:write"),
     db: Session = Depends(get_db),
     template_service: TemplateService = Depends(get_template_service)
 ):
@@ -285,6 +295,7 @@ async def upload_excel_and_create_survey_with_template(
     create_template: bool = Query(True, description="Create template from survey structure"),
     template_name: Optional[str] = Query(None, description="Name for the template (defaults to filename)"),
     schema_name: Optional[str] = Query(None, description="Override auto-detected schema"),
+    current_user: UserInToken = require_scopes("upload:write"),
     db: Session = Depends(get_db),
     template_service: TemplateService = Depends(get_template_service)
 ):

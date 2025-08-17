@@ -51,16 +51,16 @@ class INSTATStructure(BaseModel):
 # TableRef 03: Indicateurs CMR (Cadre de Mesure de la Performance)
 class CMRIndicator(BaseModel):
     """TableRef 03: CMR Performance Measurement Framework Indicators"""
-    IndicatorID: str = Field(description="Code de l'indicateur")
-    IndicatorName: str = Field(description="Nom de l'indicateur")
-    Category: str = Field(description="Catégorie")
-    MeasurementUnit: str = Field(description="Unité de mesure")
-    DataSource: str = Field(description="Source des données")
-    CollectionFrequency: str = Field(description="Fréquence de collecte")
-    ResponsibleStructure: str = Field(description="Structure responsable")
+    indicator_id: str = Field(description="Code de l'indicateur")
+    indicator_name: str = Field(description="Nom de l'indicateur")
+    category: str = Field(description="Catégorie")
+    measurement_unit: str = Field(description="Unité de mesure")
+    data_source: str = Field(description="Source des données")
+    collection_frequency: str = Field(description="Fréquence de collecte")
+    responsible_structure: str = Field(description="Structure responsable")
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # TableRef 04: Résultat attendu par Objectif opérationnel et Axe
@@ -92,31 +92,31 @@ class ParticipatingStructure(BaseModel):
 # TableRef 06: Indicateur de Suivi-évaluation
 class MonitoringIndicator(BaseModel):
     """TableRef 06: Monitoring and Evaluation Indicators"""
-    IndicatorCode: str = Field(description="Code de l'indicateur")
-    IndicatorName: str = Field(description="Nom de l'indicateur")
-    Category: str = Field(description="Catégorie")
-    MeasurementMethod: str = Field(description="Méthode de mesure")
-    ReportingFrequency: str = Field(description="Fréquence de rapportage")
-    TargetValue: Optional[str] = Field(default=None, description="Valeur cible")
-    DataCollectionMethod: str = Field(description="Méthode de collecte des données")
+    indicator_code: str = Field(description="Code de l'indicateur")
+    indicator_name: str = Field(description="Nom de l'indicateur")
+    category: str = Field(description="Catégorie")
+    measurement_method: str = Field(description="Méthode de mesure")
+    reporting_frequency: str = Field(description="Fréquence de rapportage")
+    target_value: Optional[str] = Field(default=None, description="Valeur cible")
+    data_collection_method: str = Field(description="Méthode de collecte des données")
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # TableRef 07: Sources de financement
 class FinancingSource(BaseModel):
     """TableRef 07: Financing Sources"""
-    SourceCode: str = Field(description="Code de la source")
-    SourceName: str = Field(description="Nom de la source de financement")
-    SourceType: str = Field(description="Type de source")
-    Currency: str = Field(default="FCFA", description="Devise")
-    MinAmount: Optional[float] = Field(default=None, description="Montant minimum")
-    MaxAmount: Optional[float] = Field(default=None, description="Montant maximum")
-    FinancingConditions: Optional[str] = Field(default=None, description="Conditions de financement")
+    source_code: str = Field(description="Code de la source")
+    source_name: str = Field(description="Nom de la source de financement")
+    source_type: str = Field(description="Type de source")
+    currency: str = Field(default="FCFA", description="Devise")
+    min_amount: Optional[float] = Field(default=None, description="Montant minimum")
+    max_amount: Optional[float] = Field(default=None, description="Montant maximum")
+    financing_conditions: Optional[str] = Field(default=None, description="Conditions de financement")
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # TableRef 08: Liste des régions selon le découpage administratif du Mali

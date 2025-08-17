@@ -5,7 +5,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 import config
-from src.api.v1 import surveys, file_upload, instat_routes, mali_reference_routes
+from src.api.v1 import (
+    surveys, file_upload, instat_routes, mali_reference_routes,
+    auth_routes, admin_routes
+)
 from src.infrastructure.database.connection import db_manager
 from src.utils.exception_handler import (
     validation_exception_handler,
@@ -54,6 +57,8 @@ def get_application():
     _app.add_exception_handler(Exception, generic_exception_handler)
 
     # Include routers
+    _app.include_router(auth_routes.router)
+    _app.include_router(admin_routes.router)
     _app.include_router(surveys.router)
     _app.include_router(file_upload.router)
     _app.include_router(instat_routes.router)

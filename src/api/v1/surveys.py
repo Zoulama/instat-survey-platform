@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 
 from ...infrastructure.database.connection import get_db
+from ...infrastructure.auth.oauth2 import UserInToken, require_scopes
 from ...domain.survey import survey_service
 from schemas import survey as survey_schema
 from schemas.responses import BaseResponse, PaginatedResponse, DeleteResponse
@@ -21,7 +22,7 @@ from schemas.errors import (
 
 router = APIRouter(
     tags=["Surveys"],
-    prefix="/v1"
+    prefix="/v1/api"
 )
 
 
@@ -38,6 +39,7 @@ router = APIRouter(
 def create_survey(
     schema_name: str,
     survey: survey_schema.SurveyCreate,
+    current_user: UserInToken = require_scopes("surveys:write"),
     db: Session = Depends(get_db)
 ):
     """Create a new survey"""
@@ -64,6 +66,7 @@ def read_surveys(
     schema_name: str,
     skip: int = Query(0, ge=0),
     limit: int = Query(100, ge=1, le=1000),
+    current_user: UserInToken = require_scopes("surveys:read"),
     db: Session = Depends(get_db)
 ):
     """Get all surveys"""
@@ -100,6 +103,7 @@ def read_surveys(
 def read_survey(
     schema_name: str,
     survey_id: int,
+    current_user: UserInToken = require_scopes("surveys:read"),
     db: Session = Depends(get_db)
 ):
     """Get survey by ID"""
@@ -131,6 +135,7 @@ def update_survey(
     schema_name: str,
     survey_id: int,
     survey: survey_schema.SurveyCreate,
+    current_user: UserInToken = require_scopes("surveys:write"),
     db: Session = Depends(get_db)
 ):
     """Update a survey"""
@@ -160,6 +165,7 @@ def update_survey(
 def delete_survey(
     schema_name: str,
     survey_id: int,
+    current_user: UserInToken = require_scopes("surveys:write"),
     db: Session = Depends(get_db)
 ):
     """Delete a survey"""

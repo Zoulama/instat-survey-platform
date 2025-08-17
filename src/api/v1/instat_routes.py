@@ -4,6 +4,8 @@ from typing import Optional, Dict, Any
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 
+from src.infrastructure.auth.oauth2 import UserInToken, require_scopes
+
 from src.domain.instat.instat_services import (
     INSTATSurveyService, TemplateService, MetricsService, ExportService,
     get_instat_survey_service, get_template_service, 
@@ -22,7 +24,7 @@ from schemas.errors import (
     NotFoundErrorResponse, ValidationErrorResponse
 )
 
-router = APIRouter(prefix="/v1/instat", tags=["INSTAT"])
+router = APIRouter(prefix="/v1/api/instat", tags=["INSTAT"])
 
 
 # INSTAT Survey Routes
@@ -35,6 +37,7 @@ router = APIRouter(prefix="/v1/instat", tags=["INSTAT"])
 )
 async def create_instat_survey(
     survey_data: INSTATSurveyCreate,
+    current_user: UserInToken = require_scopes("instat:write"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> BaseResponse[INSTATSurveyResponse]:
     """Create a new INSTAT survey."""
@@ -55,6 +58,7 @@ async def create_instat_survey(
 )
 async def get_instat_survey(
     survey_id: int,
+    current_user: UserInToken = require_scopes("instat:read"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> BaseResponse[INSTATSurveyResponse]:
     """Get INSTAT survey by ID."""
@@ -86,6 +90,7 @@ async def list_instat_surveys(
     status: Optional[WorkflowStatus] = Query(None, description="Filter by survey status"),
     fiscal_year: Optional[int] = Query(None, description="Filter by fiscal year"),
     reporting_cycle: Optional[ReportingCycle] = Query(None, description="Filter by reporting cycle"),
+    current_user: UserInToken = require_scopes("instat:read"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> PaginatedResponse[INSTATSurveyResponse]:
     """List INSTAT surveys with filtering."""
@@ -110,6 +115,7 @@ async def list_instat_surveys(
 async def update_instat_survey(
     survey_id: int,
     survey_update: INSTATSurveyUpdate,
+    current_user: UserInToken = require_scopes("instat:write"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> BaseResponse[INSTATSurveyResponse]:
     """Update INSTAT survey."""
@@ -136,6 +142,7 @@ async def update_instat_survey(
 )
 async def delete_instat_survey(
     survey_id: int,
+    current_user: UserInToken = require_scopes("instat:write"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> DeleteResponse:
     """Delete INSTAT survey."""
@@ -163,6 +170,7 @@ async def delete_instat_survey(
 )
 async def create_survey_template(
     template_data: SurveyTemplateCreate,
+    current_user: UserInToken = require_scopes("templates:write"),
     service: TemplateService = Depends(get_template_service)
 ) -> BaseResponse[SurveyTemplateResponse]:
     """Create a new survey template."""
@@ -183,6 +191,7 @@ async def create_survey_template(
 async def get_template_dashboard(
     skip: int = Query(0, ge=0, description="Number of records to skip"),
     limit: int = Query(10, ge=1, le=100, description="Number of recent templates to return"),
+    current_user: UserInToken = require_scopes("templates:read"),
     service: TemplateService = Depends(get_template_service)
 ) -> Dict[str, Any]:
     """Get template dashboard with statistics and recent templates."""
@@ -198,6 +207,7 @@ async def get_template_dashboard(
 )
 async def get_survey_template(
     template_id: int,
+    current_user: UserInToken = require_scopes("templates:read"),
     service: TemplateService = Depends(get_template_service)
 ) -> BaseResponse[SurveyTemplateResponse]:
     """Get survey template by ID."""
@@ -224,6 +234,7 @@ async def get_survey_template(
 )
 async def get_template_details(
     template_id: int,
+    current_user: UserInToken = require_scopes("templates:read"),
     service: TemplateService = Depends(get_template_service)
 ) -> Dict[str, Any]:
     """Get template with detailed analysis including section/question counts."""
@@ -252,6 +263,7 @@ async def list_survey_templates(
     limit: int = Query(100, ge=1, le=1000, description="Number of records to return"),
     domain: Optional[SurveyDomain] = Query(None, description="Filter by domain"),
     category: Optional[SurveyCategory] = Query(None, description="Filter by category"),
+    current_user: UserInToken = require_scopes("templates:read"),
     service: TemplateService = Depends(get_template_service)
 ) -> PaginatedResponse[SurveyTemplateResponse]:
     """List survey templates with filtering."""
@@ -273,6 +285,7 @@ async def list_survey_templates(
 )
 async def get_survey_metrics(
     survey_id: int,
+    current_user: UserInToken = require_scopes("metrics:read"),
     service: MetricsService = Depends(get_metrics_service)
 ) -> BaseResponse[SurveyMetricsResponse]:
     """Get survey metrics."""
@@ -299,6 +312,7 @@ async def get_survey_metrics(
 async def update_survey_metrics(
     survey_id: int,
     metrics_data: Dict[str, Any],
+    current_user: UserInToken = require_scopes("metrics:write"),
     service: MetricsService = Depends(get_metrics_service)
 ) -> BaseResponse[SurveyMetricsResponse]:
     """Update survey metrics."""
@@ -320,6 +334,7 @@ async def update_survey_metrics(
 )
 async def create_export_config(
     export_data: DataExportCreate,
+    current_user: UserInToken = require_scopes("exports:write"),
     service: ExportService = Depends(get_export_service)
 ) -> BaseResponse[DataExportResponse]:
     """Create export configuration."""
@@ -341,6 +356,7 @@ async def list_export_configs(
     survey_id: Optional[int] = Query(None, description="Filter by survey ID"),
     skip: int = Query(0, ge=0, description="Number of records to skip"),
     limit: int = Query(100, ge=1, le=1000, description="Number of records to return"),
+    current_user: UserInToken = require_scopes("exports:read"),
     service: ExportService = Depends(get_export_service)
 ) -> PaginatedResponse[DataExportResponse]:
     """List export configurations."""
@@ -359,6 +375,7 @@ async def list_export_configs(
     description="Get summary statistics for INSTAT dashboard"
 )
 async def get_dashboard_summary(
+    current_user: UserInToken = require_scopes("dashboard:read"),
     service: INSTATSurveyService = Depends(get_instat_survey_service)
 ) -> Dict[str, Any]:
     """Get dashboard summary statistics."""

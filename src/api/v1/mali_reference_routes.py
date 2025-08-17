@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_
 
 from src.infrastructure.database.connection import get_db
+from src.infrastructure.auth.oauth2 import UserInToken, require_scopes
 from src.infrastructure.database.mali_ref_models import (
     StrategicAxisResultModel, INSTATStructureModel, CMRIndicatorModel,
     OperationalResultModel, ParticipatingStructureModel, MonitoringIndicatorModel,
@@ -19,7 +20,7 @@ from schemas.mali_reference_tables import (
     MaliCercle, TableRefLookupRequest, TableRefLookupResponse, ReferenceTableResponse
 )
 
-router = APIRouter(prefix="/api/v1/mali-references", tags=["Mali Reference Tables"])
+router = APIRouter(prefix="/v1/api/mali-references", tags=["Mali Reference Tables"])
 
 
 # Table Reference Mapping
@@ -94,6 +95,7 @@ TABLE_REF_MAPPING = {
 @router.post("/lookup", response_model=TableRefLookupResponse)
 async def lookup_table_reference(
     request: TableRefLookupRequest,
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """
@@ -154,6 +156,7 @@ async def get_strategic_results(
     skip: int = Query(0, ge=0),
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get strategic axis results (TableRef:01)"""
@@ -179,6 +182,7 @@ async def get_instat_structures(
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
     responsible_for_collection: Optional[bool] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get INSTAT structures (TableRef:02)"""
@@ -206,6 +210,7 @@ async def get_cmr_indicators(
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
     category: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get CMR indicators (TableRef:03)"""
@@ -233,6 +238,7 @@ async def get_monitoring_indicators(
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
     category: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get monitoring indicators (TableRef:06)"""
@@ -260,6 +266,7 @@ async def get_financing_sources(
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
     source_type: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get financing sources (TableRef:07)"""
@@ -286,6 +293,7 @@ async def get_mali_regions(
     skip: int = Query(0, ge=0),
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get Mali regions (TableRef:08)"""
@@ -310,6 +318,7 @@ async def get_mali_cercles(
     limit: int = Query(100, ge=1, le=1000),
     search: Optional[str] = Query(None),
     region_code: Optional[str] = Query(None),
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Get Mali cercles (TableRef:09)"""
@@ -332,7 +341,9 @@ async def get_mali_cercles(
 
 # Utility endpoints
 @router.get("/table-mappings", response_model=Dict[str, Dict[str, Any]])
-async def get_table_mappings():
+async def get_table_mappings(
+    current_user: UserInToken = require_scopes("mali_reference:read")
+):
     """Get all table reference mappings"""
     mappings = {}
     for table_ref, mapping in TABLE_REF_MAPPING.items():
@@ -348,6 +359,7 @@ async def get_table_mappings():
 async def validate_table_reference(
     table_ref: str,
     reference_code: str,
+    current_user: UserInToken = require_scopes("mali_reference:read"),
     db: Session = Depends(get_db)
 ):
     """Validate if a reference code exists in the specified table"""
