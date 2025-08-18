@@ -36,11 +36,25 @@ For rapid deployment with complete database setup and Mali reference data:
 git clone https://github.com/your-org/instat-survey-platform.git
 cd instat-survey-platform
 
-# One-command deployment (includes database setup)
-./deploy.sh
+# Build and start all services
+docker compose down && docker compose build app && docker compose up -d
 
-# Or deploy with fresh build
-./deploy.sh --fresh
+# Wait for services to start, then set up database
+sleep 10 && DOCKER_CONTAINER=instat-survey-platform-db-1 ./scripts/setup_database.sh
+
+# Create admin user with proper password hash
+NEW_HASH=$(docker exec -i instat-survey-platform-app-1 python3 -c "
+import bcrypt
+password = 'admin123!'
+password_bytes = password.encode('utf-8')
+salt = bcrypt.gensalt(rounds=12)
+hashed = bcrypt.hashpw(password_bytes, salt)
+print(hashed.decode('utf-8'))
+")
+docker exec -i instat-survey-platform-db-1 psql -U postgres -d instat_surveys -c "INSERT INTO \"Users\" (\"Username\", \"Email\", \"Role\", \"HashedPassword\") VALUES ('admin', 'admin@instat.gov.ml', 'admin', '$NEW_HASH');"
+
+# Verify database setup
+DOCKER_CONTAINER=instat-survey-platform-db-1 ./scripts/setup_database.sh --verify
 ```
 
 **Access the platform:**
