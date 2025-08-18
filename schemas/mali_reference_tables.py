@@ -127,7 +127,7 @@ class MaliRegion(BaseModel):
     RegionCapital: str = Field(alias="region_capital", description="Chef-lieu de région")
     Population: Optional[int] = Field(alias="population", default=None, description="Population")
     Surface: Optional[float] = Field(alias="surface", default=None, description="Superficie en km²")
-    Status: str = Field(alias="status", default="active", description="Statut")
+    Status: Optional[str] = Field(alias="status", default="active", description="Statut")
     
     class Config:
         orm_mode = True
@@ -143,7 +143,7 @@ class MaliCercle(BaseModel):
     CercleCapital: str = Field(alias="cercle_capital", description="Chef-lieu de cercle")
     Population: Optional[int] = Field(alias="population", default=None, description="Population")
     Surface: Optional[float] = Field(alias="surface", default=None, description="Superficie en km²")
-    Status: str = Field(alias="status", default="active", description="Statut")
+    Status: Optional[str] = Field(alias="status", default="active", description="Statut")
     
     class Config:
         orm_mode = True

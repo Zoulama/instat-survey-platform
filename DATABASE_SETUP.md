@@ -131,9 +131,9 @@ All administrative regions with geographic coordinates:
 - Tombouctou, Gao, Kidal, Bamako District
 - Taoudénit (newest region)
 
-### TableRef 09: Mali Cercles (65 records)
+### TableRef 09: Mali Cercles (55 records)
 All administrative circles with demographic data:
-- Complete coverage of Mali's administrative divisions
+- Complete coverage of Mali's administrative divisions (48 cercles + 6 Bamako communes + 1 Taoudénit)
 - Population and surface area data
 - Capital cities and geographic relationships
 

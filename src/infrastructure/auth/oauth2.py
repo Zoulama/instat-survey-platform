@@ -32,6 +32,7 @@ oauth2_scheme = OAuth2PasswordBearer(
         "surveys:read": "Read surveys",
         "surveys:write": "Create and update surveys",
         "surveys:delete": "Delete surveys",
+        "mali_reference:read": "Read Mali reference tables",
         "admin": "Full administrative access"
     }
 )
@@ -115,24 +116,24 @@ def get_user_scopes(role: str) -> list[str]:
         "admin": [
             "upload:write", "templates:write", "context:write",
             "context:read", "users:admin", "surveys:read",
-            "surveys:write", "surveys:delete", "admin"
+            "surveys:write", "surveys:delete", "mali_reference:read", "admin"
         ],
         "manager": [
             "upload:write", "templates:write", "context:write",
-            "context:read", "surveys:read", "surveys:write"
+            "context:read", "surveys:read", "surveys:write", "mali_reference:read"
         ],
         "data_scientist": [
-            "context:read", "surveys:read", "upload:write"
+            "context:read", "surveys:read", "upload:write", "mali_reference:read"
         ],
         "readonly": [
-            "context:read", "surveys:read"
+            "context:read", "surveys:read", "mali_reference:read"
         ],
         "write": [
             "upload:write", "templates:write", "surveys:write",
-            "context:read", "surveys:read"
+            "context:read", "surveys:read", "mali_reference:read"
         ]
     }
-    return role_scopes.get(role.lower(), ["context:read"])
+    return role_scopes.get(role.lower(), ["context:read", "mali_reference:read"])
 
 
 # Dependencies

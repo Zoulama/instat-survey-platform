@@ -23,6 +23,13 @@ from schemas.mali_reference_tables import (
 router = APIRouter(prefix="/v1/api/mali-references", tags=["Mali Reference Tables"])
 
 
+# Test endpoint
+@router.get("/test")
+async def test_endpoint():
+    """Test endpoint without authentication"""
+    return {"message": "API is working", "status": "success"}
+
+
 # Table Reference Mapping
 TABLE_REF_MAPPING = {
     "TableRef:01": {

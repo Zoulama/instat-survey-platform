@@ -216,7 +216,7 @@ curl -X POST "http://localhost:8000/api/v1/auth/token" \
 
 **Available Data:**
 - 10 Mali regions with coordinates
-- 65 Mali cercles with demographics
+- 55 Mali cercles with demographics
 - 20 INSTAT organizational structures
 - 17+ strategic framework elements
 - Complete financing sources and indicators

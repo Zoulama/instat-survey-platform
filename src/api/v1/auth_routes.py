@@ -155,6 +155,7 @@ async def get_available_scopes():
         "surveys:read": "Read surveys",
         "surveys:write": "Create and update surveys",
         "surveys:delete": "Delete surveys",
+        "mali_reference:read": "Read Mali reference tables",
         "admin": "Full administrative access"
     }
 
@@ -171,33 +172,33 @@ async def get_available_roles(
             "scopes": [
                 "upload:write", "templates:write", "context:write",
                 "context:read", "users:admin", "surveys:read",
-                "surveys:write", "surveys:delete", "admin"
+                "surveys:write", "surveys:delete", "mali_reference:read", "admin"
             ],
             "description": "Full administrative access"
         },
         "manager": {
             "scopes": [
                 "upload:write", "templates:write", "context:write",
-                "context:read", "surveys:read", "surveys:write"
+                "context:read", "surveys:read", "surveys:write", "mali_reference:read"
             ],
             "description": "Management access with write permissions"
         },
         "data_scientist": {
             "scopes": [
-                "context:read", "surveys:read", "upload:write"
+                "context:read", "surveys:read", "upload:write", "mali_reference:read"
             ],
             "description": "Data analysis and upload permissions"
         },
         "readonly": {
             "scopes": [
-                "context:read", "surveys:read"
+                "context:read", "surveys:read", "mali_reference:read"
             ],
             "description": "Read-only access"
         },
         "write": {
             "scopes": [
                 "upload:write", "templates:write", "surveys:write",
-                "context:read", "surveys:read"
+                "context:read", "surveys:read", "mali_reference:read"
             ],
             "description": "General write access"
         }
