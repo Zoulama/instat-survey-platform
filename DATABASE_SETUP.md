@@ -14,29 +14,28 @@ The database setup includes:
 
 ## 🎯 Quick Start
 
-### Option 1: Automated Setup Script (Recommended)
+### Automated Setup Script (Recommended)
 
 ```bash
 # Make script executable
 chmod +x scripts/setup_database.sh
 
-# Run complete setup
-./scripts/setup_database.sh
-
 # Or with specific options
 ./scripts/setup_database.sh --migration-only
 ./scripts/setup_database.sh --data-only
+
+NEW_HASH=$(docker exec -i instat-survey-platform-app-1 python3 -c "
+import bcrypt
+password = 'admin123!'
+password_bytes = password.encode('utf-8')
+salt = bcrypt.gensalt(rounds=12)
+hashed = bcrypt.hashpw(password_bytes, salt)
+print(hashed.decode('utf-8'))
+")
+docker exec -i instat-survey-platform-db-1 psql -U postgres -d instat_surveys -c "INSERT INTO \"Users\" (\"Username\", \"Email\", \"Role\", \"HashedPassword\") VALUES ('admin', 'admin@instat.gov.ml', 'admin', '$NEW_HASH');"
+
+
 ./scripts/setup_database.sh --verify
-```
-
-### Option 2: Manual Setup
-
-```bash
-# 1. Run migration
-docker exec -i instat-survey-platform_postgres_1 psql -U postgres -d instat_surveys < migrations/complete_instat_platform_migration.sql
-
-# 2. Populate reference data
-docker exec -i instat-survey-platform_postgres_1 psql -U postgres -d instat_surveys < scripts/populate_mali_reference_data.sql
 ```
 
 ## 📁 File Structure
@@ -203,7 +202,7 @@ export DOCKER_CONTAINER="instat-survey-platform_postgres_1"
 
 ### 2. Test Authentication
 ```bash
-curl -X POST "http://localhost:8000/api/v1/auth/token" \
+curl -X POST "http://localhost:8000/v1/api/auth/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=admin&password=admin123!"
 ```
@@ -211,17 +210,17 @@ curl -X POST "http://localhost:8000/api/v1/auth/token" \
 ### 3. Test Reference Data
 ```bash
 # Get Mali regions
-curl -X GET "http://localhost:8000/api/v1/mali-reference/regions" \
+curl -X GET "http://localhost:8000/v1/api/mali-reference/regions" \
   -H "Authorization: Bearer YOUR_TOKEN"
 
 # Get INSTAT structures
-curl -X GET "http://localhost:8000/api/v1/mali-reference/structures" \
+curl -X GET "http://localhost:8000/v1/api/mali-reference/structures" \
   -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
 ### 4. Test File Upload
 ```bash
-curl -X POST "http://localhost:8000/api/v1/files/upload-excel-and-create-survey" \
+curl -X POST "http://localhost:8000/v1/api/files/upload-excel-and-create-survey" \
   -H "Authorization: Bearer YOUR_TOKEN" \
   -F "file=@sample_survey.xlsx"
 ```
