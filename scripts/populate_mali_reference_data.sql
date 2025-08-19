@@ -341,3 +341,28 @@ BEGIN
     RAISE NOTICE 'All Mali reference tables populated successfully!';
     RAISE NOTICE 'System ready for survey operations with complete reference data.';
 END $$;
+
+-- =====================================================================
+-- FIX: Set is_active = TRUE for all reference data records
+-- This ensures all records are visible through API endpoints
+-- =====================================================================
+
+UPDATE mali_regions SET is_active = TRUE;
+UPDATE mali_cercles SET is_active = TRUE;
+UPDATE financing_sources SET is_active = TRUE;
+UPDATE instat_structures SET is_active = TRUE;
+UPDATE strategic_axis_results SET is_active = TRUE;
+UPDATE monitoring_indicators SET is_active = TRUE;
+UPDATE cmr_indicators SET is_active = TRUE;
+UPDATE operational_results SET is_active = TRUE WHERE is_active IS NULL;
+UPDATE participating_structures SET is_active = TRUE WHERE is_active IS NULL;
+
+-- Notify completion of activation
+DO $$
+BEGIN
+    RAISE NOTICE '==========================================';
+    RAISE NOTICE 'Reference Data Activation COMPLETED';
+    RAISE NOTICE '==========================================';
+    RAISE NOTICE 'All reference data records set to is_active = TRUE';
+    RAISE NOTICE 'Mali reference endpoints should now return data properly';
+END $$;

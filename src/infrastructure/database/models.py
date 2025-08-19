@@ -498,40 +498,93 @@ class DataExport(Base):
     ExportID = Column(Integer, primary_key=True, index=True)
     SurveyID = Column(Integer, nullable=False)
     ExportFormat = Column(String(20), nullable=False)  # excel, csv, json, xml, pdf
-    ExportType = Column(String(50), nullable=False)  # raw_data, analysis, report, dashboard
-    
-    # Configuration (JSON)
-    ExportConfig = Column(JSON)  # includes filters, metadata options, etc.
-    
-    # Scheduling
-    IsScheduled = Column(Boolean, default=False)
-    ScheduleFrequency = Column(String(50))
-    NextExport = Column(DateTime)
-    
-    # Delivery
-    DeliveryMethod = Column(String(50), default="download")
-    Recipients = Column(JSON)
-    
-    # Tracking
-    CreatedBy = Column(String(100))
-    CreatedDate = Column(DateTime, default=datetime.utcnow)
-    LastExported = Column(DateTime)
-    ExportCount = Column(Integer, default=0)
     
     def to_dict(self):
         return {
             'ExportID': self.ExportID,
             'SurveyID': self.SurveyID,
-            'ExportFormat': self.ExportFormat,
-            'ExportType': self.ExportType,
-            'ExportConfig': self.ExportConfig,
-            'IsScheduled': self.IsScheduled,
-            'ScheduleFrequency': self.ScheduleFrequency,
-            'NextExport': self.NextExport,
-            'DeliveryMethod': self.DeliveryMethod,
-            'Recipients': self.Recipients,
-            'CreatedBy': self.CreatedBy,
-            'CreatedDate': self.CreatedDate,
-            'LastExported': self.LastExported,
-            'ExportCount': self.ExportCount
+            'ExportFormat': self.ExportFormat
+        }
+
+
+class AuditLog(Base):
+    """Audit log model for tracking user actions"""
+    __tablename__ = "AuditLog"
+    __table_args__ = {'schema': 'public'}
+    
+    LogID = Column(Integer, primary_key=True, index=True)
+    UserID = Column(Integer)
+    Username = Column(String(255))
+    Action = Column(String(100), nullable=False)
+    Resource = Column(String(100))
+    ResourceID = Column(String(100))
+    Details = Column(JSON)
+    IPAddress = Column(String(45))
+    UserAgent = Column(String(500))
+    Success = Column(Boolean, default=True)
+    ErrorMessage = Column(Text)
+    Timestamp = Column(DateTime, default=datetime.utcnow)
+    
+    def to_dict(self):
+        return {
+            'LogID': self.LogID,
+            'UserID': self.UserID,
+            'Username': self.Username,
+            'Action': self.Action,
+            'Resource': self.Resource,
+            'ResourceID': self.ResourceID,
+            'Details': self.Details,
+            'IPAddress': self.IPAddress,
+            'UserAgent': self.UserAgent,
+            'Success': self.Success,
+            'ErrorMessage': self.ErrorMessage,
+            'Timestamp': self.Timestamp
+        }
+
+
+class ParsingResult(Base):
+    """Parsing result model for file upload tracking"""
+    __tablename__ = "ParsingResult"
+    __table_args__ = {'schema': 'public'}
+    
+    ResultID = Column(Integer, primary_key=True, index=True)
+    FileName = Column(String(255), nullable=False)
+    ParsedData = Column(JSON)
+    ValidationIssues = Column(JSON)
+    Success = Column(Boolean, default=True)
+    ErrorMessage = Column(Text)
+    Timestamp = Column(DateTime, default=datetime.utcnow)
+    
+    def to_dict(self):
+        return {
+            'ResultID': self.ResultID,
+            'FileName': self.FileName,
+            'ParsedData': self.ParsedData,
+            'ValidationIssues': self.ValidationIssues,
+            'Success': self.Success,
+            'ErrorMessage': self.ErrorMessage,
+            'Timestamp': self.Timestamp
+        }
+
+
+class ParsingStatistics(Base):
+    """Parsing statistics model for tracking parsing performance"""
+    __tablename__ = "ParsingStatistics"
+    __table_args__ = {'schema': 'public'}
+    
+    StatID = Column(Integer, primary_key=True, index=True)
+    TotalFiles = Column(Integer, default=0)
+    SuccessfulParses = Column(Integer, default=0)
+    FailedParses = Column(Integer, default=0)
+    AverageParseTime = Column(Float)
+    LastUpdated = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
+    def to_dict(self):
+        return {
+            'StatID': self.StatID,
+            'TotalFiles': self.TotalFiles,
+            'SuccessfulParses': self.SuccessfulParses,
+            'FailedParses': self.FailedParses,
+            'AverageParseTime': self.AverageParseTime,
+            'LastUpdated': self.LastUpdated
         }

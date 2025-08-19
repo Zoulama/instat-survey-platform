@@ -7,6 +7,14 @@ from sqlalchemy import and_, or_, desc, asc
 
 from src.infrastructure.database.connection import get_db
 from src.infrastructure.database import models
+# Import INSTAT models directly from the main models.py file
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
+from src.infrastructure.database.models import (
+    INSTATSurvey, SurveyTemplate, INSTATQuestion, 
+    SurveyMetrics, DataExport, User, Role
+)
 from schemas.instat_domains import (
     INSTATSurveyCreate, INSTATSurveyResponse, INSTATSurveyUpdate,
     SurveyTemplateCreate, SurveyTemplateResponse, 
@@ -31,7 +39,7 @@ class INSTATSurveyService:
     def create_survey(self, survey_data: INSTATSurveyCreate) -> INSTATSurveyResponse:
         """Create a new INSTAT survey."""
         try:
-            db_survey = models.INSTATSurvey(
+            db_survey = INSTATSurvey(
                 **survey_data.model_dump(),
                 Status=WorkflowStatus.DRAFT.value
             )
@@ -49,8 +57,8 @@ class INSTATSurveyService:
 
     def get_survey(self, survey_id: int) -> Optional[INSTATSurveyResponse]:
         """Get INSTAT survey by ID."""
-        survey = self.db.query(models.INSTATSurvey).filter(
-            models.INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(INSTATSurvey).filter(
+            INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:
@@ -69,22 +77,22 @@ class INSTATSurveyService:
         reporting_cycle: Optional[ReportingCycle] = None
     ) -> PaginatedResponse[INSTATSurveyResponse]:
         """List INSTAT surveys with filtering."""
-        query = self.db.query(models.INSTATSurvey)
+        query = self.db.query(INSTATSurvey)
         
         # Apply filters
         if domain:
-            query = query.filter(models.INSTATSurvey.Domain == domain.value)
+            query = query.filter(INSTATSurvey.Domain == domain.value)
         if category:
-            query = query.filter(models.INSTATSurvey.Category == category.value)
+            query = query.filter(INSTATSurvey.Category == category.value)
         if status:
-            query = query.filter(models.INSTATSurvey.Status == status.value)
+            query = query.filter(INSTATSurvey.Status == status.value)
         if fiscal_year:
-            query = query.filter(models.INSTATSurvey.FiscalYear == fiscal_year)
+            query = query.filter(INSTATSurvey.FiscalYear == fiscal_year)
         if reporting_cycle:
-            query = query.filter(models.INSTATSurvey.ReportingCycle == reporting_cycle.value)
+            query = query.filter(INSTATSurvey.ReportingCycle == reporting_cycle.value)
         
         total = query.count()
-        surveys = query.order_by(desc(models.INSTATSurvey.CreatedDate)).offset(skip).limit(limit).all()
+        surveys = query.order_by(desc(INSTATSurvey.CreatedDate)).offset(skip).limit(limit).all()
         
         items = [INSTATSurveyResponse(**survey.to_dict()) for survey in surveys]
         
@@ -108,8 +116,8 @@ class INSTATSurveyService:
         survey_update: INSTATSurveyUpdate
     ) -> Optional[INSTATSurveyResponse]:
         """Update INSTAT survey."""
-        survey = self.db.query(models.INSTATSurvey).filter(
-            models.INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(INSTATSurvey).filter(
+            INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:
@@ -133,8 +141,8 @@ class INSTATSurveyService:
 
     def delete_survey(self, survey_id: int) -> bool:
         """Delete INSTAT survey."""
-        survey = self.db.query(models.INSTATSurvey).filter(
-            models.INSTATSurvey.SurveyID == survey_id
+        survey = self.db.query(INSTATSurvey).filter(
+            INSTATSurvey.SurveyID == survey_id
         ).first()
         
         if not survey:

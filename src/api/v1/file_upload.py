@@ -17,7 +17,7 @@ from ...domain.survey import survey_service
 from ...domain.instat.instat_services import get_template_service, TemplateService
 from ...infrastructure.auth.oauth2 import UserInToken, require_scopes
 from ...services.audit_service import AuditService
-from ...infrastructure.database.models.parsing_results import ParsingResult, ParsingStatistics
+from src.infrastructure.database.models import ParsingResult, ParsingStatistics
 from schemas import survey as survey_schema
 from schemas.instat_domains import SurveyTemplateCreate, INSTATDomain, SurveyCategory
 from schemas.responses import FileUploadResponse

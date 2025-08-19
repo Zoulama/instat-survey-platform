@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc
 from datetime import datetime
 
-from src.infrastructure.database.models.audit_log import AuditLog
+from src.infrastructure.database.models import AuditLog
 from schemas.audit_schemas import AuditLogResponse, AuditLogCreate
 
 
