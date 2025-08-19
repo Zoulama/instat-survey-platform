@@ -98,6 +98,28 @@ class UserService:
             for user in users
         ]
     
+    def get_users(self, skip: int = 0, limit: int = 100, role: Optional[str] = None) -> List[models.User]:
+        """Get users with optional role filtering (returns raw models for admin routes)"""
+        query = self.db.query(models.User)
+        
+        if role:
+            query = query.filter(models.User.Role == role)
+            
+        return query.offset(skip).limit(limit).all()
+    
+    def get_user_count(self, role: Optional[str] = None) -> int:
+        """Get total count of users with optional role filtering"""
+        query = self.db.query(models.User)
+        
+        if role:
+            query = query.filter(models.User.Role == role)
+            
+        return query.count()
+    
+    def get_user_by_id(self, user_id: int) -> Optional[models.User]:
+        """Get user by ID (returns raw model for admin routes)"""
+        return self.db.query(models.User).filter(models.User.UserID == user_id).first()
+    
     def update_user(self, user_id: int, user_update: UserUpdate) -> Optional[UserResponse]:
         """Update user information"""
         user = self.db.query(models.User).filter(models.User.UserID == user_id).first()

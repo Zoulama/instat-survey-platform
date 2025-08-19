@@ -188,7 +188,15 @@ async def get_all_users(
     users = user_service.get_users(skip=skip, limit=limit, role=role)
     total_count = user_service.get_user_count(role=role)
 
-    user_responses = [UserResponse.from_orm(user) for user in users]
+    user_responses = [
+        UserResponse(
+            user_id=user.UserID,
+            username=user.Username,
+            email=user.Email,
+            role=user.Role
+        )
+        for user in users
+    ]
 
     return PaginatedResponse(
         data=user_responses,
@@ -225,17 +233,22 @@ async def create_user(
             username=current_user.username,
             action="CREATE_USER",
             resource="users",
-            resource_id=str(new_user.UserID),
+            resource_id=str(new_user.user_id),
             details={
-                "created_username": new_user.Username,
-                "created_email": new_user.Email,
-                "created_role": new_user.Role
+                "created_username": new_user.username,
+                "created_email": new_user.email,
+                "created_role": new_user.role
             },
             ip_address=request.client.host,
             user_agent=request.headers.get("user-agent")
         )
 
-        return UserResponse.from_orm(new_user)
+        return UserResponse(
+            user_id=new_user.user_id,
+            username=new_user.username,
+            email=new_user.email,
+            role=new_user.role
+        )
 
     except Exception as e:
         # Log failed user creation
@@ -291,13 +304,18 @@ async def update_user(
             resource_id=str(user_id),
             details={
                 "updated_fields": user_data.dict(exclude_unset=True),
-                "target_username": updated_user.Username
+                "target_username": updated_user.username
             },
             ip_address=request.client.host,
             user_agent=request.headers.get("user-agent")
         )
 
-        return UserResponse.from_orm(updated_user)
+        return UserResponse(
+            user_id=updated_user.user_id,
+            username=updated_user.username,
+            email=updated_user.email,
+            role=updated_user.role
+        )
 
     except Exception as e:
         # Log failed user update
