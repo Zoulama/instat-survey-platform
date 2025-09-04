@@ -13,7 +13,14 @@
           "metadata": {
             "entry_index": 1,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Context: Numero De Fiche De Collecte/Numero d’ordre de la fiche",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         },
@@ -24,7 +31,14 @@
           "metadata": {
             "entry_index": 2,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Context: Numero De Fiche De Collecte/Nombre total de fiches",
+            "entryDescription": "Information d'identification personnelle",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         }
@@ -32,7 +46,14 @@
       "metadata": {
         "entry_index": 1,
         "parent_index": 1,
-        "type": "context"
+        "type": "context",
+        "entryFullPath": "/Context: Numero De Fiche De Collecte",
+        "entryDescription": "Section contextuelle contenant des informations de base",
+        "entryAnnotation": "",
+        "caution": "",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     },
     {
@@ -48,14 +69,44 @@
               "value": "Selectionner dans la liste deroulante \"le code de la region\"",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 1
+                "parent_index": 1,
+                "entryFullPath": "/Identification de la fiche/Quel est le code de la région .../Selectionner dans la liste deroulante \"le code de la region\"",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "JumpToEntry": "",
+                "coordinates": {
+                  "required": true,
+                  "format": "ISO 6709:2022",
+                  "precision": "decimal_degrees",
+                  "datum": "WGS84",
+                  "example": "+12.6392-08.0029/",
+                  "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                  "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                }
               }
             }
           ],
           "metadata": {
             "entry_index": 1,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est le code de la région de la structure en c...",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "Coordonnées géographiques requises pour la localisation",
+            "JumpToEntry": "",
+            "coordinates": {
+              "required": true,
+              "format": "ISO 6709:2022",
+              "precision": "decimal_degrees",
+              "datum": "WGS84",
+              "example": "+12.6392-08.0029/",
+              "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+              "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+            }
           },
           "is_required": false
         },
@@ -68,14 +119,44 @@
               "value": "Selectionner dans la liste deroulante le code du Cercle",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 2
+                "parent_index": 2,
+                "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de .../Selectionner dans la liste deroulante le code du Cercle",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "JumpToEntry": "",
+                "coordinates": {
+                  "required": true,
+                  "format": "ISO 6709:2022",
+                  "precision": "decimal_degrees",
+                  "datum": "WGS84",
+                  "example": "+12.6392-08.0029/",
+                  "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                  "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                }
               }
             }
           ],
           "metadata": {
             "entry_index": 2,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de la structure en char...",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "Coordonnées géographiques requises pour la localisation",
+            "JumpToEntry": "",
+            "coordinates": {
+              "required": true,
+              "format": "ISO 6709:2022",
+              "precision": "decimal_degrees",
+              "datum": "WGS84",
+              "example": "+12.6392-08.0029/",
+              "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+              "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+            }
           },
           "is_required": false
         },
@@ -88,14 +169,28 @@
               "value": "Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 3
+                "parent_index": 3,
+                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structur.../Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
+                "entryDescription": "Information d'identification personnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               }
             }
           ],
           "metadata": {
             "entry_index": 3,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la ré...",
+            "entryDescription": "Information d'identification personnelle",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         },
@@ -108,14 +203,28 @@
               "value": "Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 4
+                "parent_index": 4,
+                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structur.../Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
+                "entryDescription": "Information d'identification personnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               }
             }
           ],
           "metadata": {
             "entry_index": 4,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la co...",
+            "entryDescription": "Information d'identification personnelle",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         },
@@ -128,14 +237,28 @@
               "value": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 5
+                "parent_index": 5,
+                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activ.../Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               }
             }
           ],
           "metadata": {
             "entry_index": 5,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine d...",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         },
@@ -148,14 +271,28 @@
               "value": "Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 6
+                "parent_index": 6,
+                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activ.../Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               }
             }
           ],
           "metadata": {
             "entry_index": 6,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine d...",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         },
@@ -168,21 +305,42 @@
               "value": "Rechercher dans le champ de recherche la chaine de résultats",
               "metadata": {
                 "entry_index": 1,
-                "parent_index": 7
+                "parent_index": 7,
+                "entryFullPath": "/Identification de la fiche/Quelle est la chaine de résult.../Rechercher dans le champ de recherche la chaine de résultats",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               }
             }
           ],
           "metadata": {
             "entry_index": 7,
             "parent_index": 1,
-            "table_reference": null
+            "table_reference": null,
+            "entryFullPath": "/Identification de la fiche/Quelle est la chaine de résultats ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           },
           "is_required": false
         }
       ],
       "metadata": {
         "entry_index": 1,
-        "parent_index": 1
+        "parent_index": 1,
+        "entryFullPath": "/Identification de la fiche",
+        "entryDescription": "",
+        "entryAnnotation": "",
+        "caution": "",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     },
     {
@@ -200,7 +358,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -208,21 +373,42 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont-elles désagrégées ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 1,
-            "parent_index": 2
+            "parent_index": 2,
+            "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -237,7 +423,14 @@
                   "value": "Age",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Age",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -245,7 +438,14 @@
                   "value": "Sexe",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Sexe",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -253,7 +453,14 @@
                   "value": "Handicap",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Handicap",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -261,7 +468,14 @@
                   "value": "Participation à la prise de décision",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Participation à la prise de décision",
+                    "entryDescription": "",
+                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "caution": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -269,14 +483,28 @@
                   "value": "Autre Genre",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Autre Genre",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -289,7 +517,22 @@
                   "value": "Région",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Région",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -297,7 +540,22 @@
                   "value": "Cercle",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Cercle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -305,7 +563,14 @@
                   "value": "Arrondissement",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Arrondissement",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -313,7 +578,22 @@
                   "value": "Commune",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Commune",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -321,14 +601,28 @@
                   "value": "Autre niveau de désagrégation territorial",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Autre niveau de désagrégation territorial",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -341,7 +635,14 @@
                   "value": "Urbain",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 3
+                    "parent_index": 3,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?.../Urbain",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -349,14 +650,28 @@
                   "value": "Rural",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 3
+                    "parent_index": 3,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?.../Rural",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?",
+                "entryDescription": "",
+                "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -369,7 +684,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 4
+                    "parent_index": 4,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -377,7 +699,14 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 4
+                    "parent_index": 4,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -385,21 +714,42 @@
                   "value": "3=Sans Objet",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 4
+                    "parent_index": 4,
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../3=Sans Objet",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 4,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégation ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 2,
-            "parent_index": 2
+            "parent_index": 2,
+            "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -414,21 +764,42 @@
                   "value": "Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suiva.../Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
+                    "entryDescription": "",
+                    "entryAnnotation": "Sélection parmi les options proposées",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suivants ont été renseign...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 3,
-            "parent_index": 2
+            "parent_index": 2,
+            "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -443,7 +814,22 @@
                   "value": "1= Régional",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../1= Régional",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -451,7 +837,22 @@
                   "value": "2= Multirégional",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../2= Multirégional",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -459,7 +860,14 @@
                   "value": "3= National",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../3= National",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -467,7 +875,22 @@
                   "value": "4= Sous-régional",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../4= Sous-régional",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 },
                 {
@@ -475,7 +898,14 @@
                   "value": "5= International",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../5= International",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -483,21 +913,42 @@
                   "value": "7= Autre envergure",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../7= Autre envergure",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 4,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 4,
-            "parent_index": 2
+            "parent_index": 2,
+            "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -512,7 +963,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programm.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -520,28 +978,56 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programm.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 5,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programmée ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 5,
-            "parent_index": 2
+            "parent_index": 2,
+            "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         }
       ],
       "questions": [],
       "metadata": {
         "entry_index": 2,
-        "parent_index": 1
+        "parent_index": 1,
+        "entryFullPath": "/Caractéristiques de l'activité",
+        "entryDescription": "",
+        "entryAnnotation": "",
+        "caution": "",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     },
     {
@@ -559,7 +1045,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalis.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -567,21 +1060,42 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalis.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalisée ou a-t-elle connu...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 1,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -596,7 +1110,14 @@
                   "value": "Selectionner dans la liste deroulante des enregistrements de la TableRef:11 les raisons",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Selectionner dans la liste deroulante des enregistrements de la TableRef:11 les raisons",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -604,21 +1125,42 @@
                   "value": "Autres raisons  a Précisez",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Autres raisons  a Précisez",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons de la non réa...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 2,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -633,7 +1175,14 @@
                   "value": "1=En cours",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activi.../1=En cours",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -641,14 +1190,28 @@
                   "value": "2=Terminé",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activi.../2=Terminé",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activité ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -661,21 +1224,42 @@
                   "value": "Nombre en %",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le niveau d'exécution.../Nombre en %",
+                    "entryDescription": "Information d'identification personnelle",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le niveau d'exécution de l’activité ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 3,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -688,14 +1272,28 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 4,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/D'autres structures ont-elles participé à l’activité ?/D'autres structures ont-elles participé à l’activi...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 4,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/D'autres structures ont-elles participé à l’activité ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -710,7 +1308,14 @@
                   "value": "INSTAT",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../INSTAT",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -718,7 +1323,14 @@
                   "value": "CPS",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../CPS",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -726,7 +1338,14 @@
                   "value": "Directions centrales",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Directions centrales",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -734,7 +1353,14 @@
                   "value": "Observatoires/Organismes personnalisés",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Observatoires/Organismes personnalisés",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -742,7 +1368,14 @@
                   "value": "Services déconcentrés et décentralisés",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Services déconcentrés et décentralisés",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -750,7 +1383,14 @@
                   "value": "Structures privées (ONG, etc.)",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Structures privées (ONG, etc.)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "Information sensible - manipuler avec précaution",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -758,7 +1398,14 @@
                   "value": "Ensemble du SSN",
                   "metadata": {
                     "entry_index": 7,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Ensemble du SSN",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -766,7 +1413,14 @@
                   "value": "Cabinet ministériel",
                   "metadata": {
                     "entry_index": 8,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Cabinet ministériel",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -774,7 +1428,14 @@
                   "value": "PTF",
                   "metadata": {
                     "entry_index": 9,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../PTF",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -782,7 +1443,14 @@
                   "value": "Missions Diplomatiques et Consulaires",
                   "metadata": {
                     "entry_index": 10,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Missions Diplomatiques et Consulaires",
+                    "entryDescription": "",
+                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "caution": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -790,21 +1458,42 @@
                   "value": "Autres structures",
                   "metadata": {
                     "entry_index": 11,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Autres structures",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 5,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activi...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 5,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -819,7 +1508,14 @@
                   "value": "Hebdomadaire",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Hebdomadaire",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -827,7 +1523,14 @@
                   "value": "Mensuelle",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Mensuelle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -835,7 +1538,14 @@
                   "value": "Trimestrielle",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Trimestrielle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -843,7 +1553,14 @@
                   "value": "Semestrielle",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Semestrielle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -851,7 +1568,14 @@
                   "value": "Annuelle",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Annuelle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -859,7 +1583,14 @@
                   "value": "Ponctuelle",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Ponctuelle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -867,21 +1598,42 @@
                   "value": "Autre périodicité",
                   "metadata": {
                     "entry_index": 7,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Autre périodicité",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 6,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 6,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -896,7 +1648,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -904,21 +1663,42 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 7,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été respectée ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 7,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -933,7 +1713,14 @@
                   "value": "Problème financier (Insuffisance ou Manque de fonds, Suspension du financement, ...)",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Problème financier (Insuffisance ou Manque de fonds, Suspension du financement, ...)",
+                    "entryDescription": "",
+                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "caution": "Information financière - vérifier la précision",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -941,7 +1728,14 @@
                   "value": "Problèmes organisationnels (retard du partenaire, modification du plan de travail initial etc.)",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Problèmes organisationnels (retard du partenaire, modification du plan de travail initial etc.)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -949,7 +1743,14 @@
                   "value": "Situation Politique et sécuritaire du pays",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Situation Politique et sécuritaire du pays",
+                    "entryDescription": "",
+                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "caution": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -957,7 +1758,14 @@
                   "value": "Insuffisancede ressources matérielles",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Insuffisancede ressources matérielles",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -965,7 +1773,14 @@
                   "value": "Insuffisance de ressources humaines",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Insuffisance de ressources humaines",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -973,7 +1788,14 @@
                   "value": "Maladie à Corona Virus (COVID-19)",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Maladie à Corona Virus (COVID-19)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -981,14 +1803,28 @@
                   "value": "Maladie de la Dengue",
                   "metadata": {
                     "entry_index": 7,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Maladie de la Dengue",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 8,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respec...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1001,7 +1837,14 @@
                   "value": "1=Oui",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons.../1=Oui",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1009,21 +1852,42 @@
                   "value": "2=Non",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons.../2=Non",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 8,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 8,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1038,7 +1902,14 @@
                   "value": "Gouvernement",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Gouvernement",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1046,7 +1917,14 @@
                   "value": "Partenaires Techniques et Financiers",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Partenaires Techniques et Financiers",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1054,7 +1932,14 @@
                   "value": "Collectivités territoriales (CT)",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Collectivités territoriales (CT)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1062,7 +1947,14 @@
                   "value": "Besoins propres",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Besoins propres",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1070,7 +1962,14 @@
                   "value": "ONG/OSC",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../ONG/OSC",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1078,21 +1977,42 @@
                   "value": "Autres utilisateurs",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Autres utilisateurs",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 9,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette ac...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 9,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1107,14 +2027,36 @@
                   "value": "Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’e.../Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "JumpToEntry": "",
+                    "coordinates": {
+                      "required": true,
+                      "format": "ISO 6709:2022",
+                      "precision": "decimal_degrees",
+                      "datum": "WGS84",
+                      "example": "+12.6392-08.0029/",
+                      "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                      "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                    }
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 10,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’enregistrement de l’I...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1127,14 +2069,28 @@
                   "value": "Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
+                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryAnnotation": "Référence à une table de données externe",
+                    "caution": "",
+                    "existingConditions": "Nécessite l'accès à une table de référence externe",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 10,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de l’Indicateur de ...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1147,21 +2103,42 @@
                   "value": "Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 3
+                    "parent_index": 3,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
+                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryAnnotation": "Référence à une table de données externe",
+                    "caution": "",
+                    "existingConditions": "Nécessite l'accès à une table de référence externe",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 10,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de la Source de vér...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 10,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1176,14 +2153,28 @@
                   "value": "Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’e.../Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
+                    "entryDescription": "",
+                    "entryAnnotation": "Sélection parmi les options proposées",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 11,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’enregistrement du pro...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1196,14 +2187,28 @@
                   "value": "Sélectionner dans la liste déroulante le produit (@TableRef :03)",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante le produit (@TableRef :03)",
+                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryAnnotation": "Référence à une table de données externe",
+                    "caution": "",
+                    "existingConditions": "Nécessite l'accès à une table de référence externe",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 11,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le code et le libellé du produit ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1216,7 +2221,14 @@
                   "value": "Papier",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Papier",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1224,7 +2236,14 @@
                   "value": "Intranet",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Intranet",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1232,7 +2251,14 @@
                   "value": "Internet",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Internet",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1240,7 +2266,14 @@
                   "value": "Clé USB",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Clé USB",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1248,21 +2281,42 @@
                   "value": "Autre Support",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Autre Support",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 11,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 11,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1275,7 +2329,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 12,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le numéro d’ordre d’enregistrement du typ...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1288,7 +2349,14 @@
                   "value": "1=Matérielles",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../1=Matérielles",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1296,7 +2364,14 @@
                   "value": "2=Financières",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../2=Financières",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1304,7 +2379,14 @@
                   "value": "3=Ressources humaines",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../3=Ressources humaines",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1312,7 +2394,14 @@
                   "value": "4=Techniques",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../4=Techniques",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1320,7 +2409,14 @@
                   "value": "5=Sécuritaires (Crises socio-politiques, insécurité, …)",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../5=Sécuritaires (Crises socio-politiques, insécurité, …)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1328,7 +2424,14 @@
                   "value": "6=Sanitaires (Pandémie COVID 19, …)",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../6=Sanitaires (Pandémie COVID 19, …)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1336,21 +2439,42 @@
                   "value": "7=Autres type de difficultés",
                   "metadata": {
                     "entry_index": 7,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../7=Autres type de difficultés",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 12,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 12,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?",
+            "entryDescription": "",
+            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1365,7 +2489,14 @@
                   "value": "Absence de financement",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Absence de financement",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "Information financière - vérifier la précision",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1373,7 +2504,14 @@
                   "value": "Non décaissement des fonds à temps",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Non décaissement des fonds à temps",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1381,7 +2519,14 @@
                   "value": "Non acquisition du complément du budget",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Non acquisition du complément du budget",
+                    "entryDescription": "",
+                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "caution": "Information financière - vérifier la précision",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1389,7 +2534,14 @@
                   "value": "Autres risques liés à la mobilisation des ressources financières",
                   "metadata": {
                     "entry_index": 4,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Autres risques liés à la mobilisation des ressources financières",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1397,7 +2549,14 @@
                   "value": "Insécurité et terrorisme",
                   "metadata": {
                     "entry_index": 5,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Insécurité et terrorisme",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1405,7 +2564,14 @@
                   "value": "Instabilité politique",
                   "metadata": {
                     "entry_index": 6,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Instabilité politique",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1413,7 +2579,14 @@
                   "value": "Baisse de la volonté politique du gouvernement de soutenir la statistique",
                   "metadata": {
                     "entry_index": 7,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1421,7 +2594,14 @@
                   "value": "Capacités inégales des ressources humaines",
                   "metadata": {
                     "entry_index": 8,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Capacités inégales des ressources humaines",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1429,7 +2609,14 @@
                   "value": "Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
                   "metadata": {
                     "entry_index": 9,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1437,7 +2624,14 @@
                   "value": "Corruption et népotisme",
                   "metadata": {
                     "entry_index": 10,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Corruption et népotisme",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1445,7 +2639,14 @@
                   "value": "Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
                   "metadata": {
                     "entry_index": 11,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1453,7 +2654,14 @@
                   "value": "Grèves répétitives",
                   "metadata": {
                     "entry_index": 12,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Grèves répétitives",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1461,7 +2669,14 @@
                   "value": "Coupures intempestives d'électricité",
                   "metadata": {
                     "entry_index": 13,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Coupures intempestives d'électricité",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1469,7 +2684,14 @@
                   "value": "Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
                   "metadata": {
                     "entry_index": 14,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1477,21 +2699,42 @@
                   "value": "Autres risques potentiels à préciser",
                   "metadata": {
                     "entry_index": 15,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Autres risques potentiels à préciser",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 13,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la progr...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 13,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1506,7 +2749,14 @@
                   "value": "Majeur",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Majeur",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1514,7 +2764,14 @@
                   "value": "Modéré",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Modéré",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1522,21 +2779,42 @@
                   "value": "Mineur",
                   "metadata": {
                     "entry_index": 3,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Mineur",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 14,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’atteinte des objectifs ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 14,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1549,7 +2827,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 15,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quelles ont été les mesures de mitigation/atténuat...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1560,7 +2845,14 @@
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 15,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le numéro d’ordre d’enregistrement de la ...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1571,21 +2863,42 @@
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 15,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le libellé de la mesure de mitigation/att...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 15,
-            "parent_index": 4
+            "parent_index": 4,
+            "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         }
       ],
       "questions": [],
       "metadata": {
         "entry_index": 4,
-        "parent_index": 1
+        "parent_index": 1,
+        "entryFullPath": "/Réalisation de l'activité",
+        "entryDescription": "",
+        "entryAnnotation": "",
+        "caution": "",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     },
     {
@@ -1601,7 +2914,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le numéro d’ordre d’enregistrement de la ...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "Information financière - vérifier la précision",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1614,14 +2934,28 @@
                   "value": "Sélectionner dans la liste déroulante la source de financement",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 2
+                    "parent_index": 2,
+                    "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante la source de financement",
+                    "entryDescription": "",
+                    "entryAnnotation": "Sélection parmi les options proposées",
+                    "caution": "Information financière - vérifier la précision",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé de la source de fin...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "Information financière - vérifier la précision",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1632,7 +2966,14 @@
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant prévisionnel en FCFA ?",
+                "entryDescription": "",
+                "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                "caution": "Information financière - vérifier la précision",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1643,7 +2984,14 @@
               "metadata": {
                 "entry_index": 4,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant mobilisé en FCFA ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "Information financière - vérifier la précision",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1654,21 +3002,42 @@
               "metadata": {
                 "entry_index": 5,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant dépensé en FCFA ?",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "Information financière - vérifier la précision",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 1,
-            "parent_index": 5
+            "parent_index": 5,
+            "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "Information financière - vérifier la précision",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         }
       ],
       "questions": [],
       "metadata": {
         "entry_index": 5,
-        "parent_index": 1
+        "parent_index": 1,
+        "entryFullPath": "/Financement de l’activité",
+        "entryDescription": "",
+        "entryAnnotation": "",
+        "caution": "Information financière - vérifier la précision",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     },
     {
@@ -1684,7 +3053,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Prénom(s) et NOM de famille ?",
+                "entryDescription": "Information d'identification personnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1695,7 +3071,14 @@
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Sexe",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1706,7 +3089,14 @@
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Titre",
+                "entryDescription": "Position ou fonction professionnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1717,7 +3107,22 @@
               "metadata": {
                 "entry_index": 4,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Adresse de la structure",
+                "entryDescription": "Adresse géographique avec coordonnées requises",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "JumpToEntry": "",
+                "coordinates": {
+                  "required": true,
+                  "format": "ISO 6709:2022",
+                  "precision": "decimal_degrees",
+                  "datum": "WGS84",
+                  "example": "+12.6392-08.0029/",
+                  "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                  "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                }
               },
               "is_required": false
             },
@@ -1728,7 +3133,14 @@
               "metadata": {
                 "entry_index": 5,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Téléphone",
+                "entryDescription": "Information de contact",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1739,14 +3151,28 @@
               "metadata": {
                 "entry_index": 6,
                 "parent_index": 1,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Mail",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 1,
-            "parent_index": 6
+            "parent_index": 6,
+            "entryFullPath": "/Renseignements généraux/Renseignement du Point focal",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1759,7 +3185,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Prénom(s) et NOM de famille",
+                "entryDescription": "Information d'identification personnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1770,7 +3203,14 @@
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Sexe",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1781,7 +3221,14 @@
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Titre",
+                "entryDescription": "Position ou fonction professionnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1792,7 +3239,22 @@
               "metadata": {
                 "entry_index": 4,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Adresse de la structure",
+                "entryDescription": "Adresse géographique avec coordonnées requises",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "JumpToEntry": "",
+                "coordinates": {
+                  "required": true,
+                  "format": "ISO 6709:2022",
+                  "precision": "decimal_degrees",
+                  "datum": "WGS84",
+                  "example": "+12.6392-08.0029/",
+                  "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                  "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                }
               },
               "is_required": false
             },
@@ -1803,7 +3265,14 @@
               "metadata": {
                 "entry_index": 5,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Téléphone",
+                "entryDescription": "Information de contact",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1814,14 +3283,28 @@
               "metadata": {
                 "entry_index": 6,
                 "parent_index": 2,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Mail",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 2,
-            "parent_index": 6
+            "parent_index": 6,
+            "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1834,7 +3317,14 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Prénom(s) et NOM de famille",
+                "entryDescription": "Information d'identification personnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1845,7 +3335,14 @@
               "metadata": {
                 "entry_index": 2,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Sexe",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1856,7 +3353,14 @@
               "metadata": {
                 "entry_index": 3,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Titre",
+                "entryDescription": "Position ou fonction professionnelle",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1867,7 +3371,22 @@
               "metadata": {
                 "entry_index": 4,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Adresse de la structure",
+                "entryDescription": "Adresse géographique avec coordonnées requises",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "JumpToEntry": "",
+                "coordinates": {
+                  "required": true,
+                  "format": "ISO 6709:2022",
+                  "precision": "decimal_degrees",
+                  "datum": "WGS84",
+                  "example": "+12.6392-08.0029/",
+                  "validation_pattern": "^[+-][0-9]{2,3}\\.[0-9]{4}[+-][0-9]{3}\\.[0-9]{4}/$",
+                  "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+                }
               },
               "is_required": false
             },
@@ -1878,7 +3397,14 @@
               "metadata": {
                 "entry_index": 5,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Téléphone",
+                "entryDescription": "Information de contact",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             },
@@ -1889,14 +3415,28 @@
               "metadata": {
                 "entry_index": 6,
                 "parent_index": 3,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Mail",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 3,
-            "parent_index": 6
+            "parent_index": 6,
+            "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1911,7 +3451,14 @@
                   "value": "Complètement rempli",
                   "metadata": {
                     "entry_index": 1,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de rempli.../Complètement rempli",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 },
                 {
@@ -1919,21 +3466,42 @@
                   "value": "Partiellement rempli",
                   "metadata": {
                     "entry_index": 2,
-                    "parent_index": 1
+                    "parent_index": 1,
+                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de rempli.../Partiellement rempli",
+                    "entryDescription": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "",
+                    "JumpToEntry": "",
+                    "coordinates": {}
                   }
                 }
               ],
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 4,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de remplissage du questionnai...",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 4,
-            "parent_index": 6
+            "parent_index": 6,
+            "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         },
         {
@@ -1946,21 +3514,42 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 5,
-                "table_reference": null
+                "table_reference": null,
+                "entryFullPath": "/Renseignements généraux/Date de collecte/Quelle est la date de collecte ? (Jour/Mois/Année)",
+                "entryDescription": "",
+                "entryAnnotation": "",
+                "caution": "Vérifier la validité des dates saisies",
+                "existingConditions": "",
+                "JumpToEntry": "",
+                "coordinates": {}
               },
               "is_required": false
             }
           ],
           "metadata": {
             "entry_index": 5,
-            "parent_index": 6
+            "parent_index": 6,
+            "entryFullPath": "/Renseignements généraux/Date de collecte",
+            "entryDescription": "",
+            "entryAnnotation": "",
+            "caution": "Vérifier la validité des dates saisies",
+            "existingConditions": "",
+            "JumpToEntry": "",
+            "coordinates": {}
           }
         }
       ],
       "questions": [],
       "metadata": {
         "entry_index": 6,
-        "parent_index": 1
+        "parent_index": 1,
+        "entryFullPath": "/Renseignements généraux",
+        "entryDescription": "",
+        "entryAnnotation": "",
+        "caution": "",
+        "existingConditions": "",
+        "JumpToEntry": "",
+        "coordinates": {}
       }
     }
   ],

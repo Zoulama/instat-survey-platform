@@ -172,7 +172,14 @@ class INSTATExcelParser:
                         "questions": [],
                         "metadata": {
                             "entry_index": entry_index,
-                            "parent_index": parent_index
+                            "parent_index": parent_index,
+                            "entryFullPath": f"/{entry_label}",
+                            "entryDescription": self._extract_entry_description(row, entry_label),
+                            "entryAnnotation": self._extract_entry_annotation(row, entry_label),
+                            "caution": self._extract_caution_info(row, entry_label),
+                            "existingConditions": self._extract_existing_conditions(row, entry_label),
+                            "JumpToEntry": "",
+                            "coordinates": self._extract_coordinates(entry_label)
                         }
                     }
                     survey_structure["sections"].append(current_section)
@@ -187,7 +194,14 @@ class INSTATExcelParser:
                             "questions": [],
                             "metadata": {
                                 "entry_index": entry_index,
-                                "parent_index": parent_index
+                                "parent_index": parent_index,
+                                "entryFullPath": self._build_subsection_path(current_section, entry_label),
+                                "entryDescription": self._extract_entry_description(row, entry_label),
+                                "entryAnnotation": self._extract_entry_annotation(row, entry_label),
+                                "caution": self._extract_caution_info(row, entry_label),
+                                "existingConditions": self._extract_existing_conditions(row, entry_label),
+                                "JumpToEntry": "",
+                                "coordinates": self._extract_coordinates(entry_label)
                             }
                         }
                         current_section["subsections"].append(current_subsection)
@@ -202,7 +216,14 @@ class INSTATExcelParser:
                         "metadata": {
                             "entry_index": entry_index,
                             "parent_index": parent_index,
-                            "table_reference": self._extract_table_reference(entry_label)
+                            "table_reference": self._extract_table_reference(entry_label),
+                            "entryFullPath": self._build_entry_path(current_section, current_subsection, entry_label),
+                            "entryDescription": self._extract_entry_description(row, entry_label),
+                            "entryAnnotation": self._extract_entry_annotation(row, entry_label),
+                            "caution": self._extract_caution_info(row, entry_label),
+                            "existingConditions": self._extract_existing_conditions(row, entry_label),
+                            "JumpToEntry": "",
+                            "coordinates": self._extract_coordinates(entry_label)
                         },
                         "is_required": self._is_required_question(entry_label)
                     }
@@ -223,7 +244,14 @@ class INSTATExcelParser:
                             "value": entry_label,
                             "metadata": {
                                 "entry_index": entry_index,
-                                "parent_index": parent_index
+                                "parent_index": parent_index,
+                                "entryFullPath": self._build_option_path(current_section, current_subsection, current_question, entry_label),
+                                "entryDescription": self._extract_entry_description(row, entry_label),
+                                "entryAnnotation": self._extract_entry_annotation(row, entry_label),
+                                "caution": self._extract_caution_info(row, entry_label),
+                                "existingConditions": self._extract_existing_conditions(row, entry_label),
+                                "JumpToEntry": "",
+                                "coordinates": self._extract_coordinates(entry_label)
                             }
                         }
                         current_question["options"].append(response_option)
@@ -242,7 +270,14 @@ class INSTATExcelParser:
                             "metadata": {
                                 "entry_index": entry_index,
                                 "parent_index": parent_index,
-                                "type": "context"
+                                "type": "context",
+                                "entryFullPath": f"/Context/{entry_label}",
+                                "entryDescription": self._extract_entry_description(row, entry_label),
+                                "entryAnnotation": self._extract_entry_annotation(row, entry_label),
+                                "caution": self._extract_caution_info(row, entry_label),
+                                "existingConditions": self._extract_existing_conditions(row, entry_label),
+                                "JumpToEntry": "",
+                                "coordinates": self._extract_coordinates(entry_label)
                             }
                         }
                         survey_structure["sections"].append(current_section)
@@ -441,3 +476,158 @@ class INSTATExcelParser:
                 extract_from_questions(subsection.get("questions", []))
         
         return sorted(list(table_refs))
+
+    def _build_entry_path(self, current_section, current_subsection, entry_label: str) -> str:
+        """Build full path for an entry"""
+        path_parts = []
+        
+        if current_section:
+            path_parts.append(current_section.get("title", "Unknown Section"))
+            
+        if current_subsection:
+            path_parts.append(current_subsection.get("title", "Unknown Subsection"))
+            
+        path_parts.append(entry_label)
+        
+        return "/" + "/".join(path_parts)
+
+    def _build_subsection_path(self, current_section, entry_label: str) -> str:
+        """Build full path for a subsection"""
+        if current_section:
+            return f"/{current_section.get('title', 'Unknown Section')}/{entry_label}"
+        return f"/{entry_label}"
+
+    def _build_option_path(self, current_section, current_subsection, current_question, entry_label: str) -> str:
+        """Build full path for an option"""
+        path_parts = []
+        
+        if current_section:
+            path_parts.append(current_section.get("title", "Unknown Section"))
+            
+        if current_subsection:
+            path_parts.append(current_subsection.get("title", "Unknown Subsection"))
+            
+        if current_question:
+            path_parts.append(current_question.get("text", "Unknown Question")[:50] + "...")
+            
+        path_parts.append(entry_label)
+        
+        return "/" + "/".join(path_parts)
+
+    def _extract_entry_description(self, row, entry_label: str) -> str:
+        """Extract description from additional columns in the row"""
+        # Look for description in common description columns
+        description_columns = ['description', 'desc', 'annotation', 'note', 'comment', 'entryDescription']
+        
+        for col in row.index:
+            col_name = str(col).lower()
+            if any(desc_col in col_name for desc_col in description_columns):
+                val = str(row[col]).strip()
+                if val and val != 'nan' and val != entry_label:
+                    return val
+        
+        # Default description based on entry content
+        if 'adresse' in entry_label.lower():
+            return "Adresse géographique avec coordonnées requises"
+        elif 'ville' in entry_label.lower() or 'city' in entry_label.lower():
+            return "Ville ou entité géographique"
+        elif any(word in entry_label.lower() for word in ['téléphone', 'phone', 'contact']):
+            return "Information de contact"
+        elif 'email' in entry_label.lower():
+            return "Adresse électronique de contact"
+        
+        return ""
+
+    def _extract_entry_annotation(self, row, entry_label: str) -> str:
+        """Extract annotation from additional columns in the row"""
+        # Look for annotation in specific columns
+        annotation_columns = ['annotation', 'note', 'remark', 'entryAnnotation', 'comment']
+        
+        for col in row.index:
+            col_name = str(col).lower()
+            if any(ann_col in col_name for ann_col in annotation_columns):
+                val = str(row[col]).strip()
+                if val and val != 'nan' and val != entry_label:
+                    return val
+        
+        # Auto-generate annotation for specific types
+        if self._extract_table_reference(entry_label):
+            return "Référence à une table de données externe"
+        elif 'obligatoire' in entry_label.lower() or '*' in entry_label:
+            return "Champ obligatoire à remplir"
+            
+        return ""
+
+    def _extract_caution_info(self, row, entry_label: str) -> str:
+        """Extract caution/warning information"""
+        # Look for caution in specific columns
+        caution_columns = ['caution', 'warning', 'attention', 'avertissement']
+        
+        for col in row.index:
+            col_name = str(col).lower()
+            if any(caut_col in col_name for caut_col in caution_columns):
+                val = str(row[col]).strip()
+                if val and val != 'nan':
+                    return val
+        
+        # Auto-generate caution for sensitive data
+        sensitive_keywords = ['confidentiel', 'personnel', 'privé', 'sensible']
+        if any(keyword in entry_label.lower() for keyword in sensitive_keywords):
+            return "Information sensible - manipuler avec précaution"
+        
+        return ""
+
+    def _extract_existing_conditions(self, row, entry_label: str) -> str:
+        """Extract existing conditions for the entry"""
+        # Look for conditions in specific columns
+        condition_columns = ['condition', 'prerequis', 'requirement', 'existingConditions']
+        
+        for col in row.index:
+            col_name = str(col).lower()
+            if any(cond_col in col_name for cond_col in condition_columns):
+                val = str(row[col]).strip()
+                if val and val != 'nan':
+                    return val
+        
+        # Auto-generate conditions based on question type
+        if 'dépend' in entry_label.lower() or 'si' in entry_label.lower():
+            return "Réponse conditionnelle basée sur une question précédente"
+        elif self._extract_table_reference(entry_label):
+            return "Nécessite l'accès à une table de référence externe"
+            
+        return ""
+
+    def _extract_coordinates(self, entry_label: str) -> dict:
+        """Extract or generate ISO 6709:2022 coordinate metadata for geographic entries"""
+        # Check if this is a geographic/address field
+        geo_keywords = [
+            'adresse', 'address', 'ville', 'city', 'région', 'region', 
+            'commune', 'cercle', 'département', 'localisation', 'location',
+            'géographique', 'geographic', 'coordonnées', 'coordinates'
+        ]
+        
+        if any(keyword in entry_label.lower() for keyword in geo_keywords):
+            return {
+                "required": True,
+                "format": "ISO 6709:2022",
+                "precision": "decimal_degrees",
+                "datum": "WGS84",
+                "example": "+12.6392-08.0029/",
+                "validation_pattern": r"^[+-][0-9]{2,3}\.[0-9]{4}[+-][0-9]{3}\.[0-9]{4}/$",
+                "description": "Coordonnées géographiques au format ISO 6709:2022 pour localisation précise"
+            }
+        
+        return {}
+
+    def determine_schema_name(self, filename: str) -> str:
+        """Determine appropriate schema name based on filename"""
+        filename_lower = filename.lower()
+        
+        if "bilan" in filename_lower or "activites" in filename_lower:
+            return "survey_balance"
+        elif "diagnostic" in filename_lower:
+            return "survey_diagnostic"
+        elif "programme" in filename_lower or "programming" in filename_lower:
+            return "survey_program"
+        else:
+            return "survey_balance"  # default
