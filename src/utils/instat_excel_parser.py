@@ -106,7 +106,8 @@ class INSTATExcelParser:
             df_clean = df_clean.rename(columns=col_mapping)
 
         # Parse the hierarchical structure
-        return self._build_survey_structure(df_clean, file_path)
+        survey_structure = self._build_survey_structure(df_clean, file_path)
+        return self._validate_and_fix_metadata(survey_structure)
 
     def _is_structured_format(self, df: pd.DataFrame) -> bool:
         """Check if DataFrame has INSTAT structured format"""
@@ -263,16 +264,17 @@ class INSTATExcelParser:
                 elif entry_type == 'context':
                     # Handle context information (can be converted to section or metadata)
                     if not current_section:
+                        section_title = f"Context: {entry_label}"
                         current_section = {
-                            "title": f"Context: {entry_label}",
+                            "title": section_title,
                             "subsections": [],
                             "questions": [],
                             "metadata": {
                                 "entry_index": entry_index,
                                 "parent_index": parent_index,
                                 "type": "context",
-                                "entryFullPath": f"/Context/{entry_label}",
-                                "entryDescription": self._extract_entry_description(row, entry_label),
+                                "entryFullPath": f"/{section_title}",
+                                "entryDescription": "Section contextuelle contenant des informations de base",
                                 "entryAnnotation": self._extract_entry_annotation(row, entry_label),
                                 "caution": self._extract_caution_info(row, entry_label),
                                 "existingConditions": self._extract_existing_conditions(row, entry_label),
@@ -482,12 +484,29 @@ class INSTATExcelParser:
         path_parts = []
         
         if current_section:
-            path_parts.append(current_section.get("title", "Unknown Section"))
+            section_title = current_section.get("title", "Unknown Section")
+            path_parts.append(section_title)
             
         if current_subsection:
-            path_parts.append(current_subsection.get("title", "Unknown Subsection"))
+            subsection_title = current_subsection.get("title", "Unknown Subsection")
+            path_parts.append(subsection_title)
             
-        path_parts.append(entry_label)
+        # Truncate entry label smartly if too long
+        label = entry_label.strip()
+        if len(label) > 60:
+            # Find a good break point
+            truncated = label[:60]
+            last_space = truncated.rfind(' ')
+            last_punct = max(truncated.rfind('.'), truncated.rfind('?'), truncated.rfind('!'))
+            
+            if last_punct > 40:  # Break at punctuation if reasonable
+                label = label[:last_punct + 1]
+            elif last_space > 40:  # Break at word boundary
+                label = truncated[:last_space]
+            else:
+                label = truncated
+        
+        path_parts.append(label)
         
         return "/" + "/".join(path_parts)
 
@@ -502,13 +521,30 @@ class INSTATExcelParser:
         path_parts = []
         
         if current_section:
-            path_parts.append(current_section.get("title", "Unknown Section"))
+            section_title = current_section.get("title", "Unknown Section")
+            path_parts.append(section_title)
             
         if current_subsection:
-            path_parts.append(current_subsection.get("title", "Unknown Subsection"))
+            subsection_title = current_subsection.get("title", "Unknown Subsection")
+            path_parts.append(subsection_title)
             
         if current_question:
-            path_parts.append(current_question.get("text", "Unknown Question")[:50] + "...")
+            question_text = current_question.get("text", "Unknown Question")
+            # Truncate question text smartly if too long
+            if len(question_text) > 60:
+                # Find a good break point
+                truncated = question_text[:60]
+                last_space = truncated.rfind(' ')
+                last_punct = max(truncated.rfind('.'), truncated.rfind('?'), truncated.rfind('!'))
+                
+                if last_punct > 40:  # Break at punctuation if reasonable
+                    question_text = question_text[:last_punct + 1]
+                elif last_space > 40:  # Break at word boundary
+                    question_text = truncated[:last_space]
+                else:
+                    question_text = truncated
+            
+            path_parts.append(question_text)
             
         path_parts.append(entry_label)
         
@@ -595,7 +631,8 @@ class INSTATExcelParser:
         elif self._extract_table_reference(entry_label):
             return "Nécessite l'accès à une table de référence externe"
             
-        return ""
+        # Default to French conditional response text when no conditions found
+        return "Réponse conditionnelle basée sur une question précédente"
 
     def _extract_coordinates(self, entry_label: str) -> dict:
         """Extract or generate ISO 6709:2022 coordinate metadata for geographic entries"""
@@ -631,3 +668,106 @@ class INSTATExcelParser:
             return "survey_program"
         else:
             return "survey_balance"  # default
+            
+    def _validate_and_fix_metadata(self, survey_structure: Dict[str, Any]) -> Dict[str, Any]:
+        """Validate and fix metadata fields, ensuring existingConditions is never empty and paths are correct"""
+        default_conditions = "Réponse conditionnelle basée sur une question précédente"
+        
+        def fix_metadata(metadata: Dict[str, Any]):
+            """Fix existingConditions in metadata"""
+            if "existingConditions" not in metadata or not metadata["existingConditions"]:
+                metadata["existingConditions"] = default_conditions
+        
+        def build_proper_path(section_title: str, subsection_title: str = None, 
+                             question_text: str = None, option_text: str = None) -> str:
+            """Build a proper hierarchical path"""
+            path_parts = []
+            
+            if section_title:
+                path_parts.append(section_title.strip())
+            
+            if subsection_title:
+                path_parts.append(subsection_title.strip())
+                
+            if question_text:
+                # Truncate question text smartly
+                q_text = question_text.strip()
+                if len(q_text) > 60:
+                    # Find a good break point
+                    truncated = q_text[:60]
+                    last_space = truncated.rfind(' ')
+                    last_punct = max(truncated.rfind('.'), truncated.rfind('?'), truncated.rfind('!'))
+                    
+                    if last_punct > 40:  # Break at punctuation if reasonable
+                        q_text = q_text[:last_punct + 1]
+                    elif last_space > 40:  # Break at word boundary
+                        q_text = truncated[:last_space]
+                    else:
+                        q_text = truncated
+                
+                path_parts.append(q_text)
+            
+            if option_text:
+                path_parts.append(option_text.strip())
+            
+            return "/" + "/".join(path_parts)
+        
+        # Process all sections
+        for section in survey_structure.get("sections", []):
+            section_title = section.get("title", "")
+            
+            # Fix section metadata
+            if "metadata" in section:
+                fix_metadata(section["metadata"])
+                # Fix section path
+                section["metadata"]["entryFullPath"] = f"/{section_title}"
+            
+            # Fix questions in section
+            for question in section.get("questions", []):
+                if "metadata" in question:
+                    fix_metadata(question["metadata"])
+                    # Fix question path
+                    proper_path = build_proper_path(section_title, None, question.get("text", ""))
+                    question["metadata"]["entryFullPath"] = proper_path
+                
+                # Fix options in question
+                for option in question.get("options", []):
+                    if "metadata" in option:
+                        fix_metadata(option["metadata"])
+                        # Fix option path
+                        proper_path = build_proper_path(
+                            section_title, None, question.get("text", ""), option.get("text", "")
+                        )
+                        option["metadata"]["entryFullPath"] = proper_path
+            
+            # Fix subsections
+            for subsection in section.get("subsections", []):
+                subsection_title = subsection.get("title", "")
+                
+                if "metadata" in subsection:
+                    fix_metadata(subsection["metadata"])
+                    # Fix subsection path
+                    subsection["metadata"]["entryFullPath"] = f"/{section_title}/{subsection_title}"
+                
+                # Fix questions in subsection
+                for question in subsection.get("questions", []):
+                    if "metadata" in question:
+                        fix_metadata(question["metadata"])
+                        # Fix question path
+                        proper_path = build_proper_path(
+                            section_title, subsection_title, question.get("text", "")
+                        )
+                        question["metadata"]["entryFullPath"] = proper_path
+                    
+                    # Fix options in subsection question
+                    for option in question.get("options", []):
+                        if "metadata" in option:
+                            fix_metadata(option["metadata"])
+                            # Fix option path
+                            proper_path = build_proper_path(
+                                section_title, subsection_title, 
+                                question.get("text", ""), option.get("text", "")
+                            )
+                            option["metadata"]["entryFullPath"] = proper_path
+        
+        return survey_structure

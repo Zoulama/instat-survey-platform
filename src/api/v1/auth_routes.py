@@ -10,7 +10,7 @@ from src.infrastructure.database.connection import get_db
 from src.infrastructure.database import models
 from src.infrastructure.auth.oauth2 import (
     authenticate_user, create_access_token, get_user_scopes,
-    Token, UserInToken, get_current_user, require_admin
+    Token, UserInToken, UserInfo, get_current_user, require_admin
 )
 from schemas.user_schemas import (
     UserCreate, UserResponse, UserUpdate,
@@ -57,7 +57,13 @@ async def login_for_access_token(
         "access_token": access_token,
         "token_type": "bearer",
         "expires_in": 86400,  # 24 hours in seconds
-        "scope": " ".join(user_scopes)
+        "user": {
+            "UserID": user.UserID,
+            "Username": user.Username,
+            "Email": user.Email,
+            "Role": user.Role,
+            "Permissions": user_scopes
+        }
     }
 
 
@@ -112,7 +118,13 @@ async def refresh_access_token(
         "access_token": access_token,
         "token_type": "bearer",
         "expires_in": 86400,
-        "scope": " ".join(user_scopes)
+        "user": {
+            "UserID": user.UserID,
+            "Username": user.Username,
+            "Email": user.Email,
+            "Role": user.Role,
+            "Permissions": user_scopes
+        }
     }
 
 

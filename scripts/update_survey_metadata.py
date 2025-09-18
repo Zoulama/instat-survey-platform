@@ -88,6 +88,9 @@ class SurveyMetadataUpdater:
         # Add missing fields if they don't exist
         if "entryFullPath" not in metadata:
             metadata["entryFullPath"] = f"/{title}"
+        else:
+            # Fix existing path by removing truncation
+            metadata["entryFullPath"] = self._fix_full_path(metadata["entryFullPath"], title)
         
         if "entryDescription" not in metadata:
             metadata["entryDescription"] = self._generate_entry_description(title, "section")
@@ -119,6 +122,9 @@ class SurveyMetadataUpdater:
         # Add missing fields if they don't exist
         if "entryFullPath" not in metadata:
             metadata["entryFullPath"] = f"/{parent_title}/{title}"
+        else:
+            # Fix existing path by removing truncation
+            metadata["entryFullPath"] = self._fix_full_path(metadata["entryFullPath"], f"{parent_title}/{title}")
         
         if "entryDescription" not in metadata:
             metadata["entryDescription"] = self._generate_entry_description(title, "subsection")
@@ -156,6 +162,9 @@ class SurveyMetadataUpdater:
         
         # Add missing fields if they don't exist
         if "entryFullPath" not in metadata:
+            metadata["entryFullPath"] = "/" + "/".join(path_parts)
+        else:
+            # Fix existing path by removing truncation and rebuilding properly
             metadata["entryFullPath"] = "/" + "/".join(path_parts)
         
         if "entryDescription" not in metadata:
@@ -195,6 +204,9 @@ class SurveyMetadataUpdater:
         
         # Add missing fields if they don't exist
         if "entryFullPath" not in metadata:
+            metadata["entryFullPath"] = "/" + "/".join(path_parts)
+        else:
+            # Fix existing path by removing truncation and rebuilding properly
             metadata["entryFullPath"] = "/" + "/".join(path_parts)
         
         if "entryDescription" not in metadata:
@@ -312,7 +324,8 @@ class SurveyMetadataUpdater:
         elif any(keyword in text_lower for keyword in self.geo_keywords):
             return "Coordonnées géographiques requises pour la localisation"
         
-        return ""
+        # Default to French conditional response text when no conditions found
+        return "Réponse conditionnelle basée sur une question précédente"
     
     def _generate_coordinates(self, text: str) -> dict:
         """Generate coordinate metadata for geographic entries"""
@@ -331,6 +344,38 @@ class SurveyMetadataUpdater:
             }
         
         return {}
+    
+    def _fix_full_path(self, current_path: str, expected_path: str) -> str:
+        """Fix truncated or incorrect full paths"""
+        import re
+        
+        # If path contains truncation indicators, rebuild it properly
+        if "..." in current_path or len(current_path) > 200:
+            # Extract path segments
+            segments = [seg.strip() for seg in current_path.split("/") if seg.strip()]
+            
+            # Clean up segments
+            cleaned_segments = []
+            for segment in segments:
+                # Remove truncation artifacts
+                segment = re.sub(r'\.\.\.$', '', segment.strip())
+                segment = re.sub(r'\s+', ' ', segment)
+                
+                # Truncate cleanly if too long
+                if len(segment) > 80:
+                    truncated = segment[:80]
+                    last_space = truncated.rfind(' ')
+                    if last_space > 60:  # Break at word boundary if reasonable
+                        segment = truncated[:last_space]
+                    else:
+                        segment = truncated
+                
+                if segment:
+                    cleaned_segments.append(segment)
+            
+            return "/" + "/".join(cleaned_segments)
+        
+        return current_path
 
 
 def main():

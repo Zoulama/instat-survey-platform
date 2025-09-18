@@ -143,82 +143,91 @@ async def upload_excel_and_create_survey(
             shutil.copyfileobj(file.file, buffer)
     finally:
         file.file.close()
-        
+    
     # Parse the uploaded file with enhanced parser
     try:
         survey_structure = excel_parser.parse_file(file_path)
         validation_issues = excel_parser.validate_structure(survey_structure)
         
-        if validation_issues:
-            return FileUploadResponse(
-                success=False,
-                message="File uploaded, but with validation issues.",
-                file_path=str(file_path),
-                issues=validation_issues,
-                survey_structure=survey_structure,
-                timestamp=datetime.utcnow()
-            )
+        # Save the processed structure with fixed metadata to JSON file
+        generated_dir = Path(config.UPLOAD_DIR).parent / "generated"
+        generated_dir.mkdir(parents=True, exist_ok=True)
+        structure_file = generated_dir / f"{os.path.splitext(file.filename)[0]}_structure.json"
         
-        # Create INSTAT survey from parsed structure
-        instat_survey_data = INSTATSurveyCreate(
-            Title=survey_structure.get("title", file.filename),
-            Description=survey_structure.get("description", f"Survey generated from {file.filename}"),
-            Domain=_determine_instat_domain_from_schema(schema_name),
-            Category=_determine_survey_category_from_schema(schema_name),
-            FiscalYear=2024,  # Default fiscal year
-            ReportingCycle=None,  # Set to None to bypass validation issue
-            TargetAudience=["internal", "departments"],
-            GeographicScope=["national", "all_regions"],
-            ComplianceFramework=["ISO", "SDS4"]
-        )
-        
-        # Create the INSTAT survey in the database
-        created_survey = instat_service.create_survey(instat_survey_data)
-        
-        # Create template if requested
-        created_template = None
-        if create_template:
-            try:
-                # Prepare template data
-                template_sections = _convert_survey_structure_to_template_sections(survey_structure)
-                
-                template_data = SurveyTemplateCreate(
-                    TemplateName=template_name or f"Template_{os.path.splitext(file.filename)[0]}",
-                    Domain=_determine_instat_domain_from_schema(schema_name),
-                    Category=_determine_survey_category_from_schema(schema_name),
-                    Version="1.0.0",
-                    CreatedBy="System",
-                    Sections=template_sections,
-                    UsageGuidelines=f"Template created from {file.filename} upload",
-                    ExampleImplementations=[f"Original file: {file.filename}"]
-                )
-                
-                created_template = template_service.create_template(template_data)
-            except Exception as template_error:
-                # Template creation failed, but survey was created successfully
-                # Log the error but don't fail the entire operation
-                print(f"Template creation failed: {template_error}")
-        
-        # Prepare response data
-        response_data = {
-            "message": "File uploaded, parsed, and INSTAT survey created successfully.",
-            "file_path": str(file_path),
-            "survey_structure": survey_structure,
-            "created_survey": created_survey.model_dump(),
-            "timestamp": datetime.utcnow()
-        }
-        
-        # Add template info if created
-        if created_template:
-            response_data["message"] = "File uploaded, parsed, INSTAT survey and template created successfully."
-            response_data["created_template"] = created_template.model_dump()
-        
-        return FileUploadResponse(**response_data)
-    except Exception as e:
+        import json
+        with open(structure_file, 'w', encoding='utf-8') as f:
+            json.dump(survey_structure, f, indent=2, ensure_ascii=False, default=str)
+    except Exception as parse_error:
         raise HTTPException(
             status_code=500,
-            detail=f"Failed to parse Excel file: {str(e)}"
+            detail=f"Failed to parse Excel file: {str(parse_error)}"
         )
+    
+    if validation_issues:
+        return FileUploadResponse(
+            success=False,
+            message="File uploaded, but with validation issues.",
+            file_path=str(file_path),
+            issues=validation_issues,
+            survey_structure=survey_structure,
+            timestamp=datetime.utcnow()
+        )
+    
+    # Create INSTAT survey from parsed structure
+    instat_survey_data = INSTATSurveyCreate(
+        Title=survey_structure.get("title", file.filename),
+        Description=survey_structure.get("description", f"Survey generated from {file.filename}"),
+        Domain=_determine_instat_domain_from_schema(schema_name),
+        Category=_determine_survey_category_from_schema(schema_name),
+        FiscalYear=2024,  # Default fiscal year
+        ReportingCycle=None,  # Set to None to bypass validation issue
+        TargetAudience=["internal", "departments"],
+        GeographicScope=["national", "all_regions"],
+        ComplianceFramework=["ISO", "SDS4"]
+    )
+    
+    # Create the INSTAT survey in the database
+    created_survey = instat_service.create_survey(instat_survey_data)
+    
+    # Create template if requested
+    created_template = None
+    if create_template:
+        try:
+            # Prepare template data
+            template_sections = _convert_survey_structure_to_template_sections(survey_structure)
+            
+            template_data = SurveyTemplateCreate(
+                TemplateName=template_name or f"Template_{os.path.splitext(file.filename)[0]}",
+                Domain=_determine_instat_domain_from_schema(schema_name),
+                Category=_determine_survey_category_from_schema(schema_name),
+                Version="1.0.0",
+                CreatedBy="System",
+                Sections=template_sections,
+                UsageGuidelines=f"Template created from {file.filename} upload",
+                ExampleImplementations=[f"Original file: {file.filename}"]
+            )
+            
+            created_template = template_service.create_template(template_data)
+        except Exception as template_error:
+            # Template creation failed, but survey was created successfully
+            # Log the error but don't fail the entire operation
+            print(f"Template creation failed: {template_error}")
+    
+    # Prepare response data
+    response_data = {
+        "message": "File uploaded, parsed, and INSTAT survey created successfully.",
+        "file_path": str(file_path),
+        "survey_structure": survey_structure,
+        "created_survey": created_survey.model_dump(),
+        "timestamp": datetime.utcnow()
+    }
+    
+    # Add template info if created
+    if created_template:
+        response_data["message"] = "File uploaded, parsed, INSTAT survey and template created successfully."
+        response_data["created_template"] = created_template.model_dump()
+    
+    return FileUploadResponse(**response_data)
 
 
 def _determine_instat_domain_from_schema(schema_name: str) -> str:
@@ -338,6 +347,15 @@ async def upload_excel_and_create_survey_with_template(
     try:
         survey_structure = excel_parser.parse_file(file_path)
         validation_issues = excel_parser.validate_structure(survey_structure)
+        
+        # Save the processed structure with fixed metadata to JSON file
+        generated_dir = Path(config.UPLOAD_DIR).parent / "generated"
+        generated_dir.mkdir(parents=True, exist_ok=True)
+        structure_file = generated_dir / f"{os.path.splitext(file.filename)[0]}_structure.json"
+        
+        import json
+        with open(structure_file, 'w', encoding='utf-8') as f:
+            json.dump(survey_structure, f, indent=2, ensure_ascii=False, default=str)
         
         if validation_issues:
             return FileUploadResponse(

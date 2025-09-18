@@ -18,7 +18,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -33,10 +33,10 @@
             "parent_index": 1,
             "table_reference": null,
             "entryFullPath": "/Context: Numero De Fiche De Collecte/Nombre total de fiches",
-            "entryDescription": "Information d'identification personnelle",
+            "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -51,7 +51,7 @@
         "entryDescription": "Section contextuelle contenant des informations de base",
         "entryAnnotation": "",
         "caution": "",
-        "existingConditions": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
@@ -70,11 +70,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 1,
-                "entryFullPath": "/Identification de la fiche/Quel est le code de la région .../Selectionner dans la liste deroulante \"le code de la region\"",
+                "entryFullPath": "/Identification de la fiche/Quel est le code de la région de la structure en charge de/Selectionner dans la liste deroulante \"le code de la region\"",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {
                   "required": true,
@@ -92,11 +92,11 @@
             "entry_index": 1,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est le code de la région de la structure en c...",
+            "entryFullPath": "/Identification de la fiche/Quel est le code de la région de la structure en charge de",
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "Coordonnées géographiques requises pour la localisation",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {
               "required": true,
@@ -120,11 +120,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 2,
-                "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de .../Selectionner dans la liste deroulante le code du Cercle",
+                "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de la structure en charge de la/Selectionner dans la liste deroulante le code du Cercle",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {
                   "required": true,
@@ -142,11 +142,11 @@
             "entry_index": 2,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de la structure en char...",
+            "entryFullPath": "/Identification de la fiche/Quel est le code du Cercle de la structure en charge de la",
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "Coordonnées géographiques requises pour la localisation",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {
               "required": true,
@@ -170,11 +170,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 3,
-                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structur.../Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
-                "entryDescription": "Information d'identification personnelle",
+                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la réalisation/Rechercher dans le champ de recherche le Nom de la structure en charge de la réalisation de l'activité",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               }
@@ -184,11 +184,11 @@
             "entry_index": 3,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la ré...",
-            "entryDescription": "Information d'identification personnelle",
+            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la réalisation",
+            "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -204,11 +204,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 4,
-                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structur.../Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
-                "entryDescription": "Information d'identification personnelle",
+                "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la collecte/Rechercher dans le champ de recherche le Nom de la structure en charge de la collecte des données pour la Revue annuelle SDS",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               }
@@ -218,11 +218,11 @@
             "entry_index": 4,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la co...",
-            "entryDescription": "Information d'identification personnelle",
+            "entryFullPath": "/Identification de la fiche/Quel est le Nom de la structure en charge de la collecte",
+            "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -238,11 +238,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 5,
-                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activ.../Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine des/Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               }
@@ -252,11 +252,11 @@
             "entry_index": 5,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine d...",
+            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine des",
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -272,11 +272,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 6,
-                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activ.../Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
+                "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine des/Rechercher dans le champ de recherche l'intitulé de l’activité dans la chaine des résultats",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               }
@@ -286,11 +286,11 @@
             "entry_index": 6,
             "parent_index": 1,
             "table_reference": null,
-            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine d...",
+            "entryFullPath": "/Identification de la fiche/Quel est l'intitulé de l’activité dans la chaine des",
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -306,11 +306,11 @@
               "metadata": {
                 "entry_index": 1,
                 "parent_index": 7,
-                "entryFullPath": "/Identification de la fiche/Quelle est la chaine de résult.../Rechercher dans le champ de recherche la chaine de résultats",
+                "entryFullPath": "/Identification de la fiche/Quelle est la chaine de résultats ?/Rechercher dans le champ de recherche la chaine de résultats",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               }
@@ -324,7 +324,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           },
@@ -338,7 +338,7 @@
         "entryDescription": "",
         "entryAnnotation": "",
         "caution": "",
-        "existingConditions": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
@@ -359,11 +359,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont.../1=Oui",
+                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont-elles désagrégées ?/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -374,11 +374,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont.../2=Non",
+                    "entryFullPath": "/Caractéristiques de l'activité/Les données de l'activité sont-elles désagrégées/Les données de l'activité sont-elles désagrégées ?/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -392,7 +392,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -406,7 +406,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -424,11 +424,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Age",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?/Age",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -439,11 +439,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Sexe",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?/Sexe",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -454,11 +454,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Handicap",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?/Handicap",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -469,9 +469,9 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Participation à la prise de décision",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?/Participation à la prise de décision",
                     "entryDescription": "",
-                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "entryAnnotation": "",
                     "caution": "",
                     "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
@@ -484,11 +484,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?.../Autre Genre",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Genre ?/Autre Genre",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -502,7 +502,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -518,11 +518,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Région",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?/Région",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -541,11 +541,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 2,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Cercle",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?/Cercle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -564,11 +564,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 2,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Arrondissement",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?/Arrondissement",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -579,11 +579,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 2,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Commune",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?/Commune",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -602,11 +602,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 2,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?.../Autre niveau de désagrégation territorial",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par niveau territorial ?/Autre niveau de désagrégation territorial",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -620,7 +620,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -636,11 +636,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 3,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?.../Urbain",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?/Urbain",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -651,11 +651,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 3,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?.../Rural",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?/Rural",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -667,7 +667,7 @@
                 "table_reference": null,
                 "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Milieu de résidence ?",
                 "entryDescription": "",
-                "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                "entryAnnotation": "",
                 "caution": "",
                 "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
@@ -685,11 +685,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 4,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../1=Oui",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégation ?/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -700,11 +700,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 4,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../2=Non",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégation ?/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -715,11 +715,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 4,
-                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégat.../3=Sans Objet",
+                    "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation/Par Autre niveau de désagrégation ?/3=Sans Objet",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -733,7 +733,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -745,7 +745,7 @@
             "parent_index": 2,
             "entryFullPath": "/Caractéristiques de l'activité/Si oui préciser le niveau de désagrégation",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -765,11 +765,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suiva.../Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
+                    "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suivants ont été renseignés par la/Sélectionner les cases à cocher correspondantes aux indicateurs CMR-SDS",
                     "entryDescription": "",
-                    "entryAnnotation": "Sélection parmi les options proposées",
+                    "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -779,11 +779,11 @@
                 "entry_index": 1,
                 "parent_index": 3,
                 "table_reference": null,
-                "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suivants ont été renseign...",
+                "entryFullPath": "/Caractéristiques de l'activité/Lesquels des indicateurs suivants ont été renseignés par la réalisation de l'activité ?/Lesquels des indicateurs suivants ont été renseignés par la",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -797,7 +797,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -815,11 +815,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../1= Régional",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/1= Régional",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -838,11 +838,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../2= Multirégional",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/2= Multirégional",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -861,11 +861,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../3= National",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/3= National",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -876,11 +876,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../4= Sous-régional",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/4= Sous-régional",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -899,11 +899,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../5= International",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/5= International",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -914,11 +914,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’ac.../7= Autre envergure",
+                    "entryFullPath": "/Caractéristiques de l'activité/Quelle est l'envergure de l’activité ?/Quelle est l'envergure de l’activité ?/7= Autre envergure",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -932,7 +932,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -946,7 +946,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -964,11 +964,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programm.../1=Oui",
+                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programmée ?/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -979,11 +979,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programm.../2=Non",
+                    "entryFullPath": "/Caractéristiques de l'activité/L'activité était-elle programmée ?/L'activité était-elle programmée ?/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -997,7 +997,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1011,7 +1011,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1025,7 +1025,7 @@
         "entryDescription": "",
         "entryAnnotation": "",
         "caution": "",
-        "existingConditions": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
@@ -1046,11 +1046,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalis.../1=Oui",
+                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalisée ou a-t-elle connu un début/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1061,11 +1061,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalis.../2=Non",
+                    "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalisée ou a-t-elle connu un début/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1075,11 +1075,11 @@
                 "entry_index": 1,
                 "parent_index": 1,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalisée ou a-t-elle connu...",
+                "entryFullPath": "/Réalisation de l'activité/L'activité a-t-elle été réalisée ou a-t-elle connu un début de réalisation ?/L'activité a-t-elle été réalisée ou a-t-elle connu un début",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1093,7 +1093,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1111,11 +1111,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Selectionner dans la liste deroulante des enregistrements de la TableRef:11 les raisons",
+                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons de la non réalisation/Selectionner dans la liste deroulante des enregistrements de la TableRef:11 les raisons",
                     "entryDescription": "",
-                    "entryAnnotation": "",
+                    "entryAnnotation": "Référence à une table de données externe",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Nécessite l'accès à une table de référence externe",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1126,11 +1126,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Autres raisons  a Précisez",
+                    "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons de la non réalisation/Autres raisons  a Précisez",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1140,11 +1140,11 @@
                 "entry_index": 1,
                 "parent_index": 2,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons de la non réa...",
+                "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons de la non réalisation",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1156,7 +1156,7 @@
             "parent_index": 4,
             "entryFullPath": "/Réalisation de l'activité/Si non pourquoi ? Citer les principales raisons parmi les modalités suivantes",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -1176,11 +1176,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activi.../1=En cours",
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activité ?/1=En cours",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1191,11 +1191,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activi.../2=Terminé",
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le statut de l’activité ?/2=Terminé",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1209,7 +1209,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1225,11 +1225,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le niveau d'exécution.../Nombre en %",
-                    "entryDescription": "Information d'identification personnelle",
+                    "entryFullPath": "/Réalisation de l'activité/Statut et niveau d'exécution de l’activité/Quel est le niveau d'exécution de l’activité ?/Nombre en %",
+                    "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1243,7 +1243,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1257,7 +1257,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1273,11 +1273,11 @@
                 "entry_index": 1,
                 "parent_index": 4,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/D'autres structures ont-elles participé à l’activité ?/D'autres structures ont-elles participé à l’activi...",
+                "entryFullPath": "/Réalisation de l'activité/D'autres structures ont-elles participé à l’activité ?/D'autres structures ont-elles participé à l’activité ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1291,7 +1291,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1309,11 +1309,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../INSTAT",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/INSTAT",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1324,11 +1324,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../CPS",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/CPS",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1339,11 +1339,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Directions centrales",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Directions centrales",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1354,11 +1354,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Observatoires/Organismes personnalisés",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Observatoires/Organismes personnalisés",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1369,11 +1369,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Services déconcentrés et décentralisés",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Services déconcentrés et décentralisés",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1384,11 +1384,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Structures privées (ONG, etc.)",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Structures privées (ONG, etc.)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "Information sensible - manipuler avec précaution",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1399,11 +1399,11 @@
                   "metadata": {
                     "entry_index": 7,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Ensemble du SSN",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Ensemble du SSN",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1414,11 +1414,11 @@
                   "metadata": {
                     "entry_index": 8,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Cabinet ministériel",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Cabinet ministériel",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1429,11 +1429,11 @@
                   "metadata": {
                     "entry_index": 9,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../PTF",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/PTF",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1444,9 +1444,9 @@
                   "metadata": {
                     "entry_index": 10,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Missions Diplomatiques et Consulaires",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Missions Diplomatiques et Consulaires",
                     "entryDescription": "",
-                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "entryAnnotation": "",
                     "caution": "",
                     "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
@@ -1459,11 +1459,11 @@
                   "metadata": {
                     "entry_index": 11,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles .../Autres structures",
+                    "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?/Autres structures",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1473,11 +1473,11 @@
                 "entry_index": 1,
                 "parent_index": 5,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activi...",
+                "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?/D'autres structures ont-elles participé à l’activité ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1489,7 +1489,7 @@
             "parent_index": 4,
             "entryFullPath": "/Réalisation de l'activité/Si oui, lesquelles ?",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -1509,11 +1509,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Hebdomadaire",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Hebdomadaire",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1524,11 +1524,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Mensuelle",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Mensuelle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1539,11 +1539,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Trimestrielle",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Trimestrielle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1554,11 +1554,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Semestrielle",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Semestrielle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1569,11 +1569,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Annuelle",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Annuelle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1584,11 +1584,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Ponctuelle",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Ponctuelle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1599,11 +1599,11 @@
                   "metadata": {
                     "entry_index": 7,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l.../Autre périodicité",
+                    "entryFullPath": "/Réalisation de l'activité/Quelle est la périodicité de l’activité ?/Quelle est la périodicité de l’activité ?/Autre périodicité",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1617,7 +1617,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1631,7 +1631,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1649,11 +1649,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été.../1=Oui",
+                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été respectée ?/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1664,11 +1664,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été.../2=Non",
+                    "entryFullPath": "/Réalisation de l'activité/Cette périodicité a-t-elle été respectée ?/Cette périodicité a-t-elle été respectée ?/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1682,7 +1682,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1696,7 +1696,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -1714,10 +1714,10 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Problème financier (Insuffisance ou Manque de fonds, Suspension du financement, ...)",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Problème financier (Insuffisance ou Manque de fonds, Suspension du financement, ...)",
                     "entryDescription": "",
-                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
-                    "caution": "Information financière - vérifier la précision",
+                    "entryAnnotation": "",
+                    "caution": "",
                     "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
@@ -1729,11 +1729,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Problèmes organisationnels (retard du partenaire, modification du plan de travail initial etc.)",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Problèmes organisationnels (retard du partenaire, modification du plan de travail initial etc.)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1744,9 +1744,9 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Situation Politique et sécuritaire du pays",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Situation Politique et sécuritaire du pays",
                     "entryDescription": "",
-                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+                    "entryAnnotation": "",
                     "caution": "",
                     "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
@@ -1759,11 +1759,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Insuffisancede ressources matérielles",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Insuffisancede ressources matérielles",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1774,11 +1774,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Insuffisance de ressources humaines",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Insuffisance de ressources humaines",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1789,11 +1789,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Maladie à Corona Virus (COVID-19)",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Maladie à Corona Virus (COVID-19)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1804,11 +1804,11 @@
                   "metadata": {
                     "entry_index": 7,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales r.../Maladie de la Dengue",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de/Maladie de la Dengue",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1818,11 +1818,11 @@
                 "entry_index": 1,
                 "parent_index": 8,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respec...",
+                "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Quelles sont les principales raisons du non-respect de",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1838,11 +1838,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons.../1=Oui",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons/1=Oui",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1853,11 +1853,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons.../2=Non",
+                    "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes/Autres raisons/2=Non",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1871,7 +1871,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -1883,7 +1883,7 @@
             "parent_index": 4,
             "entryFullPath": "/Réalisation de l'activité/Si non, pourquoi ? Citer les principales raisons parmi les modalités suivantes",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -1903,11 +1903,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Gouvernement",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/Gouvernement",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1918,11 +1918,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Partenaires Techniques et Financiers",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/Partenaires Techniques et Financiers",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1933,11 +1933,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Collectivités territoriales (CT)",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/Collectivités territoriales (CT)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1948,11 +1948,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Besoins propres",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/Besoins propres",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1963,11 +1963,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../ONG/OSC",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/ONG/OSC",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1978,11 +1978,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réa.../Autres utilisateurs",
+                    "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité/Autres utilisateurs",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -1992,11 +1992,11 @@
                 "entry_index": 1,
                 "parent_index": 9,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette ac...",
+                "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?/Qui est le Demandeur de la réalisation de cette activité",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2008,7 +2008,7 @@
             "parent_index": 4,
             "entryFullPath": "/Réalisation de l'activité/Si l'activité est non programmée (Si non à la Question 2.05), pourquoi a-t-elle été réalisée ?",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -2028,11 +2028,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’e.../Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’enregistrement de l’Indicateur/Selectionner dans la liste deroulante le numéro d’ordre d’enregistrement du Cercle",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {
                       "required": true,
@@ -2050,11 +2050,11 @@
                 "entry_index": 1,
                 "parent_index": 10,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’enregistrement de l’I...",
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le numéro d’ordre d’enregistrement de l’Indicateur",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2070,8 +2070,8 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
-                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de l’Indicateur de/Sélectionner dans la liste déroulante l’Indicateur de suivi-évaluation (@TableRef :06)",
+                    "entryDescription": "",
                     "entryAnnotation": "Référence à une table de données externe",
                     "caution": "",
                     "existingConditions": "Nécessite l'accès à une table de référence externe",
@@ -2084,11 +2084,11 @@
                 "entry_index": 2,
                 "parent_index": 10,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de l’Indicateur de ...",
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de l’Indicateur de",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2104,8 +2104,8 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 3,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
-                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de la Source de vérification/Sélectionner dans la liste déroulante la Source de vérification (@TableRef :07)",
+                    "entryDescription": "",
                     "entryAnnotation": "Référence à une table de données externe",
                     "caution": "",
                     "existingConditions": "Nécessite l'accès à une table de référence externe",
@@ -2118,11 +2118,11 @@
                 "entry_index": 3,
                 "parent_index": 10,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de la Source de vér...",
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les indicateurs de Suivi-évaluation et leurs sources de vérification ?/Quel est le code et le libellé de la Source de vérification",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2136,7 +2136,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -2154,11 +2154,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’e.../Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’enregistrement du produit ?/Sélectionner dans la liste déroulante le numéro d’ordre d’enregistrement du produit",
                     "entryDescription": "",
-                    "entryAnnotation": "Sélection parmi les options proposées",
+                    "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2168,11 +2168,11 @@
                 "entry_index": 1,
                 "parent_index": 11,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’enregistrement du pro...",
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le numéro d’ordre d’enregistrement du produit ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2188,8 +2188,8 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante le produit (@TableRef :03)",
-                    "entryDescription": "Question avec référence à une table de données externe",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quel est le code et le libellé du produit ?/Sélectionner dans la liste déroulante le produit (@TableRef :03)",
+                    "entryDescription": "",
                     "entryAnnotation": "Référence à une table de données externe",
                     "caution": "",
                     "existingConditions": "Nécessite l'accès à une table de référence externe",
@@ -2206,7 +2206,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2222,11 +2222,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Papier",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?/Papier",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2237,11 +2237,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Intranet",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?/Intranet",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2252,11 +2252,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Internet",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?/Internet",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2267,11 +2267,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Clé USB",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?/Clé USB",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2282,11 +2282,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de pub.../Autre Support",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les produits obtenus (Décrivez-le ou les produits disponibles de manière précise) ?/Quels sont les supports de publication utilisés ?/Autre Support",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2300,7 +2300,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2314,7 +2314,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -2330,11 +2330,11 @@
                 "entry_index": 1,
                 "parent_index": 12,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le numéro d’ordre d’enregistrement du typ...",
+                "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le numéro d’ordre d’enregistrement du type de",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2350,11 +2350,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../1=Matérielles",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/1=Matérielles",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2365,11 +2365,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../2=Financières",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/2=Financières",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2380,11 +2380,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../3=Ressources humaines",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/3=Ressources humaines",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2395,11 +2395,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../4=Techniques",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/4=Techniques",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2410,11 +2410,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../5=Sécuritaires (Crises socio-politiques, insécurité, …)",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/5=Sécuritaires (Crises socio-politiques, insécurité, …)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2425,11 +2425,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../6=Sanitaires (Pandémie COVID 19, …)",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/6=Sanitaires (Pandémie COVID 19, …)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2440,11 +2440,11 @@
                   "metadata": {
                     "entry_index": 7,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficulté.../7=Autres type de difficultés",
+                    "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?/Quel est le type de difficultés ?/7=Autres type de difficultés",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2458,7 +2458,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2470,7 +2470,7 @@
             "parent_index": 4,
             "entryFullPath": "/Réalisation de l'activité/Quelles sont les difficultés rencontrées (plusieurs cases peuvent être cochées) ?",
             "entryDescription": "",
-            "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
+            "entryAnnotation": "",
             "caution": "",
             "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
@@ -2490,11 +2490,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Absence de financement",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Absence de financement",
                     "entryDescription": "",
                     "entryAnnotation": "",
-                    "caution": "Information financière - vérifier la précision",
-                    "existingConditions": "",
+                    "caution": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2505,11 +2505,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Non décaissement des fonds à temps",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Non décaissement des fonds à temps",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2520,10 +2520,10 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Non acquisition du complément du budget",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Non acquisition du complément du budget",
                     "entryDescription": "",
-                    "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
-                    "caution": "Information financière - vérifier la précision",
+                    "entryAnnotation": "",
+                    "caution": "",
                     "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
@@ -2535,11 +2535,11 @@
                   "metadata": {
                     "entry_index": 4,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Autres risques liés à la mobilisation des ressources financières",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Autres risques liés à la mobilisation des ressources financières",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2550,11 +2550,11 @@
                   "metadata": {
                     "entry_index": 5,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Insécurité et terrorisme",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Insécurité et terrorisme",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2565,11 +2565,11 @@
                   "metadata": {
                     "entry_index": 6,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Instabilité politique",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Instabilité politique",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2580,11 +2580,11 @@
                   "metadata": {
                     "entry_index": 7,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Baisse de la volonté politique du gouvernement de soutenir la statistique",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Baisse de la volonté politique du gouvernement de soutenir la statistique",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2595,11 +2595,11 @@
                   "metadata": {
                     "entry_index": 8,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Capacités inégales des ressources humaines",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Capacités inégales des ressources humaines",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2610,11 +2610,11 @@
                   "metadata": {
                     "entry_index": 9,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Ressources limitées en raison du recensement ou enquêtes d'envergures en cours",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2625,11 +2625,11 @@
                   "metadata": {
                     "entry_index": 10,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Corruption et népotisme",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Corruption et népotisme",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2640,11 +2640,11 @@
                   "metadata": {
                     "entry_index": 11,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Crise sanitaire (Maladie de la Covid-19, Maladie de la Dengue, ...)",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2655,11 +2655,11 @@
                   "metadata": {
                     "entry_index": 12,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Grèves répétitives",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Grèves répétitives",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2670,11 +2670,11 @@
                   "metadata": {
                     "entry_index": 13,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Coupures intempestives d'électricité",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Coupures intempestives d'électricité",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2685,11 +2685,11 @@
                   "metadata": {
                     "entry_index": 14,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Le plan de travail modifie les priorités définies dans le Schéma Directeur de la Statistique (SDS",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2700,11 +2700,11 @@
                   "metadata": {
                     "entry_index": 15,
                     "parent_index": 2,
-                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identif.../Autres risques potentiels à préciser",
+                    "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation/Autres risques potentiels à préciser",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2714,11 +2714,11 @@
                 "entry_index": 1,
                 "parent_index": 13,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la progr...",
+                "entryFullPath": "/Réalisation de l'activité/Quels sont les risques identifiés pendant la programmation de l’activité ?/Quels sont les risques identifiés pendant la programmation",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2732,7 +2732,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -2750,11 +2750,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Majeur",
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’atteinte des objectifs ?/Majeur",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2765,11 +2765,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Modéré",
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’atteinte des objectifs ?/Modéré",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2780,11 +2780,11 @@
                   "metadata": {
                     "entry_index": 3,
                     "parent_index": 1,
-                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’attei.../Mineur",
+                    "entryFullPath": "/Réalisation de l'activité/Quel a été l'effet sur l’atteinte des objectifs ?/Quel a été l'effet sur l’atteinte des objectifs ?/Mineur",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2798,7 +2798,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2812,7 +2812,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -2828,11 +2828,11 @@
                 "entry_index": 1,
                 "parent_index": 15,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quelles ont été les mesures de mitigation/atténuat...",
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quelles ont été les mesures de mitigation/atténuation ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2846,11 +2846,11 @@
                 "entry_index": 2,
                 "parent_index": 15,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le numéro d’ordre d’enregistrement de la ...",
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le numéro d’ordre d’enregistrement de la mesure de",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2864,11 +2864,11 @@
                 "entry_index": 3,
                 "parent_index": 15,
                 "table_reference": null,
-                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le libellé de la mesure de mitigation/att...",
+                "entryFullPath": "/Réalisation de l'activité/Quelles ont été les mesures de mitigation/atténuation ?/Quel est le libellé de la mesure de mitigation/atténuation ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2882,7 +2882,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -2896,7 +2896,7 @@
         "entryDescription": "",
         "entryAnnotation": "",
         "caution": "",
-        "existingConditions": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
@@ -2915,11 +2915,11 @@
                 "entry_index": 1,
                 "parent_index": 1,
                 "table_reference": null,
-                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le numéro d’ordre d’enregistrement de la ...",
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le numéro d’ordre d’enregistrement de la source de",
                 "entryDescription": "",
                 "entryAnnotation": "",
-                "caution": "Information financière - vérifier la précision",
-                "existingConditions": "",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2935,11 +2935,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 2,
-                    "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé.../Sélectionner dans la liste déroulante la source de financement",
+                    "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé de la source de financement ?/Sélectionner dans la liste déroulante la source de financement",
                     "entryDescription": "",
-                    "entryAnnotation": "Sélection parmi les options proposées",
-                    "caution": "Information financière - vérifier la précision",
-                    "existingConditions": "",
+                    "entryAnnotation": "",
+                    "caution": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -2949,11 +2949,11 @@
                 "entry_index": 2,
                 "parent_index": 1,
                 "table_reference": null,
-                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé de la source de fin...",
+                "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le code et le libellé de la source de financement ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
-                "caution": "Information financière - vérifier la précision",
-                "existingConditions": "",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -2969,8 +2969,8 @@
                 "table_reference": null,
                 "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant prévisionnel en FCFA ?",
                 "entryDescription": "",
-                "entryAnnotation": "Question conditionnelle basée sur une réponse précédente",
-                "caution": "Information financière - vérifier la précision",
+                "entryAnnotation": "",
+                "caution": "",
                 "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
@@ -2988,8 +2988,8 @@
                 "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant mobilisé en FCFA ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
-                "caution": "Information financière - vérifier la précision",
-                "existingConditions": "",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3006,8 +3006,8 @@
                 "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?/Quel est le montant dépensé en FCFA ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
-                "caution": "Information financière - vérifier la précision",
-                "existingConditions": "",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3020,8 +3020,8 @@
             "entryFullPath": "/Financement de l’activité/Quelles sont les sources de financement et le montant (Coût) de l’activité en Francs CFA ?",
             "entryDescription": "",
             "entryAnnotation": "",
-            "caution": "Information financière - vérifier la précision",
-            "existingConditions": "",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3034,8 +3034,8 @@
         "entryFullPath": "/Financement de l’activité",
         "entryDescription": "",
         "entryAnnotation": "",
-        "caution": "Information financière - vérifier la précision",
-        "existingConditions": "",
+        "caution": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
@@ -3055,10 +3055,10 @@
                 "parent_index": 1,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Prénom(s) et NOM de famille ?",
-                "entryDescription": "Information d'identification personnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3076,7 +3076,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3091,10 +3091,10 @@
                 "parent_index": 1,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement du Point focal/Titre",
-                "entryDescription": "Position ou fonction professionnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3112,7 +3112,7 @@
                 "entryDescription": "Adresse géographique avec coordonnées requises",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {
                   "required": true,
@@ -3138,7 +3138,7 @@
                 "entryDescription": "Information de contact",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3156,7 +3156,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3170,7 +3170,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3187,10 +3187,10 @@
                 "parent_index": 2,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Prénom(s) et NOM de famille",
-                "entryDescription": "Information d'identification personnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3208,7 +3208,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3223,10 +3223,10 @@
                 "parent_index": 2,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a rempli la Fiche/Titre",
-                "entryDescription": "Position ou fonction professionnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3244,7 +3244,7 @@
                 "entryDescription": "Adresse géographique avec coordonnées requises",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {
                   "required": true,
@@ -3270,7 +3270,7 @@
                 "entryDescription": "Information de contact",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3288,7 +3288,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3302,7 +3302,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3319,10 +3319,10 @@
                 "parent_index": 3,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Prénom(s) et NOM de famille",
-                "entryDescription": "Information d'identification personnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3340,7 +3340,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3355,10 +3355,10 @@
                 "parent_index": 3,
                 "table_reference": null,
                 "entryFullPath": "/Renseignements généraux/Renseignement de la Personne qui a fourni les informations/Titre",
-                "entryDescription": "Position ou fonction professionnelle",
+                "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3376,7 +3376,7 @@
                 "entryDescription": "Adresse géographique avec coordonnées requises",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "Coordonnées géographiques requises pour la localisation",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {
                   "required": true,
@@ -3402,7 +3402,7 @@
                 "entryDescription": "Information de contact",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3420,7 +3420,7 @@
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3434,7 +3434,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3452,11 +3452,11 @@
                   "metadata": {
                     "entry_index": 1,
                     "parent_index": 1,
-                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de rempli.../Complètement rempli",
+                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de remplissage du questionnaire ?/Complètement rempli",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -3467,11 +3467,11 @@
                   "metadata": {
                     "entry_index": 2,
                     "parent_index": 1,
-                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de rempli.../Partiellement rempli",
+                    "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de remplissage du questionnaire ?/Partiellement rempli",
                     "entryDescription": "",
                     "entryAnnotation": "",
                     "caution": "",
-                    "existingConditions": "",
+                    "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                     "JumpToEntry": "",
                     "coordinates": {}
                   }
@@ -3481,11 +3481,11 @@
                 "entry_index": 1,
                 "parent_index": 4,
                 "table_reference": null,
-                "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de remplissage du questionnai...",
+                "entryFullPath": "/Renseignements généraux/Quel est le résultat de remplissage du questionnaire ?/Quel est le résultat de remplissage du questionnaire ?",
                 "entryDescription": "",
                 "entryAnnotation": "",
                 "caution": "",
-                "existingConditions": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3499,7 +3499,7 @@
             "entryDescription": "",
             "entryAnnotation": "",
             "caution": "",
-            "existingConditions": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3518,8 +3518,8 @@
                 "entryFullPath": "/Renseignements généraux/Date de collecte/Quelle est la date de collecte ? (Jour/Mois/Année)",
                 "entryDescription": "",
                 "entryAnnotation": "",
-                "caution": "Vérifier la validité des dates saisies",
-                "existingConditions": "",
+                "caution": "",
+                "existingConditions": "Réponse conditionnelle basée sur une question précédente",
                 "JumpToEntry": "",
                 "coordinates": {}
               },
@@ -3532,8 +3532,8 @@
             "entryFullPath": "/Renseignements généraux/Date de collecte",
             "entryDescription": "",
             "entryAnnotation": "",
-            "caution": "Vérifier la validité des dates saisies",
-            "existingConditions": "",
+            "caution": "",
+            "existingConditions": "Réponse conditionnelle basée sur une question précédente",
             "JumpToEntry": "",
             "coordinates": {}
           }
@@ -3547,7 +3547,7 @@
         "entryDescription": "",
         "entryAnnotation": "",
         "caution": "",
-        "existingConditions": "",
+        "existingConditions": "Réponse conditionnelle basée sur une question précédente",
         "JumpToEntry": "",
         "coordinates": {}
       }
