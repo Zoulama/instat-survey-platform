@@ -62,3 +62,19 @@ class UserStats(BaseModel):
     users_by_role: dict
     active_users: int
     recent_logins: int
+
+
+class PasswordResetRequest(BaseModel):
+    """Schema for password reset request"""
+    generate_temp_password: bool = True
+    temp_password_length: Optional[int] = 12
+    send_email_notification: bool = False
+
+
+class PasswordResetResponse(BaseModel):
+    """Schema for password reset response"""
+    user_id: int
+    username: str
+    temp_password: str
+    reset_timestamp: str
+    message: str

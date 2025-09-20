@@ -4,10 +4,13 @@ User service for user management operations
 from typing import Optional, List, Dict, Any
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
+from datetime import datetime
+import secrets
+import string
 
 from src.infrastructure.database import models
 from src.infrastructure.auth.oauth2 import get_password_hash, verify_password
-from schemas.user_schemas import UserCreate, UserUpdate, UserResponse
+from schemas.user_schemas import UserCreate, UserUpdate, UserResponse, PasswordResetRequest, PasswordResetResponse
 
 
 class UserService:
@@ -214,6 +217,67 @@ class UserService:
         except Exception as e:
             self.db.rollback()
             raise ValueError(f"Failed to change password: {str(e)}")
+    
+    def reset_user_password(self, user_id: int, reset_request: PasswordResetRequest) -> PasswordResetResponse:
+        """Reset user password to a temporary password"""
+        user = self.db.query(models.User).filter(models.User.UserID == user_id).first()
+        if not user:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="User not found"
+            )
+        
+        # Generate temporary password
+        temp_password = self._generate_temp_password(reset_request.temp_password_length or 12)
+        
+        # Hash the temporary password
+        hashed_temp_password = get_password_hash(temp_password)
+        
+        try:
+            # Update user's password
+            user.HashedPassword = hashed_temp_password
+            self.db.commit()
+            self.db.refresh(user)
+            
+            # Create response
+            reset_timestamp = datetime.utcnow().isoformat()
+            
+            return PasswordResetResponse(
+                user_id=user.UserID,
+                username=user.Username,
+                temp_password=temp_password,
+                reset_timestamp=reset_timestamp,
+                message=f"Password successfully reset for user {user.Username}. Please provide the temporary password to the user."
+            )
+            
+        except Exception as e:
+            self.db.rollback()
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Failed to reset password: {str(e)}"
+            )
+    
+    def _generate_temp_password(self, length: int = 12) -> str:
+        """Generate a secure temporary password"""
+        # Include letters, digits, and some special characters
+        chars = string.ascii_letters + string.digits + "!@#$%&*"
+        
+        # Ensure at least one character from each category
+        password = [
+            secrets.choice(string.ascii_lowercase),
+            secrets.choice(string.ascii_uppercase),
+            secrets.choice(string.digits),
+            secrets.choice("!@#$%&*")
+        ]
+        
+        # Fill the rest randomly
+        for _ in range(length - 4):
+            password.append(secrets.choice(chars))
+        
+        # Shuffle the password list
+        secrets.SystemRandom().shuffle(password)
+        
+        return ''.join(password)
     
     def get_user_stats(self) -> Dict[str, Any]:
         """Get user statistics"""

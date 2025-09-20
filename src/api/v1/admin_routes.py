@@ -13,7 +13,7 @@ from src.services.user_service import UserService
 from schemas.audit_schemas import (
     AuditLogResponse, AuditLogFilter, AuditStatistics
 )
-from schemas.user_schemas import UserResponse, UserCreate, UserUpdate
+from schemas.user_schemas import UserResponse, UserCreate, UserUpdate, PasswordResetRequest, PasswordResetResponse
 from schemas.common_schemas import PaginatedResponse
 
 router = APIRouter(prefix="/v1/api/admin", tags=["Administration"])
@@ -340,6 +340,64 @@ async def update_user(
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=str(e)
+        )
+
+
+@router.post("/users/{user_id}/reset-password", response_model=PasswordResetResponse)
+async def reset_user_password(
+        user_id: int,
+        reset_request: PasswordResetRequest,
+        request: Request,
+        current_user: UserInToken = Depends(require_admin),
+        db: Session = Depends(get_db)
+):
+    """
+    Reset user password to a temporary password (Admin only)
+    """
+    audit_service = AuditService(db)
+    user_service = UserService(db)
+
+    try:
+        # Reset the password
+        reset_response = user_service.reset_user_password(user_id, reset_request)
+        
+        # Log successful password reset
+        audit_service.log_action(
+            user_id=current_user.user_id,
+            username=current_user.username,
+            action="RESET_USER_PASSWORD",
+            resource="users",
+            resource_id=str(user_id),
+            details={
+                "target_username": reset_response.username,
+                "reset_timestamp": reset_response.reset_timestamp,
+                "temp_password_length": reset_request.temp_password_length or 12
+            },
+            ip_address=request.client.host,
+            user_agent=request.headers.get("user-agent")
+        )
+        
+        return reset_response
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        # Log failed password reset
+        audit_service.log_action(
+            user_id=current_user.user_id,
+            username=current_user.username,
+            action="RESET_USER_PASSWORD",
+            resource="users",
+            resource_id=str(user_id),
+            details={"error": str(e)},
+            ip_address=request.client.host,
+            user_agent=request.headers.get("user-agent"),
+            success=False,
+            error_message=str(e)
+        )
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to reset password: {str(e)}"
         )
 
 
