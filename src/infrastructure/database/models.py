@@ -228,13 +228,17 @@ class User(Base):
     Email = Column(String(255), unique=True, nullable=False)
     HashedPassword = Column(String(255), nullable=False)
     Role = Column(String(50), nullable=False)
+    Status = Column(String(50), nullable=False, default="active")
+    Department = Column(String(100), nullable=True)
     
     def to_dict(self):
         return {
             'UserID': self.UserID,
             'Username': self.Username,
             'Email': self.Email,
-            'Role': self.Role
+            'Role': self.Role,
+            'Status': self.Status,
+            'Department': self.Department
         }
 
 

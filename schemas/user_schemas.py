@@ -10,6 +10,8 @@ class UserBase(BaseModel):
     username: str
     email: EmailStr
     role: str
+    status: str = "active"
+    department: Optional[str] = None
 
 
 class UserCreate(UserBase):
@@ -21,6 +23,8 @@ class UserUpdate(BaseModel):
     """Schema for updating user information"""
     email: Optional[EmailStr] = None
     role: Optional[str] = None
+    status: Optional[str] = None
+    department: Optional[str] = None
 
 
 class UserResponse(UserBase):

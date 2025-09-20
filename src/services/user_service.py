@@ -38,7 +38,9 @@ class UserService:
             Username=user_data.username,
             Email=user_data.email,
             HashedPassword=hashed_password,
-            Role=user_data.role
+            Role=user_data.role,
+            Status=user_data.status,
+            Department=user_data.department
         )
         
         try:
@@ -50,7 +52,9 @@ class UserService:
                 user_id=db_user.UserID,
                 username=db_user.Username,
                 email=db_user.Email,
-                role=db_user.Role
+                role=db_user.Role,
+                status=db_user.Status,
+                department=db_user.Department
             )
         except Exception as e:
             self.db.rollback()
@@ -69,7 +73,9 @@ class UserService:
             user_id=user.UserID,
             username=user.Username,
             email=user.Email,
-            role=user.Role
+            role=user.Role,
+            status=user.Status,
+            department=user.Department
         )
     
     def get_user_by_username(self, username: str) -> Optional[UserResponse]:
@@ -82,7 +88,9 @@ class UserService:
             user_id=user.UserID,
             username=user.Username,
             email=user.Email,
-            role=user.Role
+            role=user.Role,
+            status=user.Status,
+            department=user.Department
         )
     
     def list_users(self, skip: int = 0, limit: int = 100) -> List[UserResponse]:
@@ -93,7 +101,9 @@ class UserService:
                 user_id=user.UserID,
                 username=user.Username,
                 email=user.Email,
-                role=user.Role
+                role=user.Role,
+                status=user.Status,
+                department=user.Department
             )
             for user in users
         ]
@@ -143,6 +153,12 @@ class UserService:
         if user_update.role:
             user.Role = user_update.role
         
+        if user_update.status:
+            user.Status = user_update.status
+        
+        if user_update.department is not None:
+            user.Department = user_update.department
+        
         try:
             self.db.commit()
             self.db.refresh(user)
@@ -151,7 +167,9 @@ class UserService:
                 user_id=user.UserID,
                 username=user.Username,
                 email=user.Email,
-                role=user.Role
+                role=user.Role,
+                status=user.Status,
+                department=user.Department
             )
         except Exception as e:
             self.db.rollback()

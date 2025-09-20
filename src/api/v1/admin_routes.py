@@ -193,7 +193,9 @@ async def get_all_users(
             user_id=user.UserID,
             username=user.Username,
             email=user.Email,
-            role=user.Role
+            role=user.Role,
+            status=user.Status,
+            department=user.Department
         )
         for user in users
     ]
@@ -247,7 +249,9 @@ async def create_user(
             user_id=new_user.user_id,
             username=new_user.username,
             email=new_user.email,
-            role=new_user.role
+            role=new_user.role,
+            status=new_user.status,
+            department=new_user.department
         )
 
     except Exception as e:
@@ -314,7 +318,9 @@ async def update_user(
             user_id=updated_user.user_id,
             username=updated_user.username,
             email=updated_user.email,
-            role=updated_user.role
+            role=updated_user.role,
+            status=updated_user.status,
+            department=updated_user.department
         )
 
     except Exception as e:
