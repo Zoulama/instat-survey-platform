@@ -17,6 +17,10 @@ CREATE TABLE IF NOT EXISTS "Users" (
     "Email" VARCHAR(255) UNIQUE NOT NULL,
     "HashedPassword" VARCHAR(255) NOT NULL,
     "Role" VARCHAR(50) NOT NULL DEFAULT 'readonly',
+    "Status" VARCHAR(50) NOT NULL DEFAULT 'active',
+    "Department" VARCHAR(100),
+    "created_at" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     "IsActive" BOOLEAN DEFAULT TRUE,
     "CreatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     "UpdatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -504,6 +508,11 @@ CREATE INDEX IF NOT EXISTS idx_instat_surveys_category ON "INSTATSurveys" ("Cate
 CREATE INDEX IF NOT EXISTS idx_instat_surveys_status ON "INSTATSurveys" ("Status");
 CREATE INDEX IF NOT EXISTS idx_templates_domain_category ON "SurveyTemplates" ("Domain", "Category");
 
+-- Users indexes
+CREATE INDEX IF NOT EXISTS idx_users_status ON "Users" ("Status");
+CREATE INDEX IF NOT EXISTS idx_users_role ON "Users" ("Role");
+CREATE INDEX IF NOT EXISTS idx_users_department ON "Users" ("Department");
+
 -- Mali reference data indexes
 CREATE INDEX IF NOT EXISTS idx_mali_regions_code ON mali_regions (region_code);
 CREATE INDEX IF NOT EXISTS idx_mali_cercles_code ON mali_cercles (cercle_code);
@@ -567,8 +576,8 @@ CREATE OR REPLACE TRIGGER update_mali_cercles_updated_at
 -- =====================================================================
 
 -- Insert initial admin user if not exists (password: admin123!)
-INSERT INTO "Users" ("Username", "Email", "Role", "HashedPassword", "CreatedAt")
-SELECT 'admin', 'admin@instat.gov.ml', 'admin', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj0kzOcQPQvO', CURRENT_TIMESTAMP
+INSERT INTO "Users" ("Username", "Email", "Role", "HashedPassword", "Status", "Department", "CreatedAt")
+SELECT 'admin', 'admin@instat.gov.ml', 'admin', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj0kzOcQPQvO', 'active', 'Direction Générale', CURRENT_TIMESTAMP
 WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Username" = 'admin');
 
 -- Insert default roles

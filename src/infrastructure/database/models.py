@@ -230,6 +230,8 @@ class User(Base):
     Role = Column(String(50), nullable=False)
     Status = Column(String(50), nullable=False, default="active")
     Department = Column(String(100), nullable=True)
+    CreatedAt = Column(DateTime, nullable=False, default=datetime.utcnow)
+    UpdatedAt = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
     
     def to_dict(self):
         return {
@@ -238,7 +240,9 @@ class User(Base):
             'Email': self.Email,
             'Role': self.Role,
             'Status': self.Status,
-            'Department': self.Department
+            'Department': self.Department,
+            'CreatedAt': self.CreatedAt.isoformat() if self.CreatedAt else None,
+            'UpdatedAt': self.UpdatedAt.isoformat() if self.UpdatedAt else None
         }
 
 

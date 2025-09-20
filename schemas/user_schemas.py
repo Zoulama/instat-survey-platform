@@ -2,6 +2,7 @@
 User-related Pydantic schemas for API request/response models
 """
 from typing import Optional, List
+from datetime import datetime
 from pydantic import BaseModel, EmailStr
 
 
@@ -30,6 +31,8 @@ class UserUpdate(BaseModel):
 class UserResponse(UserBase):
     """Schema for user response (without password)"""
     user_id: int
+    CreatedAt: Optional[datetime] = None
+    UpdatedAt: Optional[datetime] = None
     
     class Config:
         from_attributes = True
@@ -39,6 +42,8 @@ class UserProfile(UserBase):
     """Schema for user profile information"""
     user_id: int
     scopes: List[str]
+    CreatedAt: Optional[datetime] = None
+    UpdatedAt: Optional[datetime] = None
     
     class Config:
         from_attributes = True

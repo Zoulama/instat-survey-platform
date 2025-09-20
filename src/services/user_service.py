@@ -57,7 +57,9 @@ class UserService:
                 email=db_user.Email,
                 role=db_user.Role,
                 status=db_user.Status,
-                department=db_user.Department
+                department=db_user.Department,
+                CreatedAt=db_user.CreatedAt,
+                UpdatedAt=db_user.UpdatedAt
             )
         except Exception as e:
             self.db.rollback()
@@ -78,7 +80,9 @@ class UserService:
             email=user.Email,
             role=user.Role,
             status=user.Status,
-            department=user.Department
+            department=user.Department,
+            CreatedAt=user.CreatedAt,
+            UpdatedAt=user.UpdatedAt
         )
     
     def get_user_by_username(self, username: str) -> Optional[UserResponse]:
@@ -93,7 +97,9 @@ class UserService:
             email=user.Email,
             role=user.Role,
             status=user.Status,
-            department=user.Department
+            department=user.Department,
+            CreatedAt=user.CreatedAt,
+            UpdatedAt=user.UpdatedAt
         )
     
     def list_users(self, skip: int = 0, limit: int = 100) -> List[UserResponse]:
@@ -106,7 +112,9 @@ class UserService:
                 email=user.Email,
                 role=user.Role,
                 status=user.Status,
-                department=user.Department
+                department=user.Department,
+                CreatedAt=user.CreatedAt,
+                UpdatedAt=user.UpdatedAt
             )
             for user in users
         ]
@@ -172,7 +180,9 @@ class UserService:
                 email=user.Email,
                 role=user.Role,
                 status=user.Status,
-                department=user.Department
+                department=user.Department,
+                CreatedAt=user.CreatedAt,
+                UpdatedAt=user.UpdatedAt
             )
         except Exception as e:
             self.db.rollback()

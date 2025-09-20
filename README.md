@@ -36,31 +36,64 @@ For rapid deployment with complete database setup and Mali reference data:
 git clone https://github.com/your-org/instat-survey-platform.git
 cd instat-survey-platform
 
-# Build and start all services
-docker compose down && docker compose build app && docker compose up -d
+# Clean environment and build services
+make deploy-fresh
 
-# Wait for services to start, then set up database
-sleep 10 && DOCKER_CONTAINER=instat-survey-platform-db-1 ./scripts/setup_database.sh
+# Alternative manual deployment:
+# docker compose down && docker compose build --no-cache && docker compose up -d
+
+# Wait for services to be ready (about 30 seconds)
+sleep 30
+
+# Verify services are running
+docker compose ps
+
+# Load Mali reference data
+docker compose exec app python -m scripts.load_mali_reference_data
 
 # Create admin user with proper password hash
-NEW_HASH=$(docker exec -i instat-survey-platform-app-1 python3 -c "
+NEW_HASH=$(docker compose exec app python3 -c "
 import bcrypt
-password = 'admin123!'
+password = 'admin123'
 password_bytes = password.encode('utf-8')
 salt = bcrypt.gensalt(rounds=12)
 hashed = bcrypt.hashpw(password_bytes, salt)
 print(hashed.decode('utf-8'))
 ")
-docker exec -i instat-survey-platform-db-1 psql -U postgres -d instat_surveys -c "INSERT INTO \"Users\" (\"Username\", \"Email\", \"Role\", \"HashedPassword\") VALUES ('admin', 'admin@instat.gov.ml', 'admin', '$NEW_HASH');"
 
-# Verify database setup
-DOCKER_CONTAINER=instat-survey-platform-db-1 ./scripts/setup_database.sh --verify
+docker compose exec db psql -U postgres -d instat_surveys -c "
+INSERT INTO \"Users\" (\"Username\", \"Email\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
+VALUES 
+('admin', 'admin@instat.gov.ml', '$NEW_HASH', 'admin', 'Actif', 'Direction Générale', NOW(), NOW())
+ON CONFLICT (\"Username\") DO NOTHING;
+"
+
+# Verify admin user was created
+docker compose exec db psql -U postgres -d instat_surveys -c "SELECT \"Username\", \"Role\", \"Status\", \"Department\" FROM \"Users\" WHERE \"Username\" = 'admin';"
 ```
 
 **Access the platform:**
 - Application: http://localhost:8000
 - API Docs: http://localhost:8000/docs
-- Admin Login: `username=admin`, `password=admin123!`
+- Admin Login: `username=admin`, `password=admin123`
+
+**Test authentication:**
+```bash
+# Get authentication token
+curl -X POST "http://localhost:8000/v1/api/auth/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "username=admin&password=admin123"
+
+# Expected successful response:
+# {"access_token":"eyJ...","token_type":"bearer","expires_in":86400,"user":{...}}
+
+# Test authenticated endpoint with the token
+# Replace YOUR_TOKEN with the actual token from the response above
+curl -X GET "http://localhost:8000/v1/api/admin/audit-logs" \
+  -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+**Note:** The application uses bcrypt for password hashing. If you encounter "hash could not be identified" errors, ensure you're using the bcrypt hash generation method shown above, not plain text or other hash formats.
 
 ## Features
 
@@ -289,20 +322,36 @@ SELECT 'Table Reference Mappings', COUNT(*) FROM table_reference_mappings;
 
 ```bash
 # Test the OAuth2 authentication system
-# The admin user is automatically created by the migration
-# Default credentials: username=admin, password=admin123!
+# Create the admin user first (if not done during deployment)
+NEW_HASH=$(docker compose exec app python3 -c "
+import bcrypt
+password = 'admin123'
+password_bytes = password.encode('utf-8')
+salt = bcrypt.gensalt(rounds=12)
+hashed = bcrypt.hashpw(password_bytes, salt)
+print(hashed.decode('utf-8'))
+")
+
+docker compose exec db psql -U postgres -d instat_surveys -c "
+INSERT INTO \"Users\" (\"Username\", \"Email\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
+VALUES 
+('admin', 'admin@instat.gov.ml', '$NEW_HASH', 'admin', 'Actif', 'Direction Générale', NOW(), NOW())
+ON CONFLICT (\"Username\") DO NOTHING;
+"
+
+# Default credentials: username=admin, password=admin123
 
 # Get authentication token
-curl -X POST "http://localhost:8000/api/v1/auth/token" \
+curl -X POST "http://localhost:8000/v1/api/auth/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "username=admin&password=admin123!"
+  -d "username=admin&password=admin123"
 
 # Test authenticated endpoint (replace YOUR_TOKEN with the token from above)
-curl -X GET "http://localhost:8000/api/v1/admin/audit-logs" \
+curl -X GET "http://localhost:8000/v1/api/admin/audit-logs" \
   -H "Authorization: Bearer YOUR_TOKEN"
 
 # Test Mali reference data endpoints
-curl -X GET "http://localhost:8000/api/v1/mali-reference/regions" \
+curl -X GET "http://localhost:8000/api/v1/mali-references/regions" \
   -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
