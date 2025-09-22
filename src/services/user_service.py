@@ -21,26 +21,28 @@ class UserService:
     
     def create_user(self, user_data: UserCreate) -> UserResponse:
         """Create a new user"""
-        # Check if user already exists
+        # Check if user already exists (email serves as username)
         existing_user = self.db.query(models.User).filter(
-            (models.User.Username == user_data.username) |
+            (models.User.Username == user_data.email) |
             (models.User.Email == user_data.email)
         ).first()
         
         if existing_user:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail="User with this username or email already exists"
+                detail="User with this email already exists"
             )
         
         # Hash the password
         hashed_password = get_password_hash(user_data.password)
         
-        # Create new user
+        # Create new user (username is the email)
         db_user = models.User(
-            Username=user_data.username,
+            Username=user_data.email,
             Email=user_data.email,
             HashedPassword=hashed_password,
+            FirstName=user_data.first_name,
+            LastName=user_data.last_name,
             Role=user_data.role,
             Status=user_data.status,
             Department=user_data.department
@@ -55,6 +57,8 @@ class UserService:
                 user_id=db_user.UserID,
                 username=db_user.Username,
                 email=db_user.Email,
+                first_name=db_user.FirstName,
+                last_name=db_user.LastName,
                 role=db_user.Role,
                 status=db_user.Status,
                 department=db_user.Department,
@@ -78,6 +82,8 @@ class UserService:
             user_id=user.UserID,
             username=user.Username,
             email=user.Email,
+            first_name=user.FirstName,
+            last_name=user.LastName,
             role=user.Role,
             status=user.Status,
             department=user.Department,
@@ -95,6 +101,8 @@ class UserService:
             user_id=user.UserID,
             username=user.Username,
             email=user.Email,
+            first_name=user.FirstName,
+            last_name=user.LastName,
             role=user.Role,
             status=user.Status,
             department=user.Department,
@@ -110,6 +118,8 @@ class UserService:
                 user_id=user.UserID,
                 username=user.Username,
                 email=user.Email,
+                first_name=user.FirstName,
+                last_name=user.LastName,
                 role=user.Role,
                 status=user.Status,
                 department=user.Department,
@@ -160,6 +170,13 @@ class UserService:
                     detail="Email already taken by another user"
                 )
             user.Email = user_update.email
+            user.Username = user_update.email  # Username is email
+        
+        if user_update.first_name is not None:
+            user.FirstName = user_update.first_name
+        
+        if user_update.last_name is not None:
+            user.LastName = user_update.last_name
         
         if user_update.role:
             user.Role = user_update.role
@@ -178,6 +195,8 @@ class UserService:
                 user_id=user.UserID,
                 username=user.Username,
                 email=user.Email,
+                first_name=user.FirstName,
+                last_name=user.LastName,
                 role=user.Role,
                 status=user.Status,
                 department=user.Department,
@@ -255,9 +274,11 @@ class UserService:
             return PasswordResetResponse(
                 user_id=user.UserID,
                 username=user.Username,
+                first_name=user.FirstName,
+                last_name=user.LastName,
                 temp_password=temp_password,
                 reset_timestamp=reset_timestamp,
-                message=f"Password successfully reset for user {user.Username}. Please provide the temporary password to the user."
+                message=f"Password successfully reset for user {user.FirstName} {user.LastName} ({user.Username}). Please provide the temporary password to the user."
             )
             
         except Exception as e:

@@ -8,8 +8,9 @@ from pydantic import BaseModel, EmailStr
 
 class UserBase(BaseModel):
     """Base user schema with common fields"""
-    username: str
-    email: EmailStr
+    email: EmailStr  # Email serves as username
+    first_name: str
+    last_name: str
     role: str
     status: str = "active"
     department: Optional[str] = None
@@ -23,14 +24,23 @@ class UserCreate(UserBase):
 class UserUpdate(BaseModel):
     """Schema for updating user information"""
     email: Optional[EmailStr] = None
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
     role: Optional[str] = None
     status: Optional[str] = None
     department: Optional[str] = None
 
 
-class UserResponse(UserBase):
+class UserResponse(BaseModel):
     """Schema for user response (without password)"""
     user_id: int
+    username: str  # Email that serves as username
+    email: EmailStr
+    first_name: str
+    last_name: str
+    role: str
+    status: str = "active"
+    department: Optional[str] = None
     CreatedAt: Optional[datetime] = None
     UpdatedAt: Optional[datetime] = None
     
@@ -38,9 +48,16 @@ class UserResponse(UserBase):
         from_attributes = True
 
 
-class UserProfile(UserBase):
+class UserProfile(BaseModel):
     """Schema for user profile information"""
     user_id: int
+    username: str  # Email that serves as username
+    email: EmailStr
+    first_name: str
+    last_name: str
+    role: str
+    status: str = "active"
+    department: Optional[str] = None
     scopes: List[str]
     CreatedAt: Optional[datetime] = None
     UpdatedAt: Optional[datetime] = None
@@ -57,7 +74,7 @@ class PasswordChange(BaseModel):
 
 class UserLogin(BaseModel):
     """Schema for user login request"""
-    username: str
+    username: str  # Email address used as username
     password: str
 
 
@@ -80,6 +97,8 @@ class PasswordResetResponse(BaseModel):
     """Schema for password reset response"""
     user_id: int
     username: str
+    first_name: str
+    last_name: str
     temp_password: str
     reset_timestamp: str
     message: str

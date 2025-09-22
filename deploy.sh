@@ -279,9 +279,9 @@ verify_deployment() {
 
     # Test authentication
     print_info "Testing authentication system..."
-    TOKEN=$(curl -s -X POST "http://localhost:8000/api/v1/auth/token" \
+    TOKEN=$(curl -s -X POST "http://localhost:8000/v1/api/auth/token" \
         -H "Content-Type: application/x-www-form-urlencoded" \
-        -d "username=admin&password=admin123!" | \
+        -d "username=admin@instat.gov.ml&password=admin123" | \
         python3 -c "import sys, json; print(json.load(sys.stdin)['access_token'])" 2>/dev/null || echo "")
 
     if [ -n "$TOKEN" ]; then
@@ -322,8 +322,8 @@ show_summary() {
     fi
     echo
     echo "🔐 Default Credentials:"
-    echo "  • Username: admin"
-    echo "  • Password: admin123!"
+    echo "  • Username: admin@instat.gov.ml"
+    echo "  • Password: admin123"
     echo
     echo "📝 Available API Endpoints:"
     echo "  • Authentication: POST /api/v1/auth/token"

@@ -231,7 +231,7 @@ template-test:
 
 auth-test:
 	@echo "$(COLOR_BLUE)Testing authentication system...$(COLOR_NC)"
-	@docker compose -f $(COMPOSE_FILE) exec $(APP_CONTAINER) curl -s -X POST http://localhost:8000/v1/auth/token -d "username=admin&password=password" | grep -q "access_token" && \
+	@docker compose -f $(COMPOSE_FILE) exec $(APP_CONTAINER) curl -s -X POST http://localhost:8000/v1/api/auth/token -d "username=admin@instat.gov.ml&password=admin123" | grep -q "access_token" && \
 	echo "$(COLOR_GREEN)✅ Authentication system working$(COLOR_NC)" || echo "$(COLOR_RED)❌ Authentication system failed$(COLOR_NC)"
 
 # =====================================================================

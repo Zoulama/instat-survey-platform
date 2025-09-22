@@ -61,6 +61,8 @@ async def login_for_access_token(
             "UserID": user.UserID,
             "Username": user.Username,
             "Email": user.Email,
+            "FirstName": user.FirstName,
+            "LastName": user.LastName,
             "Role": user.Role,
             "Permissions": user_scopes
         }
@@ -77,8 +79,12 @@ async def read_users_me(
     return UserProfile(
         username=current_user.username,
         email=current_user.email,
+        first_name=current_user.first_name,
+        last_name=current_user.last_name,
         role=current_user.role,
         user_id=current_user.user_id,
+        status=current_user.status,
+        department=current_user.department,
         scopes=current_user.scopes
     )
 
@@ -122,6 +128,8 @@ async def refresh_access_token(
             "UserID": user.UserID,
             "Username": user.Username,
             "Email": user.Email,
+            "FirstName": user.FirstName,
+            "LastName": user.LastName,
             "Role": user.Role,
             "Permissions": user_scopes
         }

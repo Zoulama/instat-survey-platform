@@ -224,9 +224,11 @@ class User(Base):
     __table_args__ = {'schema': 'public'}
     
     UserID = Column(Integer, primary_key=True, index=True)
-    Username = Column(String(255), unique=True, nullable=False)
+    Username = Column(String(255), unique=True, nullable=False)  # This will be the email
     Email = Column(String(255), unique=True, nullable=False)
     HashedPassword = Column(String(255), nullable=False)
+    FirstName = Column(String(100), nullable=False, default="")
+    LastName = Column(String(100), nullable=False, default="")
     Role = Column(String(50), nullable=False)
     Status = Column(String(50), nullable=False, default="active")
     Department = Column(String(100), nullable=True)
@@ -238,6 +240,8 @@ class User(Base):
             'UserID': self.UserID,
             'Username': self.Username,
             'Email': self.Email,
+            'FirstName': self.FirstName,
+            'LastName': self.LastName,
             'Role': self.Role,
             'Status': self.Status,
             'Department': self.Department,

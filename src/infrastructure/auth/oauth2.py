@@ -63,7 +63,11 @@ class TokenData(BaseModel):
 class UserInToken(BaseModel):
     username: str
     email: str
+    first_name: str
+    last_name: str
     role: str
+    status: str
+    department: Optional[str]
     user_id: int
     scopes: list[str]
 
@@ -196,7 +200,11 @@ async def get_current_user(
     return UserInToken(
         username=user.Username,
         email=user.Email,
+        first_name=user.FirstName,
+        last_name=user.LastName,
         role=user.Role,
+        status=user.Status,
+        department=user.Department,
         user_id=user.UserID,
         scopes=user_scopes
     )

@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS "Users" (
     "Username" VARCHAR(255) UNIQUE NOT NULL,
     "Email" VARCHAR(255) UNIQUE NOT NULL,
     "HashedPassword" VARCHAR(255) NOT NULL,
+    "FirstName" VARCHAR(100) NOT NULL DEFAULT '',
+    "LastName" VARCHAR(100) NOT NULL DEFAULT '',
     "Role" VARCHAR(50) NOT NULL DEFAULT 'readonly',
     "Status" VARCHAR(50) NOT NULL DEFAULT 'active',
     "Department" VARCHAR(100),
@@ -576,9 +578,9 @@ CREATE OR REPLACE TRIGGER update_mali_cercles_updated_at
 -- =====================================================================
 
 -- Insert initial admin user if not exists (password: admin123!)
-INSERT INTO "Users" ("Username", "Email", "Role", "HashedPassword", "Status", "Department", "CreatedAt")
-SELECT 'admin', 'admin@instat.gov.ml', 'admin', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj0kzOcQPQvO', 'active', 'Direction Générale', CURRENT_TIMESTAMP
-WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Username" = 'admin');
+INSERT INTO "Users" ("Username", "Email", "FirstName", "LastName", "Role", "HashedPassword", "Status", "Department", "CreatedAt")
+SELECT 'admin@instat.gov.ml', 'admin@instat.gov.ml', 'Admin', 'User', 'admin', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj0kzOcQPQvO', 'active', 'IT', CURRENT_TIMESTAMP
+WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Username" = 'admin@instat.gov.ml');
 
 -- Insert default roles
 INSERT INTO "Roles" ("RoleName", "Description", "Permissions") VALUES

@@ -51,7 +51,7 @@ docker compose ps
 # Load Mali reference data
 docker compose exec app python -m scripts.load_mali_reference_data
 
-# Create admin user with proper password hash
+# Create admin user with proper password hash (email serves as username)
 NEW_HASH=$(docker compose exec app python3 -c "
 import bcrypt
 password = 'admin123'
@@ -62,27 +62,27 @@ print(hashed.decode('utf-8'))
 ")
 
 docker compose exec db psql -U postgres -d instat_surveys -c "
-INSERT INTO \"Users\" (\"Username\", \"Email\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
+INSERT INTO \"Users\" (\"Username\", \"Email\", \"FirstName\", \"LastName\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
 VALUES 
-('admin', 'admin@instat.gov.ml', '$NEW_HASH', 'admin', 'Actif', 'Direction Générale', NOW(), NOW())
+('admin@instat.gov.ml', 'admin@instat.gov.ml', 'Admin', 'User', '$NEW_HASH', 'admin', 'active', 'IT', NOW(), NOW())
 ON CONFLICT (\"Username\") DO NOTHING;
 "
 
 # Verify admin user was created
-docker compose exec db psql -U postgres -d instat_surveys -c "SELECT \"Username\", \"Role\", \"Status\", \"Department\" FROM \"Users\" WHERE \"Username\" = 'admin';"
+docker compose exec db psql -U postgres -d instat_surveys -c "SELECT \"Username\", \"FirstName\", \"LastName\", \"Role\", \"Status\", \"Department\" FROM \"Users\" WHERE \"Username\" = 'admin@instat.gov.ml';"
 ```
 
 **Access the platform:**
 - Application: http://localhost:8000
 - API Docs: http://localhost:8000/docs
-- Admin Login: `username=admin`, `password=admin123`
+- Admin Login: `username=admin@instat.gov.ml`, `password=admin123`
 
 **Test authentication:**
 ```bash
-# Get authentication token
+# Get authentication token (using email as username)
 curl -X POST "http://localhost:8000/v1/api/auth/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "username=admin&password=admin123"
+  -d "username=admin@instat.gov.ml&password=admin123"
 
 # Expected successful response:
 # {"access_token":"eyJ...","token_type":"bearer","expires_in":86400,"user":{...}}
@@ -333,18 +333,18 @@ print(hashed.decode('utf-8'))
 ")
 
 docker compose exec db psql -U postgres -d instat_surveys -c "
-INSERT INTO \"Users\" (\"Username\", \"Email\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
+INSERT INTO \"Users\" (\"Username\", \"Email\", \"FirstName\", \"LastName\", \"HashedPassword\", \"Role\", \"Status\", \"Department\", \"CreatedAt\", \"UpdatedAt\") 
 VALUES 
-('admin', 'admin@instat.gov.ml', '$NEW_HASH', 'admin', 'Actif', 'Direction Générale', NOW(), NOW())
+('admin@instat.gov.ml', 'admin@instat.gov.ml', 'Admin', 'User', '$NEW_HASH', 'admin', 'active', 'IT', NOW(), NOW())
 ON CONFLICT (\"Username\") DO NOTHING;
 "
 
-# Default credentials: username=admin, password=admin123
+# Default credentials: username=admin@instat.gov.ml, password=admin123
 
-# Get authentication token
+# Get authentication token (using email as username)
 curl -X POST "http://localhost:8000/v1/api/auth/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "username=admin&password=admin123"
+  -d "username=admin@instat.gov.ml&password=admin123"
 
 # Test authenticated endpoint (replace YOUR_TOKEN with the token from above)
 curl -X GET "http://localhost:8000/v1/api/admin/audit-logs" \
