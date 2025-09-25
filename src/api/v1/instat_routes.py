@@ -17,6 +17,10 @@ from schemas.instat_domains import (
     SurveyMetricsResponse, DataExportCreate, DataExportResponse,
     SurveyDomain, SurveyCategory, WorkflowStatus, ReportingCycle
 )
+from schemas.survey_extensions import (
+    TemplateActions, TemplateDuplicateRequest, TemplateDuplicateResult,
+    TemplatePreview, FormSection, FormField
+)
 from schemas.responses import (
     BaseResponse, PaginatedResponse, DeleteResponse
 )
@@ -417,3 +421,176 @@ async def get_dashboard_summary(
             "last_updated": recent_updated_response.data[:5]
         }
     }
+
+
+# Missing Template Endpoints
+@router.put(
+    "/templates/{template_id}",
+    response_model=BaseResponse[SurveyTemplateResponse],
+    responses={404: {"model": NotFoundErrorResponse}},
+    summary="Update Survey Template",
+    description="Update an existing survey template"
+)
+async def update_survey_template(
+    template_id: int,
+    template_update: Dict[str, Any],
+    current_user: UserInToken = require_scopes("templates:write"),
+    service: TemplateService = Depends(get_template_service)
+) -> BaseResponse[SurveyTemplateResponse]:
+    """Update survey template."""
+    template = service.update_template(template_id, template_update)
+    if not template:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Template not found"
+        )
+    
+    return BaseResponse[SurveyTemplateResponse](
+        success=True,
+        message="Template updated successfully",
+        data=template
+    )
+
+
+@router.get(
+    "/templates/{template_id}/actions",
+    response_model=BaseResponse[TemplateActions],
+    responses={404: {"model": NotFoundErrorResponse}},
+    summary="Get Template Actions",
+    description="Get available actions for a template based on user permissions"
+)
+async def get_template_actions(
+    template_id: int,
+    current_user: UserInToken = require_scopes("templates:read"),
+    service: TemplateService = Depends(get_template_service)
+) -> BaseResponse[TemplateActions]:
+    """Get available actions for a template."""
+    template = service.get_template(template_id)
+    if not template:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Template not found"
+        )
+    
+    # Determine available actions based on user permissions
+    user_permissions = current_user.scopes
+    available_actions = []
+    
+    if "templates:write" in user_permissions:
+        available_actions.extend([
+            {
+                "action_id": "edit",
+                "action_name": "Edit Template",
+                "description": "Modify template structure and content",
+                "requires_permission": "templates:write",
+                "is_available": True
+            },
+            {
+                "action_id": "duplicate",
+                "action_name": "Duplicate Template",
+                "description": "Create a copy of this template",
+                "requires_permission": "templates:write",
+                "is_available": True
+            }
+        ])
+    
+    if "templates:delete" in user_permissions or "admin" in user_permissions:
+        available_actions.append({
+            "action_id": "delete",
+            "action_name": "Delete Template",
+            "description": "Permanently delete this template",
+            "requires_permission": "templates:delete",
+            "is_available": True
+        })
+    
+    if "surveys:write" in user_permissions:
+        available_actions.append({
+            "action_id": "create_survey",
+            "action_name": "Create Survey from Template",
+            "description": "Create a new survey using this template",
+            "requires_permission": "surveys:write",
+            "is_available": True
+        })
+    
+    available_actions.append({
+        "action_id": "preview",
+        "action_name": "Preview Template",
+        "description": "Preview how this template will look as a form",
+        "requires_permission": "templates:read",
+        "is_available": True
+    })
+    
+    actions_data = TemplateActions(
+        template_id=template_id,
+        template_name=template.TemplateName,
+        actions=available_actions,
+        user_permissions=user_permissions
+    )
+    
+    return BaseResponse[TemplateActions](
+        success=True,
+        message="Template actions retrieved successfully",
+        data=actions_data
+    )
+
+
+@router.post(
+    "/templates/{template_id}/duplicate",
+    response_model=BaseResponse[TemplateDuplicateResult],
+    status_code=status.HTTP_201_CREATED,
+    responses={404: {"model": NotFoundErrorResponse}},
+    summary="Duplicate Template",
+    description="Create a copy of an existing template"
+)
+async def duplicate_template(
+    template_id: int,
+    duplicate_request: TemplateDuplicateRequest,
+    current_user: UserInToken = require_scopes("templates:write"),
+    service: TemplateService = Depends(get_template_service)
+) -> BaseResponse[TemplateDuplicateResult]:
+    """Duplicate an existing template."""
+    original_template = service.get_template(template_id)
+    if not original_template:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Template not found"
+        )
+    
+    # Create duplicate template
+    duplicate_result = service.duplicate_template(template_id, duplicate_request, current_user.username)
+    
+    return BaseResponse[TemplateDuplicateResult](
+        success=True,
+        message="Template duplicated successfully",
+        data=duplicate_result
+    )
+
+
+@router.get(
+    "/templates/{template_id}/preview",
+    response_model=BaseResponse[TemplatePreview],
+    responses={404: {"model": NotFoundErrorResponse}},
+    summary="Preview Template",
+    description="Get template preview for form rendering"
+)
+async def preview_template(
+    template_id: int,
+    current_user: UserInToken = require_scopes("templates:read"),
+    service: TemplateService = Depends(get_template_service)
+) -> BaseResponse[TemplatePreview]:
+    """Get template preview for form rendering."""
+    template = service.get_template(template_id)
+    if not template:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Template not found"
+        )
+    
+    # Convert template to preview format
+    preview = service.generate_template_preview(template_id)
+    
+    return BaseResponse[TemplatePreview](
+        success=True,
+        message="Template preview generated successfully",
+        data=preview
+    )

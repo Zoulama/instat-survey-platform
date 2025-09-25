@@ -72,14 +72,15 @@ class FileUploadResponse(BaseModel):
     created_survey: Optional[Dict[str, Any]] = None
     created_template: Optional[Dict[str, Any]] = None
     issues: Optional[List[str]] = None
+    upload_info: Optional[Dict[str, Any]] = None
     timestamp: Optional[datetime] = None
     
     class Config:
         json_schema_extra = {
             "example": {
                 "success": True,
-                "message": "File uploaded, parsed, and survey created successfully",
-                "file_path": "/uploads/survey.xlsx",
+                "message": "File 'survey_20240925_152348.xlsx' uploaded at 2024-09-25 15:23:48 UTC, parsed, and survey created successfully",
+                "file_path": "/uploads/survey_20240925_152348.xlsx",
                 "survey_structure": {
                     "title": "Sample Survey",
                     "description": "A sample survey",
@@ -90,7 +91,15 @@ class FileUploadResponse(BaseModel):
                     "Title": "Sample Survey",
                     "Status": "Draft"
                 },
-                "timestamp": "2025-08-05T21:23:40Z"
+                "upload_info": {
+                    "original_filename": "survey.xlsx",
+                    "timestamped_filename": "survey_20240925_152348.xlsx",
+                    "upload_timestamp": "2024-09-25T15:23:48.123456",
+                    "uploaded_by": "admin@instat.gov.ml",
+                    "file_size": 102400,
+                    "file_path": "/uploads/survey_20240925_152348.xlsx"
+                },
+                "timestamp": "2024-09-25T15:23:48.123456Z"
             }
         }
 

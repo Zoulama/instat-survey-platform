@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import config
 from src.api.v1 import (
     surveys, file_upload, instat_routes, mali_reference_routes,
-    auth_routes, admin_routes
+    auth_routes, admin_routes, survey_responses, survey_management, upload_tracking
 )
 from src.infrastructure.database.connection import db_manager
 from src.utils.exception_handler import (
@@ -63,6 +63,9 @@ def get_application():
     _app.include_router(file_upload.router)
     _app.include_router(instat_routes.router)
     _app.include_router(mali_reference_routes.router)
+    _app.include_router(survey_responses.router)
+    _app.include_router(survey_management.router)
+    _app.include_router(upload_tracking.router)
 
     return _app
 

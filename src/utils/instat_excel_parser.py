@@ -445,6 +445,9 @@ class INSTATExcelParser:
             issues.append("No sections found in the survey")
 
         total_questions = 0
+        sections_with_questions = 0
+        empty_sections = []
+        
         for i, section in enumerate(survey_structure.get("sections", [])):
             if not section.get("title"):
                 issues.append(f"Section {i + 1} is missing a title")
@@ -454,12 +457,23 @@ class INSTATExcelParser:
                 section_questions += len(subsection.get("questions", []))
             
             total_questions += section_questions
+            
+            if section_questions > 0:
+                sections_with_questions += 1
+            else:
+                empty_sections.append(section.get('title', f'Section {i + 1}'))
 
-            if section_questions == 0:
-                issues.append(f"Section '{section.get('title', 'Unknown')}' has no questions")
-
+        # Only report issues if the survey has significant problems
         if total_questions == 0:
             issues.append("No questions found in the entire survey")
+        elif total_questions < 5 and sections_with_questions < 2:
+            issues.append(f"Survey appears to have very few questions ({total_questions} total)")
+            
+        # For INSTAT files, only report empty sections if they constitute a large portion
+        # of the survey (more than 50% empty sections suggests a parsing problem)
+        total_sections = len(survey_structure.get("sections", []))
+        if len(empty_sections) > total_sections * 0.5 and total_questions > 0:
+            issues.append(f"Many sections appear to be empty ({len(empty_sections)} out of {total_sections}). This might indicate a parsing issue.")
 
         return issues
 

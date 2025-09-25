@@ -18,6 +18,8 @@ from ...domain.instat.instat_services import get_template_service, TemplateServi
 from ...infrastructure.auth.oauth2 import UserInToken, require_scopes
 from ...services.audit_service import AuditService
 from src.infrastructure.database.models import ParsingResult, ParsingStatistics
+from ...utils.upload_tracker import upload_tracker
+from ...utils.admin_permissions import admin_permissions
 from schemas import survey as survey_schema
 from schemas.instat_domains import SurveyTemplateCreate, INSTATDomain, SurveyCategory, INSTATSurveyCreate, SurveyDomain, WorkflowStatus, ReportingCycle
 from schemas.responses import FileUploadResponse
@@ -97,10 +99,12 @@ def _convert_questions_to_schema(questions_data):
     "/upload-excel-and-create-survey",
     response_model=FileUploadResponse,
     status_code=status.HTTP_201_CREATED,
+    summary="Upload Excel file and create survey (Admin only)",
+    description="Upload an Excel file, parse it, and create a survey structure. This endpoint is restricted to admin users only.",
     responses={
         status.HTTP_400_BAD_REQUEST: {"model": BadRequestErrorResponse},
         status.HTTP_401_UNAUTHORIZED: {"description": "Not authenticated"},
-        status.HTTP_403_FORBIDDEN: {"description": "Not enough permissions"},
+        status.HTTP_403_FORBIDDEN: {"description": "Admin access required"},
         status.HTTP_422_UNPROCESSABLE_ENTITY: {"model": ValidationErrorResponse},
         status.HTTP_500_INTERNAL_SERVER_ERROR: {"model": InternalErrorResponse}
     }
@@ -112,11 +116,14 @@ async def upload_excel_and_create_survey(
     template_name: Optional[str] = Query(None, description="Name for the template (defaults to filename)"),
     schema_name: Optional[str] = Query(None, description="Override auto-detected schema"),
     request: Request = None,
-    current_user: UserInToken = require_scopes("upload:write"),
+    current_user: UserInToken = require_scopes("admin:write"),
     db: Session = Depends(get_db),
     template_service: TemplateService = Depends(get_template_service),
     instat_service: INSTATSurveyService = Depends(get_instat_survey_service)
 ):
+    # Check admin access for file upload
+    admin_permissions.require_upload_admin_access(current_user)
+    
     # Auto-detect schema name if not provided
     if not schema_name:
         schema_name = excel_parser.determine_schema_name(file.filename)
@@ -136,13 +143,35 @@ async def upload_excel_and_create_survey(
     upload_dir = Path(config.UPLOAD_DIR)
     upload_dir.mkdir(parents=True, exist_ok=True)
     
-    # Save file to disk
-    file_path = upload_dir / file.filename
+    # Generate timestamp for file
+    upload_timestamp = datetime.utcnow()
+    timestamp_str = upload_timestamp.strftime("%Y%m%d_%H%M%S")
+    
+    # Create timestamped filename to avoid conflicts
+    original_name = os.path.splitext(file.filename)[0]
+    file_extension = os.path.splitext(file.filename)[1]
+    timestamped_filename = f"{original_name}_{timestamp_str}{file_extension}"
+    file_path = upload_dir / timestamped_filename
+    
+    # Save file to disk with timestamp
     try:
         with file_path.open("wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
     finally:
         file.file.close()
+    
+    # Log upload information
+    upload_info = {
+        "original_filename": file.filename,
+        "timestamped_filename": timestamped_filename,
+        "upload_timestamp": upload_timestamp.isoformat(),
+        "uploaded_by": current_user.username,
+        "file_size": file_path.stat().st_size,
+        "file_path": str(file_path)
+    }
+    
+    # Track the upload using upload tracker
+    upload_tracker.log_upload(upload_info)
     
     # Parse the uploaded file with enhanced parser
     try:
@@ -152,7 +181,10 @@ async def upload_excel_and_create_survey(
         # Save the processed structure with fixed metadata to JSON file
         generated_dir = Path(config.UPLOAD_DIR).parent / "generated"
         generated_dir.mkdir(parents=True, exist_ok=True)
-        structure_file = generated_dir / f"{os.path.splitext(file.filename)[0]}_structure.json"
+        structure_file = generated_dir / f"{original_name}_{timestamp_str}_structure.json"
+        
+        # Add upload metadata to structure
+        survey_structure["upload_metadata"] = upload_info
         
         import json
         with open(structure_file, 'w', encoding='utf-8') as f:
@@ -166,11 +198,12 @@ async def upload_excel_and_create_survey(
     if validation_issues:
         return FileUploadResponse(
             success=False,
-            message="File uploaded, but with validation issues.",
+            message=f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, but with validation issues.",
             file_path=str(file_path),
             issues=validation_issues,
             survey_structure=survey_structure,
-            timestamp=datetime.utcnow()
+            upload_info=upload_info,
+            timestamp=upload_timestamp
         )
     
     # Create INSTAT survey from parsed structure
@@ -215,16 +248,17 @@ async def upload_excel_and_create_survey(
     
     # Prepare response data
     response_data = {
-        "message": "File uploaded, parsed, and INSTAT survey created successfully.",
+        "message": f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, parsed, and INSTAT survey created successfully.",
         "file_path": str(file_path),
         "survey_structure": survey_structure,
         "created_survey": created_survey.model_dump(),
-        "timestamp": datetime.utcnow()
+        "upload_info": upload_info,
+        "timestamp": upload_timestamp
     }
     
     # Add template info if created
     if created_template:
-        response_data["message"] = "File uploaded, parsed, INSTAT survey and template created successfully."
+        response_data["message"] = f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, parsed, INSTAT survey and template created successfully."
         response_data["created_template"] = created_template.model_dump()
     
     return FileUploadResponse(**response_data)
@@ -299,8 +333,12 @@ def _convert_survey_structure_to_template_sections(survey_structure: Dict[str, A
     "/upload-excel-and-create-survey-with-template",
     response_model=FileUploadResponse,
     status_code=status.HTTP_201_CREATED,
+    summary="Upload Excel file and create survey with template (Admin only)",
+    description="Upload an Excel file, create survey, and optionally create a reusable template. This endpoint is restricted to admin users only.",
     responses={
         status.HTTP_400_BAD_REQUEST: {"model": BadRequestErrorResponse},
+        status.HTTP_401_UNAUTHORIZED: {"description": "Not authenticated"},
+        status.HTTP_403_FORBIDDEN: {"description": "Admin access required"},
         status.HTTP_422_UNPROCESSABLE_ENTITY: {"model": ValidationErrorResponse},
         status.HTTP_500_INTERNAL_SERVER_ERROR: {"model": InternalErrorResponse}
     }
@@ -310,11 +348,14 @@ async def upload_excel_and_create_survey_with_template(
     create_template: bool = Query(True, description="Create template from survey structure"),
     template_name: Optional[str] = Query(None, description="Name for the template (defaults to filename)"),
     schema_name: Optional[str] = Query(None, description="Override auto-detected schema"),
-    current_user: UserInToken = require_scopes("upload:write"),
+    current_user: UserInToken = require_scopes("admin:write"),
     db: Session = Depends(get_db),
     template_service: TemplateService = Depends(get_template_service)
 ):
-    """Upload Excel file, create survey, and optionally create reusable template"""
+    """Upload Excel file, create survey, and optionally create reusable template (Admin only)"""
+    # Check admin access for file upload
+    admin_permissions.require_upload_admin_access(current_user)
+    
     # Auto-detect schema name if not provided
     if not schema_name:
         schema_name = excel_parser.determine_schema_name(file.filename)
@@ -335,13 +376,35 @@ async def upload_excel_and_create_survey_with_template(
     upload_dir = Path(config.UPLOAD_DIR)
     upload_dir.mkdir(parents=True, exist_ok=True)
     
-    # Save file to disk
-    file_path = upload_dir / file.filename
+    # Generate timestamp for file
+    upload_timestamp = datetime.utcnow()
+    timestamp_str = upload_timestamp.strftime("%Y%m%d_%H%M%S")
+    
+    # Create timestamped filename to avoid conflicts
+    original_name = os.path.splitext(file.filename)[0]
+    file_extension = os.path.splitext(file.filename)[1]
+    timestamped_filename = f"{original_name}_{timestamp_str}{file_extension}"
+    file_path = upload_dir / timestamped_filename
+    
+    # Save file to disk with timestamp
     try:
         with file_path.open("wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
     finally:
         file.file.close()
+    
+    # Log upload information
+    upload_info = {
+        "original_filename": file.filename,
+        "timestamped_filename": timestamped_filename,
+        "upload_timestamp": upload_timestamp.isoformat(),
+        "uploaded_by": current_user.username,
+        "file_size": file_path.stat().st_size,
+        "file_path": str(file_path)
+    }
+    
+    # Track the upload using upload tracker
+    upload_tracker.log_upload(upload_info)
         
     # Parse the uploaded file with enhanced parser
     try:
@@ -351,7 +414,10 @@ async def upload_excel_and_create_survey_with_template(
         # Save the processed structure with fixed metadata to JSON file
         generated_dir = Path(config.UPLOAD_DIR).parent / "generated"
         generated_dir.mkdir(parents=True, exist_ok=True)
-        structure_file = generated_dir / f"{os.path.splitext(file.filename)[0]}_structure.json"
+        structure_file = generated_dir / f"{original_name}_{timestamp_str}_structure.json"
+        
+        # Add upload metadata to structure
+        survey_structure["upload_metadata"] = upload_info
         
         import json
         with open(structure_file, 'w', encoding='utf-8') as f:
@@ -360,11 +426,12 @@ async def upload_excel_and_create_survey_with_template(
         if validation_issues:
             return FileUploadResponse(
                 success=False,
-                message="File uploaded, but with validation issues.",
+                message=f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, but with validation issues.",
                 file_path=str(file_path),
                 issues=validation_issues,
                 survey_structure=survey_structure,
-                timestamp=datetime.utcnow()
+                upload_info=upload_info,
+                timestamp=upload_timestamp
             )
         
         # Create survey from parsed structure
@@ -402,15 +469,16 @@ async def upload_excel_and_create_survey_with_template(
                 print(f"Template creation failed: {template_error}")
         
         response_data = {
-            "message": "File uploaded, parsed, and survey created successfully.",
+            "message": f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, parsed, and survey created successfully.",
             "file_path": str(file_path),
             "survey_structure": survey_structure,
             "created_survey": created_survey.to_dict(),
-            "timestamp": datetime.utcnow()
+            "upload_info": upload_info,
+            "timestamp": upload_timestamp
         }
         
         if created_template:
-            response_data["message"] = "File uploaded, parsed, survey and template created successfully."
+            response_data["message"] = f"File '{timestamped_filename}' uploaded at {upload_timestamp.strftime('%Y-%m-%d %H:%M:%S')} UTC, parsed, survey and template created successfully."
             response_data["created_template"] = created_template.model_dump()
         
         return FileUploadResponse(**response_data)
